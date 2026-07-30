@@ -231,10 +231,15 @@ export default function Contact() {
                 ))}
               </div>
 
-              {/* Map Placeholder */}
-              <div className="mt-8 bg-black/[0.03] border border-black/[0.08] h-60 flex items-center justify-center text-[13px] text-[#0A0A0A]/40 tracking-[2px] uppercase rounded-sm">
-                <MapPin size={20} className="mr-2" />
-                Google Maps
+              {/* Mapa */}
+              <div className="mt-8 h-60 border border-black/[0.08] rounded-sm overflow-hidden">
+                <iframe
+                  src="https://maps.google.com/maps?q=%C5%A0ujanovo%20n%C3%A1m%C4%9Bst%C3%AD%201%2C%20Brno&z=16&output=embed"
+                  className="w-full h-full border-0"
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Mapa - Šujanovo náměstí 1, Brno"
+                />
               </div>
 
               {/* Osobní tréninky */}
