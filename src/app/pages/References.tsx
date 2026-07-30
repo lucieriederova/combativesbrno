@@ -76,32 +76,37 @@ export default function References() {
                 quote: 'Měl jsem zkušenosti s boxem a BJJ, ale RBSD mi ukázalo, jak to vypadá doopravdy. Bez pravidel, bez rozhodčích.',
               },
             ].map((testimonial, i) => (
-              <div key={i} className="bg-white p-8 border-l-[4px] border-[#C41E2A] relative">
-                <Quote className="absolute top-6 right-6 text-[#C41E2A]/10" size={48} />
+              <div key={i} className="bg-white border-l-[4px] border-[#C41E2A] flex flex-col sm:flex-row overflow-hidden">
+                <div className="w-full h-72 sm:h-auto sm:w-[220px] shrink-0">
+                  <img
+                    src={testimonial.photo}
+                    alt={testimonial.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
 
-                <div className="relative z-10">
-                  <div className="flex items-center gap-4 mb-5">
-                    <img
-                      src={testimonial.photo}
-                      alt={testimonial.name}
-                      className="w-16 h-16 rounded-full object-cover border-2 border-[#C41E2A]"
-                    />
-                    <div className="flex-1">
-                      <h3 className="text-[20px] font-bold text-[#0A0A0A] mb-1">
-                        {testimonial.name}
-                      </h3>
-                      <div className="text-[12px] text-[#0A0A0A]/50">
-                        {testimonial.program}
+                <div className="p-8 relative flex-1">
+                  <Quote className="absolute top-6 right-6 text-[#C41E2A]/10" size={48} />
+
+                  <div className="relative z-10">
+                    <div className="flex items-start justify-between gap-3 mb-4">
+                      <div>
+                        <h3 className="text-[20px] font-bold text-[#0A0A0A] mb-1">
+                          {testimonial.name}
+                        </h3>
+                        <div className="text-[12px] text-[#0A0A0A]/50">
+                          {testimonial.program}
+                        </div>
+                      </div>
+                      <div className="text-[11px] tracking-[2px] uppercase text-[#C41E2A] font-bold text-right shrink-0">
+                        {testimonial.duration}
                       </div>
                     </div>
-                    <div className="text-[11px] tracking-[2px] uppercase text-[#C41E2A] font-bold text-right shrink-0">
-                      {testimonial.duration}
-                    </div>
-                  </div>
 
-                  <p className="text-[15px] text-[#0A0A0A]/70 leading-relaxed italic">
-                    "{testimonial.quote}"
-                  </p>
+                    <p className="text-[15px] text-[#0A0A0A]/70 leading-relaxed italic">
+                      "{testimonial.quote}"
+                    </p>
+                  </div>
                 </div>
               </div>
             ))}
