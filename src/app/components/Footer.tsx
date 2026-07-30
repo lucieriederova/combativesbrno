@@ -1,5 +1,6 @@
 import { Link } from 'react-router';
 import rbsdLogo from '@/imports/si_la__kopie_.png';
+import { openCookieSettings } from '../lib/cookieConsent';
 
 export default function Footer() {
   return (
@@ -98,9 +99,14 @@ export default function Footer() {
             <div className="space-y-2.5">
               <div className="flex items-start gap-2.5">
                 <span className="text-sm mt-0.5">📍</span>
-                <p className="text-[13px] text-white/45 leading-normal">
-                  ZŠ Milénova<br />Brno-Líšeň
-                </p>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=%C5%A0ujanovo+n%C3%A1m%C4%9Bst%C3%AD+1+Brno"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[13px] text-white/45 leading-normal hover:text-[#C41E2A] transition-colors"
+                >
+                  Šujanovo náměstí 1<br />Brno
+                </a>
               </div>
               <div className="flex items-start gap-2.5">
                 <span className="text-sm mt-0.5">📞</span>
@@ -117,9 +123,20 @@ export default function Footer() {
         {/* Bottom */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-[11px] text-white/18 tracking-wide">
           <span>© 2026 RBSD Combatives Brno</span>
-          <Link to="/" className="text-white/20 hover:text-[#C41E2A] transition-colors">
-            ← Zpět nahoru
-          </Link>
+          <div className="flex items-center gap-5">
+            <Link to="/ochrana-soukromi" className="text-white/20 hover:text-[#C41E2A] transition-colors">
+              Ochrana soukromí
+            </Link>
+            <button
+              onClick={openCookieSettings}
+              className="text-white/20 hover:text-[#C41E2A] transition-colors cursor-pointer"
+            >
+              Nastavení cookies
+            </button>
+            <Link to="/" className="text-white/20 hover:text-[#C41E2A] transition-colors">
+              ← Zpět nahoru
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

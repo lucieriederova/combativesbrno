@@ -70,8 +70,14 @@ export default function About() {
               </p>
 
               <p className="text-[15px] text-[#0A0A0A]/70 leading-relaxed mb-3.5">
-                Trénujeme prevenci, deeskalaci, právní stránku obrany a nejvíc ze všeho — 
+                Trénujeme prevenci, deeskalaci, právní stránku obrany a nejvíc ze všeho —
                 jak přežít konflikt na ulici. Žádné iluze, žádné kompromisy.
+              </p>
+
+              <p className="text-[15px] text-[#0A0A0A]/70 leading-relaxed mb-3.5">
+                RBSD Combatives Brno je součástí mezinárodní RBSD komunity — sítě instruktorů a škol
+                po celém světě, kteří sdílí stejnou filozofii a metodiku výcviku. Nejsme v tom sami,
+                čerpáme ze zkušeností celé komunity a jsme s ní v pravidelném kontaktu.
               </p>
             </RevealOnScroll>
 
@@ -126,6 +132,14 @@ export default function About() {
                   <li className="flex items-start gap-2.5">
                     <span className="text-[#C41E2A] font-bold">▸</span>
                     Psychologie útočníka
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <span className="text-[#C41E2A] font-bold">▸</span>
+                    Právní stránka sebeobrany
+                  </li>
+                  <li className="flex items-start gap-2.5">
+                    <span className="text-[#C41E2A] font-bold">▸</span>
+                    První pomoc
                   </li>
                 </ul>
               </div>

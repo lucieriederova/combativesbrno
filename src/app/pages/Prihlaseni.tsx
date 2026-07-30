@@ -63,7 +63,7 @@ export default function Prihlaseni() {
                 Vyber si <span className="text-[#C41E2A]">termín</span>
               </h2>
               <p className="text-[15px] text-[#0A0A0A]/60">
-                Tréninky probíhají v tělocvičně ZŠ Milénova
+                Tréninky probíhají na Šujanově náměstí 1, Brno
               </p>
             </div>
 

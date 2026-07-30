@@ -2,3 +2,8 @@ node_modules
 dist
 .DS_Store
 *.log
+
+# original full-resolution photos (web uses optimized copies instead)
+src/imports/Áďa.jpg
+src/imports/Káťa.jpg
+src/imports/Kryštof.jpg

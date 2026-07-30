@@ -1,6 +1,10 @@
 import { Link } from 'react-router';
 import { Quote } from 'lucide-react';
 import { RevealOnScroll } from '../components/RevealOnScroll';
+import adaPhoto from '@/imports/ada.jpg';
+import kataPhoto from '@/imports/kata.jpg';
+import krystofPhoto from '@/imports/krystof.jpg';
+import matyPhoto from '@/imports/maty.jpg';
 
 export default function References() {
   return (
@@ -44,66 +48,57 @@ export default function References() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
-                name: 'Petra Nováková',
-                age: '32 let',
+                name: 'Áďa',
                 program: 'RBSD Začátečníci',
                 duration: 'Trénuje 1 rok',
+                photo: adaPhoto,
                 quote: 'Konečně něco, co má smysl. Žádné zbytečnosti, jen praktická obrana. Cítím se mnohem bezpečněji.',
               },
               {
-                name: 'Martin Svoboda',
-                age: '28 let',
+                name: 'Káťa',
+                program: 'Sebeobrana pro ženy',
+                duration: 'Trénuje 8 měsíců',
+                photo: kataPhoto,
+                quote: 'Nikdy jsem nesportovala, ale tady se nebojím zkoušet nové věci. Všichni jsou vstřícní a atmosféra je skvělá.',
+              },
+              {
+                name: 'Kryštof',
                 program: 'Urban Combatives',
                 duration: 'Trénuje 3 roky',
+                photo: krystofPhoto,
                 quote: 'Nejlepší rozhodnutí mého života. RBSD mě naučilo, jak zvládat stres a jednat pod tlakem. To se hodí i v běžném životě.',
               },
               {
-                name: 'Jana Procházková',
-                age: '41 let',
-                program: 'Sebeobrana pro ženy',
-                duration: 'Trénuje 6 měsíců',
-                quote: 'Cítím se mnohem silněji a sebevědoměji. Trenér mě naučil, jak se bránit, ale hlavně jak konfliktům předcházet.',
-              },
-              {
-                name: 'Tomáš Dvořák',
-                age: '24 let',
+                name: 'Maty',
                 program: 'Pokročilí',
                 duration: 'Trénuje 2 roky',
+                photo: matyPhoto,
                 quote: 'Měl jsem zkušenosti s boxem a BJJ, ale RBSD mi ukázalo, jak to vypadá doopravdy. Bez pravidel, bez rozhodčích.',
-              },
-              {
-                name: 'Lukáš Horák',
-                age: '35 let',
-                program: 'Privátní lekce',
-                duration: 'Trénuje 1 rok',
-                quote: 'Pracuji jako ochránce a RBSD mi dal nástroje, které denně používám. Praktické, efektivní, bez keců.',
-              },
-              {
-                name: 'Kateřina Malá',
-                age: '29 let',
-                program: 'RBSD Všichni',
-                duration: 'Trénuje 8 měsíců',
-                quote: 'Nikdy jsem nesportovala, ale tady se nebojím zkoušet nové věci. Všichni jsou vstřícní a atmosféra je skvělá.',
               },
             ].map((testimonial, i) => (
               <div key={i} className="bg-white p-8 border-l-[4px] border-[#C41E2A] relative">
                 <Quote className="absolute top-6 right-6 text-[#C41E2A]/10" size={48} />
-                
+
                 <div className="relative z-10">
-                  <div className="flex items-start justify-between mb-4">
-                    <div>
+                  <div className="flex items-center gap-4 mb-5">
+                    <img
+                      src={testimonial.photo}
+                      alt={testimonial.name}
+                      className="w-16 h-16 rounded-full object-cover border-2 border-[#C41E2A]"
+                    />
+                    <div className="flex-1">
                       <h3 className="text-[20px] font-bold text-[#0A0A0A] mb-1">
                         {testimonial.name}
                       </h3>
                       <div className="text-[12px] text-[#0A0A0A]/50">
-                        {testimonial.age} · {testimonial.program}
+                        {testimonial.program}
                       </div>
                     </div>
-                    <div className="text-[11px] tracking-[2px] uppercase text-[#C41E2A] font-bold">
+                    <div className="text-[11px] tracking-[2px] uppercase text-[#C41E2A] font-bold text-right shrink-0">
                       {testimonial.duration}
                     </div>
                   </div>
-                  
+
                   <p className="text-[15px] text-[#0A0A0A]/70 leading-relaxed italic">
                     "{testimonial.quote}"
                   </p>

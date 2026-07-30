@@ -194,7 +194,7 @@ export default function Contact() {
                   { 
                     icon: <MapPin size={20} />, 
                     label: 'Adresa tréninků', 
-                    value: 'ZŠ Milénova\nBrno – Líšeň' 
+                    value: 'Šujanovo náměstí 1\nBrno'
                   },
                   { 
                     icon: <Phone size={20} />, 

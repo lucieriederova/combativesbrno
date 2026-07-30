@@ -1,6 +1,12 @@
 import { useEffect } from 'react';
 import Lenis from 'lenis';
 
+let lenisInstance: Lenis | null = null;
+
+export function getLenis() {
+  return lenisInstance;
+}
+
 export function useSmoothScroll() {
   useEffect(() => {
     // Inicializace Lenis smooth scrollu
@@ -13,6 +19,7 @@ export function useSmoothScroll() {
       smoothTouch: false,
       touchMultiplier: 2,
     });
+    lenisInstance = lenis;
 
     // RequestAnimationFrame loop
     function raf(time: number) {
@@ -22,9 +29,17 @@ export function useSmoothScroll() {
 
     requestAnimationFrame(raf);
 
+    // Lenis caches the scrollable height on init. Dynamic content (FAQ accordions,
+    // images finishing loading) can change document height afterwards without Lenis
+    // knowing, which is what causes scrolling to get stuck short of the real bottom.
+    const resizeObserver = new ResizeObserver(() => lenis.resize());
+    resizeObserver.observe(document.body);
+
     // Cleanup
     return () => {
+      resizeObserver.disconnect();
       lenis.destroy();
+      lenisInstance = null;
     };
   }, []);
 }

@@ -46,25 +46,21 @@ export default function Training() {
               {
                 step: '01',
                 title: 'Zahřátí',
-                time: '15 min',
                 desc: 'Funkční zahřátí zaměřené na kondici a mobility potřebné pro sebeobranu.',
               },
               {
                 step: '02',
                 title: 'Technika',
-                time: '30 min',
                 desc: 'Nácvik základních principů - úderů, krytu, clinche a pohybu.',
               },
               {
                 step: '03',
                 title: 'Scénáře',
-                time: '30 min',
                 desc: 'Realistické stresové situace. Zde se učíš jednat pod tlakem.',
               },
               {
                 step: '04',
                 title: 'Diskuse',
-                time: '15 min',
                 desc: 'Rozbor právní stránky, psychologie a prevence konfliktů.',
               },
             ].map((phase, i) => (
@@ -75,10 +71,7 @@ export default function Training() {
                 <h3 className="text-[18px] font-bold text-[#0A0A0A] mb-2">
                   {phase.title}
                 </h3>
-                <div className="text-[11px] tracking-[2px] uppercase text-[#C41E2A] mb-3">
-                  {phase.time}
-                </div>
-                <p className="text-[13px] text-[#0A0A0A]/60 leading-relaxed">
+                <p className="text-[13px] text-[#0A0A0A]/60 leading-relaxed mt-3">
                   {phase.desc}
                 </p>
               </div>
@@ -97,7 +90,16 @@ export default function Training() {
             Kdy <span className="text-[#C41E2A]">trénujeme</span>
           </h2>
           <p className="text-base text-white/60 leading-relaxed max-w-[580px] mb-14">
-            Tréninky probíhají pravidelně v prostorách ZŠ Milénova v Brně-Líšni. První hodina je vždy zdarma.
+            Tréninky probíhají pravidelně na adrese{' '}
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=%C5%A0ujanovo+n%C3%A1m%C4%9Bst%C3%AD+1+Brno"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#C41E2A] underline underline-offset-2 hover:text-white transition-colors"
+            >
+              Šujanovo náměstí 1, Brno
+            </a>
+            . První hodina je vždy zdarma.
           </p>
 
           <div className="overflow-x-auto">
@@ -268,49 +270,54 @@ export default function Training() {
                 features: [],
               },
             ].map((plan, i) => (
-              <div 
-                key={i} 
-                className={`p-8 relative overflow-hidden ${
-                  plan.featured 
-                    ? 'bg-[#C41E2A] border-[#C41E2A]' 
-                    : 'bg-[#0A0A0A] border border-white/10'
+              <div
+                key={i}
+                className={`flex flex-col p-8 border-l-[3px] ${
+                  plan.featured
+                    ? 'bg-gradient-to-br from-[#C41E2A] via-[#C41E2A] to-[#8B0000] border-white/60'
+                    : 'bg-[#0A0A0A] border-[#C41E2A]'
                 }`}
               >
-                {plan.featured && (
-                  <div className="absolute top-4 right-4 bg-[#0A0A0A] text-white text-[10px] font-bold tracking-[2px] uppercase px-3 py-1">
-                    Nejlepší
-                  </div>
+                {plan.featured ? (
+                  <span className="self-start bg-[#0A0A0A] text-white text-[10px] font-bold tracking-[2px] uppercase px-3 py-1 mb-5">
+                    Nejlepší volba
+                  </span>
+                ) : (
+                  <div className="h-[26px] mb-5" />
                 )}
-                
-                <h3 className={`text-[20px] font-bold mb-2 ${plan.featured ? 'text-white' : 'text-white'}`}>
+
+                <h3 className="text-[20px] font-bold text-white mb-2">
                   {plan.name}
                 </h3>
-                <div className={`text-[11px] tracking-[2px] uppercase mb-6 ${plan.featured ? 'text-white/80' : 'text-white/40'}`}>
+                <div className={`text-[11px] tracking-[2px] uppercase mb-8 ${plan.featured ? 'text-white/80' : 'text-white/40'}`}>
                   {plan.desc}
                 </div>
-                <div className={`text-[42px] font-bold mb-6 ${plan.featured ? 'text-white' : 'text-white'}`}>
-                  {plan.price}
+
+                <div className="mt-auto">
+                  <div className="text-[36px] font-bold text-white mb-6 whitespace-nowrap tabular-nums">
+                    {plan.price}
+                  </div>
+                  {plan.features.length > 0 && (
+                    <ul className="space-y-3 mb-8">
+                      {plan.features.map((feature, j) => (
+                        <li key={j} className={`flex items-start gap-2 text-[13px] ${plan.featured ? 'text-white/90' : 'text-white/50'}`}>
+                          <span className={plan.featured ? 'text-white' : 'text-[#C41E2A]'}>▸</span>
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                  <Link
+                    to="/prihlaseni"
+                    className={`block text-center py-3 text-[11px] font-bold tracking-[2px] uppercase transition-colors ${
+                      plan.featured
+                        ? 'bg-[#0A0A0A] text-white hover:bg-[#111]'
+                        : 'bg-[#C41E2A] text-white hover:bg-[#A01822]'
+                    }`}
+                  >
+                    {i === 0 ? 'Vyzkoušet' : i === 1 ? 'Začít trénovat' : 'Rezervovat'}
+                  </Link>
                 </div>
-                {plan.features.length > 0 && (
-                  <ul className="space-y-3 mb-8">
-                    {plan.features.map((feature, j) => (
-                      <li key={j} className={`flex items-start gap-2 text-[13px] ${plan.featured ? 'text-white/90' : 'text-white/50'}`}>
-                        <span className={plan.featured ? 'text-white' : 'text-[#C41E2A]'}>✓</span>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-                <Link
-                  to="/prihlaseni"
-                  className={`block text-center py-3 rounded-sm text-[11px] font-bold tracking-[2px] uppercase transition-colors ${
-                    plan.featured
-                      ? 'bg-[#0A0A0A] text-white hover:bg-[#111]'
-                      : 'bg-[#C41E2A] text-white hover:bg-[#A01822]'
-                  }`}
-                >
-                  {i === 0 ? 'Vyzkoušet' : i === 1 ? 'Začít trénovat' : 'Rezervovat'}
-                </Link>
               </div>
             ))}
           </div>

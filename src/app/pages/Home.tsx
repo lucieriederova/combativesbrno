@@ -249,68 +249,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Video rozhovor */}
-      <section className="py-24 bg-[#C41E2A] relative overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-[0.04] pointer-events-none"
-          style={{ backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(0,0,0,0.15) 3px, rgba(0,0,0,0.15) 4px)' }}
-        />
-        <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5 relative z-10">
-          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-12">
-            <div>
-              <span className="block text-[10px] font-bold tracking-[5px] uppercase text-white/50 mb-4">
-                Videorozhovor
-              </span>
-              <h2 className="font-sans text-[clamp(28px,4vw,46px)] font-bold leading-tight text-white tracking-tight">
-                POSLECHNI SI JIŘÍHO HOLÁNĚ
-              </h2>
-            </div>
-            <p className="text-[14px] text-white/70 max-w-[320px] leading-relaxed">
-              Hlavní instruktor RBSD Combatives Brno o filozofii výcviku, reálné sebeobranně a o tom, proč sport nestačí.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-            {/* Video rozhovor */}
-            <div className="relative aspect-video overflow-hidden">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/8ptJjCGCbdo?rel=0&modestbranding=1"
-                title="Rozhovor s Jiřím Holáněm — RBSD Combatives Brno"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
-            </div>
-
-            {/* Citát / perex */}
-            <div className="flex flex-col gap-6">
-              <blockquote className="border-l-[3px] border-white/40 pl-6">
-                <p className="text-[18px] font-serif font-bold text-white leading-snug mb-3">
-                  "Trénujeme pro ulici, ne pro ring. Rozdíl je zásadní."
-                </p>
-                <cite className="text-[12px] tracking-[2px] uppercase text-white/50 not-italic">
-                  Jiří Holáň — zakladatel RBSD Combatives Brno
-                </cite>
-              </blockquote>
-
-              <div className="space-y-3">
-                {[
-                  'Co je Urban Combatives a proč ho učíme',
-                  'Jak vypadá skutečný konflikt na ulici',
-                  'Proč jsou sportovní bojová umění nedostatečná',
-                  'Pro koho je RBSD výcvik určen',
-                ].map((topic, i) => (
-                  <div key={i} className="flex items-start gap-3 text-[14px] text-white/70">
-                    <span className="text-white font-bold shrink-0 tabular-nums">{String(i + 1).padStart(2, '0')}.</span>
-                    {topic}
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* FAQ */}
       <section className="py-24 bg-[#0A0A0A]">
         <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5">
@@ -337,7 +275,15 @@ export default function Home() {
               },
               {
                 question: 'Kolik stojí trénink?',
-                answer: 'První lekce je vždy zdarma. Ceny za pravidelný trénink najdete v sekci Tréninky nebo nás kontaktujte.',
+                answer: (
+                  <>
+                    První lekce je vždy zdarma. Ceny za pravidelný trénink najdete v sekci{' '}
+                    <Link to="/treninky" className="text-[#C41E2A] underline hover:text-white transition-colors">
+                      Tréninky
+                    </Link>{' '}
+                    nebo nás kontaktujte.
+                  </>
+                ),
               },
             ].map((faq, i) => (
               <div key={i} className="border border-white/10 overflow-hidden">
