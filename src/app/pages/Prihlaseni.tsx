@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Calendar, CheckCircle2, Mail, Phone, User } from 'lucide-react';
+import { Calendar, CheckCircle2, ExternalLink, Mail, Phone, User } from 'lucide-react';
 import { RevealOnScroll } from '../components/RevealOnScroll';
 
 export default function Prihlaseni() {
@@ -89,6 +89,33 @@ export default function Prihlaseni() {
                   </div>
                 </div>
               ))}
+            </div>
+          </RevealOnScroll>
+        </div>
+      </section>
+
+      {/* Reenio rezervační systém */}
+      <section className="py-24 bg-[#F5F3F0]">
+        <div className="max-w-[700px] mx-auto px-12 max-[880px]:px-5">
+          <RevealOnScroll>
+            <div className="bg-white border-l-[4px] border-[#C41E2A] p-12 text-center relative overflow-hidden">
+              <div className="w-16 h-16 bg-[rgba(196,30,42,0.1)] rounded-full flex items-center justify-center mx-auto mb-5">
+                <Calendar className="text-[#C41E2A]" size={28} />
+              </div>
+              <h3 className="font-serif text-[24px] font-bold text-[#0A0A0A] mb-3">
+                Rezervační kalendář Reenio
+              </h3>
+              <p className="text-[14px] text-[#0A0A0A]/60 leading-relaxed max-w-[420px] mx-auto mb-8">
+                Vyber si volný termín a přihlas se na trénink přímo online — kalendář se otevře v nové záložce.
+              </p>
+              <a
+                href="https://combatives.reenio.cz/cs/terms/2026-09-22;viewMode=3-days"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-2 bg-[#C41E2A] hover:bg-[#A01822] text-white px-8 py-3.5 text-[11px] font-bold tracking-[2px] uppercase transition-colors"
+              >
+                Otevřít rezervaci <ExternalLink size={14} />
+              </a>
             </div>
           </RevealOnScroll>
         </div>
