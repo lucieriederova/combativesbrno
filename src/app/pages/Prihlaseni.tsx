@@ -54,46 +54,6 @@ export default function Prihlaseni() {
         </RevealOnScroll>
       </section>
 
-      {/* Vyber si termín */}
-      <section className="py-24 bg-[#F5F3F0]">
-        <div className="max-w-[900px] mx-auto px-12 max-[880px]:px-5">
-          <RevealOnScroll>
-            <div className="text-center mb-6">
-              <h2 className="font-serif text-[clamp(32px,4vw,48px)] font-bold text-[#0A0A0A] mb-3">
-                Vyber si <span className="text-[#C41E2A]">termín</span>
-              </h2>
-              <p className="text-[15px] text-[#0A0A0A]/60">
-                Tréninky probíhají na Šujanově náměstí 1, Brno
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-12">
-              {[
-                { day: 'Pondělí', time: '18:00 - 20:00', level: 'Začátečníci' },
-                { day: 'Pondělí', time: '20:00 - 21:30', level: 'Pokročilí' },
-                { day: 'Středa', time: '18:30 - 20:00', level: 'Začátečníci + pokročilí' },
-                { day: 'Pátek', time: '18:00 - 19:30', level: 'Pokročilí' },
-              ].map((slot, i) => (
-                <div
-                  key={i}
-                  className="bg-white border-l-[3px] border-[#C41E2A] p-6 hover:shadow-lg transition-shadow"
-                >
-                  <div className="text-[18px] font-bold text-[#0A0A0A] mb-2">
-                    {slot.day}
-                  </div>
-                  <div className="text-[15px] text-[#0A0A0A]/70 mb-3">
-                    {slot.time}
-                  </div>
-                  <div className="inline-block text-[10px] font-bold tracking-[2px] uppercase bg-[rgba(196,30,42,0.1)] text-[#C41E2A] px-3 py-1">
-                    {slot.level}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </RevealOnScroll>
-        </div>
-      </section>
-
       {/* Reenio rezervační systém */}
       <section className="py-24 bg-[#F5F3F0]">
         <div className="max-w-[700px] mx-auto px-12 max-[880px]:px-5">
