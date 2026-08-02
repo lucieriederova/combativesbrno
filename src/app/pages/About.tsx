@@ -75,9 +75,17 @@ export default function About() {
               </p>
 
               <p className="text-[15px] text-[#0A0A0A]/70 leading-relaxed mb-3.5">
-                RBSD Combatives Brno je součástí sítě RBSD škol po celé České republice, které sdílí
-                stejnou filozofii a metodiku výcviku. Nejsme v tom sami, čerpáme ze zkušeností celé
-                sítě a jsme s ní v pravidelném kontaktu.
+                RBSD Combatives Brno je součástí{' '}
+                <a
+                  href="https://rbsd.cz/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#C41E2A] underline underline-offset-2 hover:text-[#0A0A0A] transition-colors"
+                >
+                  sítě RBSD škol
+                </a>{' '}
+                po celé České republice, které sdílí stejnou filozofii a metodiku výcviku. Nejsme
+                v tom sami, čerpáme ze zkušeností celé sítě a jsme s ní v pravidelném kontaktu.
               </p>
             </RevealOnScroll>
 
