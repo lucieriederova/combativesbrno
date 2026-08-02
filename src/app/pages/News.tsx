@@ -1,10 +1,12 @@
 import { Link } from 'react-router';
 import { Calendar, ChevronRight } from 'lucide-react';
 import { RevealOnScroll } from '../components/RevealOnScroll';
-import { ImageWithFallback } from '../components/figma/ImageWithFallback';
-import adaPhoto from '@/imports/ada.jpg';
-import krystofPhoto from '@/imports/krystof.jpg';
-import matyPhoto from '@/imports/maty.jpg';
+import { newsArticles, newsSidebarExtras } from '../data/newsArticles';
+
+const sidebarItems = [
+  ...newsArticles.map((a) => ({ title: a.title, date: a.date })),
+  ...newsSidebarExtras,
+];
 
 export default function News() {
   return (
@@ -13,15 +15,15 @@ export default function News() {
       <section className="bg-[#C41E2A] min-h-[35vh] flex items-end pb-10 relative overflow-hidden">
         {/* Gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#8B0000] via-[#C41E2A] to-[#0A0A0A]" />
-        
+
         {/* Scan lines texture */}
-        <div 
+        <div
           className="absolute inset-0 opacity-[0.03] pointer-events-none"
           style={{
             backgroundImage: 'repeating-linear-gradient(0deg, transparent, transparent 3px, rgba(255,255,255,0.08) 3px, rgba(255,255,255,0.08) 4px)',
           }}
         />
-        
+
         <RevealOnScroll delay={0.2}>
           <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5 relative z-10">
             <div className="text-[10px] tracking-[4px] uppercase text-white/60 mb-3.5">
@@ -40,32 +42,10 @@ export default function News() {
           <div className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-12">
             {/* Main Articles */}
             <div className="space-y-8">
-              {[
-                {
-                  tag: 'Soustředění',
-                  title: 'Letní soustředění 2026',
-                  excerpt: 'Termín: 11. 7. – 18. 7. – Blatiny 33 (u Nového Města…',
-                  meta: '11.–18. 7. 2026',
-                  image: adaPhoto,
-                },
-                {
-                  tag: 'Nový program',
-                  title: 'Otevíráme tréninky Sandy',
-                  excerpt: 'Sanda je čínský plnokontaktní bojový sport, který je podobný kickboxu. Využívá údery,…',
-                  meta: '2026',
-                  image: krystofPhoto,
-                },
-                {
-                  tag: 'Nábor',
-                  title: 'Tréninky sebeobrany pro nováčky – září 2025',
-                  excerpt: 'Otevíráme nábor pro začátečníky. Přijďte si k nám vyzkoušet trénink a naučte…',
-                  meta: 'Září 2025',
-                  image: matyPhoto,
-                },
-              ].map((article, i) => (
-                <div key={i} className="bg-white border-l-[4px] border-[#C41E2A] overflow-hidden hover:shadow-lg transition-shadow">
+              {newsArticles.map((article) => (
+                <div key={article.slug} className="bg-white border-l-[4px] border-[#C41E2A] overflow-hidden hover:shadow-lg transition-shadow">
                   <div className="aspect-video bg-[#0A0A0A] flex items-center justify-center relative overflow-hidden">
-                    <ImageWithFallback
+                    <img
                       src={article.image}
                       alt={article.title}
                       className="w-full h-full object-cover"
@@ -85,11 +65,14 @@ export default function News() {
                     </p>
                     <div className="flex items-center justify-between">
                       <div className="text-[11px] text-[#0A0A0A]/40 tracking-wide">
-                        {article.meta}
+                        {article.date}
                       </div>
-                      <button className="text-[#C41E2A] text-[13px] font-bold flex items-center gap-1 hover:gap-2 transition-all">
+                      <Link
+                        to={`/aktuality/${article.slug}`}
+                        className="text-[#C41E2A] text-[13px] font-bold flex items-center gap-1 hover:gap-2 transition-all"
+                      >
                         Číst více <ChevronRight size={16} />
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -103,24 +86,16 @@ export default function News() {
               </div>
 
               <div className="space-y-0">
-                {[
-                  { number: '01', title: 'Letní soustředění 2026', date: '11.–18. 7. 2026' },
-                  { number: '02', title: 'Otevíráme tréninky Sandy', date: '2026' },
-                  { number: '03', title: 'Tréninky sebeobrany pro nováčky – září 2025', date: 'Září 2025' },
-                  { number: '04', title: 'Letní tréninky sebeobrany 2025', date: 'Červen 2025' },
-                  { number: '05', title: 'Tréninky dětí 11. 2. zrušeny z důvodu jarních prázdnin', date: '11. února 2025' },
-                  { number: '06', title: 'Tréninky sebeobrany pro nováčky – leden 2025', date: 'Leden 2025' },
-                  { number: '07', title: 'Tréninky 29. 10. zrušeny z důvodu podzimních prázdnin', date: '29. října 2024' },
-                ].map((item, i) => (
+                {sidebarItems.map((item, i) => (
                   <div
                     key={i}
-                    className="flex items-start gap-4 py-5 border-b border-[#0A0A0A]/10 hover:bg-white/50 transition-colors px-4 -mx-4 cursor-pointer group"
+                    className="flex items-start gap-4 py-5 border-b border-[#0A0A0A]/10 px-4 -mx-4"
                   >
-                    <div className="text-[32px] font-bold text-[#C41E2A]/10 leading-none group-hover:text-[#C41E2A]/30 transition-colors">
-                      {item.number}
+                    <div className="text-[32px] font-bold text-[#C41E2A]/10 leading-none">
+                      {String(i + 1).padStart(2, '0')}
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-[15px] font-bold text-[#0A0A0A] mb-1 leading-tight group-hover:text-[#C41E2A] transition-colors">
+                      <h3 className="text-[15px] font-bold text-[#0A0A0A] mb-1 leading-tight">
                         {item.title}
                       </h3>
                       <div className="flex items-center gap-1.5 text-[11px] text-[#0A0A0A]/40">

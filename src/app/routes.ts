@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Training from "./pages/Training";
 import News from "./pages/News";
+import NewsArticle from "./pages/NewsArticle";
 import Contact from "./pages/Contact";
 import Partners from "./pages/Partners";
 import References from "./pages/References";
@@ -19,6 +20,7 @@ export const router = createBrowserRouter([
       { path: "o-nas", Component: About },
       { path: "treninky", Component: Training },
       { path: "aktuality", Component: News },
+      { path: "aktuality/:slug", Component: NewsArticle },
       { path: "reference", Component: References },
       { path: "prihlaseni", Component: Prihlaseni },
       { path: "kontakt", Component: Contact },
