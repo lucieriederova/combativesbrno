@@ -18,7 +18,7 @@ export default function Prihlaseni() {
         <RevealOnScroll delay={0.2}>
           <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5 relative z-10">
             <div className="text-[10px] tracking-[4px] uppercase text-white/60 mb-3.5">
-              RBSD Combatives Brno <span className="text-white">/ Zkus si trénink</span>
+              RBSD Combatives Brno <span className="text-white">/ Chci začít</span>
             </div>
             <h1 className="font-serif text-[clamp(34px,5vw,58px)] font-bold text-white leading-tight">
               Domluv si <span className="text-white/90">první trénink</span>
@@ -64,8 +64,8 @@ export default function Prihlaseni() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {[
-                'Pohodlné sportovní oblečení (tričko + tepláky)',
-                'Čistá obuv do tělocvičny nebo ponožky',
+                'Pohodlné sportovní oblečení (tričko + kraťasy)',
+                'Sálová obuv do tělocvičny',
                 'Láhev s vodou',
                 'Dobrá nálada a chuť se učit',
               ].map((item, i) => (
@@ -102,7 +102,7 @@ export default function Prihlaseni() {
                 },
                 {
                   q: 'Jak vypadá typický trénink?',
-                  a: 'Začínáme zahřátím, pak technika (údery, kryty, clinch), stresové scénáře a diskuse o právní stránce a psychologii. Vše přizpůsobujeme úrovni skupiny.'
+                  a: 'Na úvod teorie na dané téma (právo, stres, první pomoc...), poté základy — technika, taktika, reálné scénáře a scénáře ve stresu.'
                 },
                 {
                   q: 'Kolik stojí členství?',

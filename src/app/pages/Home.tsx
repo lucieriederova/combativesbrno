@@ -63,7 +63,7 @@ export default function Home() {
 
               <p className="text-base leading-relaxed text-white/80 mb-10 max-w-[440px] max-[880px]:mx-auto">
                 Bez kompromisů. Bez pravidel. Jen to, co funguje v reálném konfliktu.
-                Naučíme tě přežít.
+                Naučíme tě, jak se dostat domů v pořádku.
               </p>
 
               <div className="flex gap-4 flex-wrap max-[880px]:justify-center">
@@ -220,12 +220,12 @@ export default function Home() {
               {
                 Icon: Trophy,
                 title: 'Sportovci',
-                desc: 'Sportuješ? Super. Teď ti ukážeme, jak to vypadá na ulici.',
+                desc: 'Sportuješ? Super, jen tvé dovednosti lehce upravíme pro ulici.',
               },
               {
                 Icon: ShieldCheck,
                 title: 'Ženy',
-                desc: 'Speciální programy pro sebeobranu žen.',
+                desc: 'Necítíš se sama na ulici v bezpečí? Naučíme tě rozpoznat hrozbu včas a ubránit se, i když je útočník fyzicky silnější.',
               },
               {
                 Icon: Briefcase,
@@ -267,7 +267,7 @@ export default function Home() {
               },
               {
                 question: 'Jak vypadá typický trénink?',
-                answer: 'Zahřátí, technika, modelové situace a diskuse o právní stránce a psychologii konfliktu. Každý trénink je intenzivní a praktický.',
+                answer: 'Na úvod teorie na dané téma (právo, stres, první pomoc...), poté základy — technika, taktika, reálné scénáře a scénáře ve stresu.',
               },
               {
                 question: 'Je RBSD sport nebo bojové umění?',

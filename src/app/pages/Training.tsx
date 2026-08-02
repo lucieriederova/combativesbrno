@@ -90,7 +90,7 @@ export default function Training() {
             Kdy <span className="text-[#C41E2A]">trénujeme</span>
           </h2>
           <p className="text-base text-white/60 leading-relaxed max-w-[580px] mb-14">
-            Tréninky probíhají pravidelně na adrese{' '}
+            Většina tréninků probíhá na adrese{' '}
             <a
               href="https://www.google.com/maps/search/?api=1&query=%C5%A0ujanovo+n%C3%A1m%C4%9Bst%C3%AD+1+Brno"
               target="_blank"
@@ -99,7 +99,7 @@ export default function Training() {
             >
               Šujanovo náměstí 1, Brno
             </a>
-            . První hodina je vždy zdarma.
+            , další programy podle rozvrhu níže. První hodina je vždy zdarma.
           </p>
 
           <div className="overflow-x-auto">
@@ -119,13 +119,18 @@ export default function Training() {
                     Úroveň
                   </th>
                   <th className="px-5 py-3.5 text-left text-[10px] font-bold tracking-[3px] uppercase text-white">
-                    Instruktor
+                    Místo
                   </th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  { day: 'Pondělí', time: '18:00 – 19:15', program: 'CB', level: 'Dospělí', levelColor: 'red', instructor: 'Jiří Holáň' },
+                  { day: 'Úterý', time: '16:00 – 17:00', program: 'Sebeobrana', level: 'Děti 6–11 let', levelColor: 'red', location: 'Šujanovo náměstí 1' },
+                  { day: 'Úterý', time: '17:00 – 18:00', program: 'Sebeobrana', level: 'Junioři', levelColor: 'red', location: 'Šujanovo náměstí 1' },
+                  { day: 'Úterý', time: '18:00 – 19:30', program: 'Sebeobrana', level: 'Dospělí', levelColor: 'red', location: 'Šujanovo náměstí 1' },
+                  { day: 'Středa', time: '11:00 – 12:15', program: 'Sebeobrana', level: 'Studenti VUT', levelColor: 'red', location: 'Tělocvična Machina' },
+                  { day: 'Čtvrtek', time: '16:00 – 17:00', program: 'Kondiční trénink', level: 'Plně obsazeno', levelColor: 'muted', location: 'Josefská' },
+                  { day: 'Pátek', time: '6:15 – 7:30', program: 'Sanda', level: '—', levelColor: 'red', location: 'Josefská' },
                 ].map((row, i) => (
                   <tr
                     key={i}
@@ -150,7 +155,7 @@ export default function Training() {
                       </span>
                     </td>
                     <td className="px-5 py-3.5 text-sm text-white/70">
-                      {row.instructor}
+                      {row.location}
                     </td>
                   </tr>
                 ))}
@@ -190,8 +195,8 @@ export default function Training() {
               </h3>
               <ul className="space-y-4">
                 {[
-                  'Sportovní oblečení (tepláky, tričko)',
-                  'Čistá obuv nebo tréninková bosa',
+                  'Sportovní oblečení (kraťasy, tričko)',
+                  'Sálová obuv',
                   'Voda',
                   'Chuť se učit',
                 ].map((item, i) => (
@@ -209,11 +214,8 @@ export default function Training() {
               </h3>
               <ul className="space-y-4">
                 {[
-                  'MMA rukavice (4-6 oz)',
                   'Chránič na zuby',
-                  'Chránič rozkroku (muži)',
-                  'Boxerské rukavice (12-14 oz)',
-                  'Bandáže na ruce',
+                  'Suspenzor',
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-[15px] text-[#0A0A0A]/70">
                     <span className="text-[#C41E2A] font-bold">✓</span>

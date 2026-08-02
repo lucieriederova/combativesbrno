@@ -75,9 +75,9 @@ export default function About() {
               </p>
 
               <p className="text-[15px] text-[#0A0A0A]/70 leading-relaxed mb-3.5">
-                RBSD Combatives Brno je součástí mezinárodní RBSD komunity — sítě instruktorů a škol
-                po celém světě, kteří sdílí stejnou filozofii a metodiku výcviku. Nejsme v tom sami,
-                čerpáme ze zkušeností celé komunity a jsme s ní v pravidelném kontaktu.
+                RBSD Combatives Brno je součástí sítě RBSD škol po celé České republice, které sdílí
+                stejnou filozofii a metodiku výcviku. Nejsme v tom sami, čerpáme ze zkušeností celé
+                sítě a jsme s ní v pravidelném kontaktu.
               </p>
             </RevealOnScroll>
 
@@ -88,10 +88,6 @@ export default function About() {
                     JAK PRACUJEME
                   </h4>
                   <ul className="space-y-2.5 text-[14px] text-white/60">
-                    <li className="flex items-start gap-2.5">
-                      <span className="text-[#C41E2A] font-bold">▸</span>
-                      Individuální přístup ke každému
-                    </li>
                     <li className="flex items-start gap-2.5">
                       <span className="text-[#C41E2A] font-bold">▸</span>
                       Modelové situace a simulace
@@ -115,31 +111,31 @@ export default function About() {
                 <ul className="space-y-2.5 text-[14px] text-white/60">
                   <li className="flex items-start gap-2.5">
                     <span className="text-[#C41E2A] font-bold">▸</span>
-                    Prevence a vyhýbání se konfliktu
+                    Prevenci a vyhýbání se konfliktům
                   </li>
                   <li className="flex items-start gap-2.5">
                     <span className="text-[#C41E2A] font-bold">▸</span>
-                    Preemptive strikes (preventivní údery)
+                    Slovní deeskalaci
                   </li>
                   <li className="flex items-start gap-2.5">
                     <span className="text-[#C41E2A] font-bold">▸</span>
-                    Obrana na zemi
+                    Bojovat, pokud není jiná možnost
                   </li>
                   <li className="flex items-start gap-2.5">
                     <span className="text-[#C41E2A] font-bold">▸</span>
-                    Improvizované zbraně
+                    Co dělat po skončení konfliktu
                   </li>
                   <li className="flex items-start gap-2.5">
                     <span className="text-[#C41E2A] font-bold">▸</span>
-                    Psychologie útočníka
+                    Boj se zbraní a proti zbrani
                   </li>
                   <li className="flex items-start gap-2.5">
                     <span className="text-[#C41E2A] font-bold">▸</span>
-                    Právní stránka sebeobrany
+                    Právní stránku konfliktu
                   </li>
                   <li className="flex items-start gap-2.5">
                     <span className="text-[#C41E2A] font-bold">▸</span>
-                    První pomoc
+                    Psychologii konfliktu
                   </li>
                 </ul>
               </div>
@@ -200,7 +196,8 @@ export default function About() {
               </h3>
 
               <p className="text-[14px] text-white/60 leading-relaxed mb-3">
-                Certifikovaný instruktor Urban Combatives pod vedením Lee Morrisona a zakladatel RBSD Combatives Brno.
+                Certifikovaný instruktor Urban Combatives pod vedením Lee Morrisona a instruktor RBSD
+                u Martina Mikoláška. Zakladatel RBSD Combatives Brno.
               </p>
               <p className="text-[14px] text-white/60 leading-relaxed mb-8">
                 Specializuje se na reálnou sebeobranu, modelové situace a psychologii konfliktu.
@@ -208,10 +205,15 @@ export default function About() {
 
               <div className="border-t border-white/10 pt-8 space-y-3">
                 {[
-                  'Urban Combatives — Lee Morrison',
+                  'Trenér Urban Combatives — Lee Morrison',
+                  'Trenér RBSD – Martin Mikolášek',
+                  'Zkušenost se systémy Red Zone, Crazy Monkey Defense Program, Krav Maga a další',
+                  'Zdravotnická školení ZDrSEM, CACM a další',
+                  'Zkušenosti s ostrahou osob a majetku',
+                  'Certifikovaný DNS trenér',
                   'Hung Gar Kung Fu',
                   'Právní aspekty sebeobrany',
-                  'modelové situace & psychologie konfliktu',
+                  'Modelové situace & psychologie konfliktu',
                 ].map((cert, i) => (
                   <div key={i} className="flex items-center gap-3 text-[13px] text-white/40">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#C41E2A] shrink-0" />
@@ -224,59 +226,8 @@ export default function About() {
         </div>
       </section>
 
-      {/* Hodnoty */}
-      <section className="py-24 bg-[#F5F3F0]">
-        <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5">
-          <span className="block text-[10px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-4">
-            Naše hodnoty
-          </span>
-          <h2 className="font-serif text-[clamp(32px,5vw,56px)] font-bold leading-tight text-[#0A0A0A] mb-16">
-            V CO <span className="text-[#C41E2A]">VĚŘÍME</span>
-          </h2>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                number: '01',
-                title: 'BEZ KOMPROMISŮ',
-                desc: 'Učíme jen to, co funguje v reálném konfliktu. Žádné fancy techniky, žádné iluze.',
-              },
-              {
-                number: '02',
-                title: 'RESPEKT',
-                desc: 'Každý student si zaslouží respekt a individuální přístup. Nejsme továrna na bojovníky.',
-              },
-              {
-                number: '03',
-                title: 'REALITA',
-                desc: 'Trénujeme pro ulici, ne pro ring. Realita je drsná a my vás na ni připravíme.',
-              },
-            ].map((value, i) => (
-              <div
-                key={i}
-                className="group relative bg-white p-8 border-l-[3px] border-[#C41E2A] cursor-default overflow-hidden transition-all duration-300 hover:bg-[#0A0A0A] hover:-translate-y-1 hover:shadow-[0_12px_40px_rgba(196,30,42,0.25)]"
-              >
-                {/* red fill sweep on hover */}
-                <div className="absolute inset-0 border-l-[3px] border-[#C41E2A] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="text-[56px] font-bold leading-none mb-4 text-[#C41E2A]/10 group-hover:text-[#C41E2A]/30 transition-colors duration-300">
-                  {value.number}
-                </div>
-                <h3 className="text-[18px] font-bold mb-3 tracking-[1px] text-[#0A0A0A] group-hover:text-white transition-colors duration-300">
-                  {value.title}
-                </h3>
-                <p className="text-[14px] leading-relaxed text-[#0A0A0A]/60 group-hover:text-white/60 transition-colors duration-300">
-                  {value.desc}
-                </p>
-                {/* bottom red accent line */}
-                <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-[#C41E2A] group-hover:w-full transition-all duration-500" />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
-      <section className="py-24 bg-[#0A0A0A]">
+      <section className="py-24 bg-[#0A0A0A] border-t border-white/10">
         <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5 text-center">
           <h2 className="font-serif text-[clamp(36px,5vw,56px)] font-bold text-white leading-tight mb-6">
             Připraven začít?

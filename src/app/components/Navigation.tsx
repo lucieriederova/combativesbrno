@@ -63,7 +63,7 @@ export default function Navigation() {
             to="/prihlaseni"
             className="bg-[#C41E2A] hover:bg-[#A01822] text-white px-6 py-2.5 rounded-sm text-[10px] font-bold tracking-[2px] uppercase transition-colors"
           >
-            Zkus si trénink
+            Chci začít
           </Link>
         </div>
 
@@ -98,7 +98,7 @@ export default function Navigation() {
               to="/prihlaseni"
               className="block w-full bg-[#C41E2A] hover:bg-[#A01822] text-white px-6 py-3 rounded-sm text-center text-[11px] font-bold tracking-[2px] uppercase transition-colors mt-4"
             >
-              Zkus si trénink
+              Chci začít
             </Link>
           </div>
         </div>
