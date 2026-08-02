@@ -1,7 +1,10 @@
 import { Link } from 'react-router';
-import { Calendar, Clock, ChevronRight } from 'lucide-react';
+import { Calendar, ChevronRight } from 'lucide-react';
 import { RevealOnScroll } from '../components/RevealOnScroll';
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
+import adaPhoto from '@/imports/ada.jpg';
+import krystofPhoto from '@/imports/krystof.jpg';
+import matyPhoto from '@/imports/maty.jpg';
 
 export default function News() {
   return (
@@ -39,25 +42,25 @@ export default function News() {
             <div className="space-y-8">
               {[
                 {
-                  tag: 'Workshop',
-                  title: 'Víkendový workshop: Obrana proti noži',
-                  excerpt: 'Intenzivní 3hodinový workshop zaměřený na obranu proti nejčastějším typům nožových útoků. Realita, ne Hollywood.',
-                  meta: '15. ledna 2026 · Michal Novák · Workshop',
-                  image: 'https://images.unsplash.com/photo-1555597673-b21d5c935865?w=800&h=500&fit=crop',
-                },
-                {
-                  tag: 'Úspěch',
-                  title: 'Naši studenti na Lee Morrison seminář v Praze',
-                  excerpt: 'Pět našich pokročilých studentů se zúčastnilo exkluzivního semináře s Lee Morrisonem, zakladatelem Urban Combatives.',
-                  meta: '8. ledna 2026 · Martin Svoboda · Reportáž',
-                  image: 'https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=800&h=500&fit=crop',
+                  tag: 'Soustředění',
+                  title: 'Letní soustředění 2026',
+                  excerpt: 'Termín: 11. 7. – 18. 7. – Blatiny 33 (u Nového Města…',
+                  meta: '11.–18. 7. 2026',
+                  image: adaPhoto,
                 },
                 {
                   tag: 'Nový program',
-                  title: 'Spouštíme ženy-only tréninky',
-                  excerpt: 'Nový program zaměřený výhradně na sebeobranu žen. Bezpečné prostředí, praktické techniky, realita ulice.',
-                  meta: '2. ledna 2026 · Michal Novák · Novinky',
-                  image: 'https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=800&h=500&fit=crop',
+                  title: 'Otevíráme tréninky Sandy',
+                  excerpt: 'Sanda je čínský plnokontaktní bojový sport, který je podobný kickboxu. Využívá údery,…',
+                  meta: '2026',
+                  image: krystofPhoto,
+                },
+                {
+                  tag: 'Nábor',
+                  title: 'Tréninky sebeobrany pro nováčky – září 2025',
+                  excerpt: 'Otevíráme nábor pro začátečníky. Přijďte si k nám vyzkoušet trénink a naučte…',
+                  meta: 'Září 2025',
+                  image: matyPhoto,
                 },
               ].map((article, i) => (
                 <div key={i} className="bg-white border-l-[4px] border-[#C41E2A] overflow-hidden hover:shadow-lg transition-shadow">
@@ -101,11 +104,13 @@ export default function News() {
 
               <div className="space-y-0">
                 {[
-                  { number: '01', title: 'Změna rozvrhu od února', date: '28. ledna 2026' },
-                  { number: '02', title: 'Právní stránka sebeobrany — seminář', date: '15. ledna 2026' },
-                  { number: '03', title: 'Co je RBSD — průvodce pro nováčky', date: '1. ledna 2026' },
-                  { number: '04', title: 'Rozhovor s Michalem Novákem', date: '20. prosince 2025' },
-                  { number: '05', title: 'Trénink pod stresem — proč je důležitý', date: '10. prosince 2025' },
+                  { number: '01', title: 'Letní soustředění 2026', date: '11.–18. 7. 2026' },
+                  { number: '02', title: 'Otevíráme tréninky Sandy', date: '2026' },
+                  { number: '03', title: 'Tréninky sebeobrany pro nováčky – září 2025', date: 'Září 2025' },
+                  { number: '04', title: 'Letní tréninky sebeobrany 2025', date: 'Červen 2025' },
+                  { number: '05', title: 'Tréninky dětí 11. 2. zrušeny z důvodu jarních prázdnin', date: '11. února 2025' },
+                  { number: '06', title: 'Tréninky sebeobrany pro nováčky – leden 2025', date: 'Leden 2025' },
+                  { number: '07', title: 'Tréninky 29. 10. zrušeny z důvodu podzimních prázdnin', date: '29. října 2024' },
                 ].map((item, i) => (
                   <div
                     key={i}
@@ -125,27 +130,6 @@ export default function News() {
                     </div>
                   </div>
                 ))}
-              </div>
-
-              {/* Quick Info Box */}
-              <div className="mt-8 bg-[#0A0A0A] p-6">
-                <h3 className="text-[13px] font-bold tracking-[2px] uppercase text-[#C41E2A] mb-4">
-                  Nadcházející události
-                </h3>
-                <div className="space-y-4">
-                  <div className="pb-4 border-b border-white/10">
-                    <div className="text-[11px] text-white/40 mb-1">5. února 2026</div>
-                    <div className="text-[14px] text-white font-semibold">Workshop: Právní stránka</div>
-                  </div>
-                  <div className="pb-4 border-b border-white/10">
-                    <div className="text-[11px] text-white/40 mb-1">12. února 2026</div>
-                    <div className="text-[14px] text-white font-semibold">Obrana proti noži</div>
-                  </div>
-                  <div>
-                    <div className="text-[11px] text-white/40 mb-1">19. února 2026</div>
-                    <div className="text-[14px] text-white font-semibold">Sebeobrana pro ženy</div>
-                  </div>
-                </div>
               </div>
 
               {/* Newsletter */}
