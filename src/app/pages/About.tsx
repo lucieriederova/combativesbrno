@@ -203,25 +203,39 @@ export default function About() {
                 Jiří Holáň
               </h3>
 
-              <p className="text-[14px] text-white/60 leading-relaxed mb-3">
-                Certifikovaný instruktor Urban Combatives pod vedením Lee Morrisona a instruktor RBSD
-                u Martina Mikoláška. Zakladatel RBSD Combatives Brno.
+              <p className="text-[14px] text-white/60 leading-relaxed mb-6">
+                Tréninku bojových sportů a umění se věnuje již 15 let. Začínal s karate a kung-fu,
+                ve kterém byl i úspěšným závodníkem. Od roku 2010 se začal věnovat tréninkům reálné
+                sebeobrany. Od té doby si vyzkoušel mnoho sebeobranných systémů jak českých, tak
+                zahraničních. Nejvíce ho zaujal systém Urban Combatives Lee Morrisona, převážně pro
+                svou komplexnost a účinnost, a tento systém teď tvoří valnou část jeho tréninkové
+                náplně. Tréninku Urban Combatives se nyní intenzivně věnuje přímo s Lee Morrisonem,
+                případně s jeho zástupci v České republice – Martinem Mikoláškem a Lukášem Wolfem.
+                Mimo Combatives se věnuje i tréninku úpolových sportů – zejména boxu a graplingu.
+                Reálné zkušenosti sbírá při práci, kdy působí jako ostraha na různých akcích.
               </p>
-              <p className="text-[14px] text-white/60 leading-relaxed mb-8">
-                Specializuje se na reálnou sebeobranu, modelové situace a psychologii konfliktu.
-              </p>
+
+              <blockquote className="border-l-[3px] border-white/20 pl-5 mb-8">
+                <p className="text-[15px] font-serif italic text-white/80 leading-relaxed">
+                  „Combatives je systém, jehož základ najdeme ve výcviku jednotek Comandos za druhé
+                  světové války. Je z 90&nbsp;% postaven na správném nastavení hlavy, nasazení a vůli
+                  zvítězit. To byl pro mne obrovský rozdíl mezi drilováním technik v jiných systémech
+                  a mezi komplexním přístupem Combatives. Trénink „hlavy“ posunul úžasným způsobem moje
+                  výkony jak v sebeobraně, tak i v dalších oblastech života.“
+                </p>
+              </blockquote>
 
               <div className="border-t border-white/10 pt-8 space-y-3">
                 {[
-                  'Trenér Urban Combatives — Lee Morrison',
-                  'Trenér RBSD – Martin Mikolášek',
+                  'Instruktor Urban Combatives pod vedením Lee Morrisona',
+                  'Instruktor systému RED ZONE (Level 1)',
+                  'Instruktor RBSD',
+                  'Vede pravidelné tréninky sebeobrany pro děti a dospělé v Brně',
                   'Zkušenost se systémy Red Zone, Crazy Monkey Defense Program, Krav Maga a další',
-                  'Zdravotnická školení ZDrSEM, CACM a další',
-                  'Zkušenosti s ostrahou osob a majetku',
+                  'Zkušenosti s ochranou osob a majetku',
+                  'Trenérská licence 2. třídy (FTVS – UK Praha)',
                   'Certifikovaný DNS trenér',
-                  'Hung Gar Kung Fu',
-                  'Právní aspekty sebeobrany',
-                  'Modelové situace & psychologie konfliktu',
+                  'Zdravotnická školení ZDrSEM, CACM a další',
                 ].map((cert, i) => (
                   <div key={i} className="flex items-center gap-3 text-[13px] text-white/40">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#C41E2A] shrink-0" />

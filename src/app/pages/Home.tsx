@@ -125,7 +125,7 @@ export default function Home() {
                     'Trénink pod stresem',
                     'Prevence a deeskalace',
                     'Právní stránka sebeobrany',
-                    'Psychologie útočníka',
+                    'Psychologie konfliktu',
                     'Urban Combatives',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-white/70 text-[14px]">
@@ -175,7 +175,7 @@ export default function Home() {
                 number: '03',
                 title: 'SPORTOVNÍ BOJ',
                 subtitle: 'PRAXE V BEZPEČNÉM PROSTŘEDÍ',
-                desc: 'Vyzkoušej techniky v reálném, ale stále bezpečném prostředí. Sparring ti dá fyzickou kondici, sebedůvěru a zkušenost pod tlakem — přesně to, co na ulici potřebuješ.',
+                desc: 'Vyzkoušej techniky v reálném, ale stále bezpečném prostředí. Sparring ti dá fyzickou kondici, sebedůvěru a zkušenost z práce pod tlakem — přesně to, co na ulici potřebuješ.',
               },
             ].map((pillar, i) => (
               <div key={i} className="bg-[#0A0A0A] p-8 border-l-[3px] border-transparent hover:border-[#C41E2A] transition-all duration-300 group">
