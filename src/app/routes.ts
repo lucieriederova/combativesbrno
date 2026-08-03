@@ -10,6 +10,7 @@ import Partners from "./pages/Partners";
 import References from "./pages/References";
 import Prihlaseni from "./pages/Prihlaseni";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
+import PersonalData from "./pages/PersonalData";
 
 export const router = createBrowserRouter([
   {
@@ -25,6 +26,7 @@ export const router = createBrowserRouter([
       { path: "prihlaseni", Component: Prihlaseni },
       { path: "kontakt", Component: Contact },
       { path: "ochrana-soukromi", Component: PrivacyPolicy },
+      { path: "ochrana-osobnich-udaju", Component: PersonalData },
     ],
   },
 ]);

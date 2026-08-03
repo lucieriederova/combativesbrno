@@ -127,6 +127,9 @@ export default function Footer() {
             <Link to="/ochrana-soukromi" className="text-white/20 hover:text-[#C41E2A] transition-colors">
               Ochrana soukromí
             </Link>
+            <Link to="/ochrana-osobnich-udaju" className="text-white/20 hover:text-[#C41E2A] transition-colors">
+              Ochrana osobních údajů
+            </Link>
             <button
               onClick={openCookieSettings}
               className="text-white/20 hover:text-[#C41E2A] transition-colors cursor-pointer"
