@@ -104,10 +104,10 @@ export default function Home() {
                 CO JE <span className="text-[#C41E2A]">COMBATIVES</span>
               </h2>
               <p className="text-[15px] leading-relaxed text-[#0A0A0A]/70 mb-6">
-                <strong className="text-[#0A0A0A] font-bold">Combatives</strong> je mezinárodně uznávaný systém, který učí dovednosti osobní bezpečnosti a sebeobrany jako účinnou odpověď na násilí. Byl vytvořen především pro běžné civilisty.
+                <strong className="text-[#0A0A0A] font-bold">Urban Combatives</strong> je mezinárodně uznávaná organizace, která vyučuje dovednosti v oblasti osobní bezpečnosti a sebeobrany jako metodu boje proti násilí. Byla vytvořena primárně pro běžné civilisty, ale je přizpůsobitelná i pro potřeby bezpečnostních služeb, policie a vojenských jednotek.
               </p>
               <p className="text-[15px] leading-relaxed text-[#0A0A0A]/70">
-                Jedná se o unikátní systém přípravy, který kombinuje trénink sebeobrany a trénink sportovního boje. Vše za účelem zajištění nejefektivnějších tréninkových metod.
+                Nejde o sport ani tradiční bojové umění s pravidly, ale o čistě „pouliční“ metodu zaměřenou na osobní bezpečnost a obranu proti skutečnému násilí. Vše je postaveno na budování odolné psychiky a schopnosti fungovat i pod stresem.
               </p>
             </div>
 

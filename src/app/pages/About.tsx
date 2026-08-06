@@ -61,18 +61,23 @@ export default function About() {
               </p>
 
               <h3 className="font-serif text-[26px] font-bold text-[#0A0A0A] mb-5 mt-12">
-                Co je Combatives
+                Co je to Urban Combatives?
               </h3>
 
               <p className="text-[15px] text-[#0A0A0A]/70 leading-relaxed mb-3.5">
-                Combatives je mezinárodně uznávaný systém, který učí dovednosti osobní bezpečnosti
-                a sebeobrany jako účinnou odpověď na násilí. Byl vytvořen především pro běžné civilisty,
-                díky své přizpůsobivosti ho ale využívají i bezpečnostní složky, policie a armádní jednotky.
+                Urban Combatives je mezinárodně uznávaná organizace, která vyučuje dovednosti v oblasti
+                osobní bezpečnosti a sebeobrany jako metodu boje proti násilí. Byla vytvořena primárně
+                pro běžné civilisty, ale je přizpůsobitelná i pro potřeby bezpečnostních služeb, policie
+                a vojenských jednotek. Systém Urban Combatives se vyučuje napříč všemi úrovněmi, a to až
+                po elitní speciální jednotky po celém světě, kde se samozřejmě pravidla boje i samotné
+                cíle budou lišit.
               </p>
 
               <p className="text-[15px] text-[#0A0A0A]/70 leading-relaxed mb-3.5">
-                Combatives se vyučuje úplným začátečníkům až po elitní speciální jednotky po celém
-                světě — pravidla nasazení i cíl výcviku se samozřejmě liší podle toho, komu je určen.
+                Nejde o sport ani tradiční bojové umění s pravidly, ale o čistě „pouliční“ metodu
+                zaměřenou na osobní bezpečnost a obranu proti skutečnému násilí. Vše je postaveno na
+                budování odolné psychiky a schopnosti fungovat i pod obrovským stresem, zmatkem
+                a návalem adrenalinu.
               </p>
 
               <p className="text-[15px] text-[#0A0A0A]/70 leading-relaxed mb-3.5">
