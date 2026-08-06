@@ -92,7 +92,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Co je RBSD */}
+      {/* Co je Combatives */}
       <section className="py-24 bg-[#F5F3F0]">
         <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
@@ -101,10 +101,10 @@ export default function Home() {
                 01 — O SYSTÉMU
               </span>
               <h2 className="font-serif text-[clamp(32px,5vw,56px)] font-bold leading-tight text-[#0A0A0A] mb-6">
-                CO JE <span className="text-[#C41E2A]">RBSD</span>
+                CO JE <span className="text-[#C41E2A]">COMBATIVES</span>
               </h2>
               <p className="text-[15px] leading-relaxed text-[#0A0A0A]/70 mb-6">
-                <strong className="text-[#0A0A0A] font-bold">RBSD</strong> – systém tréninků reálné sebeobrany založený na zkušenostech špičkových instruktorů z celého světa.
+                <strong className="text-[#0A0A0A] font-bold">Combatives</strong> je mezinárodně uznávaný systém, který učí dovednosti osobní bezpečnosti a sebeobrany jako účinnou odpověď na násilí. Byl vytvořen především pro běžné civilisty.
               </p>
               <p className="text-[15px] leading-relaxed text-[#0A0A0A]/70">
                 Jedná se o unikátní systém přípravy, který kombinuje trénink sebeobrany a trénink sportovního boje. Vše za účelem zajištění nejefektivnějších tréninkových metod.
