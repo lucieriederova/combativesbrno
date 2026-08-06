@@ -159,22 +159,33 @@ export default function About() {
             NÁŠ <span className="text-[#C41E2A]">TÝM</span>
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-start">
-            {/* foto */}
-            <div className="relative overflow-hidden aspect-[592/570] bg-[#111]">
-              <ImageWithFallback
-                src={jiriPhoto}
-                alt="Jiří Holáň - hlavní instruktor RBSD Combatives Brno"
-                className="w-full h-full object-cover"
-              />
-              {/* gradient overlay bottom */}
-              <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#0A0A0A] to-transparent" />
-              {/* red accent line left */}
-              <div className="absolute top-0 left-0 w-[4px] h-full bg-[#C41E2A]" />
+          <div className="grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-10 items-start">
+            {/* foto + citace */}
+            <div className="lg:sticky lg:top-28">
+              <div className="relative overflow-hidden aspect-[592/570] bg-[#111]">
+                <ImageWithFallback
+                  src={jiriPhoto}
+                  alt="Jiří Holáň - hlavní instruktor RBSD Combatives Brno"
+                  className="w-full h-full object-cover"
+                />
+                {/* gradient overlay bottom */}
+                <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#0A0A0A] to-transparent" />
+                {/* red accent line left */}
+                <div className="absolute top-0 left-0 w-[4px] h-full bg-[#C41E2A]" />
+              </div>
+
+              <blockquote className="bg-[#111] border-l-[3px] border-[#C41E2A] p-6">
+                <p className="text-[14px] font-serif italic text-white/70 leading-relaxed">
+                  „Combatives je systém, jehož základ najdeme ve výcviku jednotek Comandos za druhé
+                  světové války. Je z 90&nbsp;% postaven na správném nastavení hlavy, nasazení a vůli
+                  zvítězit. Trénink „hlavy“ posunul úžasným způsobem moje výkony jak v sebeobraně,
+                  tak i v dalších oblastech života.“
+                </p>
+              </blockquote>
             </div>
 
             {/* info */}
-            <div className="bg-[#111] border border-white/5 border-l-0 p-10 flex flex-col justify-center">
+            <div className="bg-[#111] border border-white/5 p-10">
               <div className="text-[10px] tracking-[4px] uppercase text-[#C41E2A] mb-3">
                 Zakladatel & hlavní instruktor
               </div>
@@ -182,7 +193,7 @@ export default function About() {
                 Jiří Holáň
               </h3>
 
-              <p className="text-[14px] text-white/60 leading-relaxed mb-6">
+              <p className="text-[14px] text-white/60 leading-relaxed mb-8">
                 Tréninku bojových sportů a umění se věnuje již 15 let. Začínal s karate a kung-fu,
                 ve kterém byl i úspěšným závodníkem. Od roku 2010 se začal věnovat tréninkům reálné
                 sebeobrany. Od té doby si vyzkoušel mnoho sebeobranných systémů jak českých, tak
@@ -194,17 +205,7 @@ export default function About() {
                 Reálné zkušenosti sbírá při práci, kdy působí jako ostraha na různých akcích.
               </p>
 
-              <blockquote className="border-l-[3px] border-white/20 pl-5 mb-8">
-                <p className="text-[15px] font-serif italic text-white/80 leading-relaxed">
-                  „Combatives je systém, jehož základ najdeme ve výcviku jednotek Comandos za druhé
-                  světové války. Je z 90&nbsp;% postaven na správném nastavení hlavy, nasazení a vůli
-                  zvítězit. To byl pro mne obrovský rozdíl mezi drilováním technik v jiných systémech
-                  a mezi komplexním přístupem Combatives. Trénink „hlavy“ posunul úžasným způsobem moje
-                  výkony jak v sebeobraně, tak i v dalších oblastech života.“
-                </p>
-              </blockquote>
-
-              <div className="border-t border-white/10 pt-8 space-y-3">
+              <div className="border-t border-white/10 pt-8 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3">
                 {[
                   'Instruktor Urban Combatives pod vedením Lee Morrisona',
                   'Instruktor systému RED ZONE (Level 1)',
@@ -216,8 +217,8 @@ export default function About() {
                   'Certifikovaný DNS trenér',
                   'Zdravotnická školení ZDrSEM, CACM a další',
                 ].map((cert, i) => (
-                  <div key={i} className="flex items-center gap-3 text-[13px] text-white/40">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#C41E2A] shrink-0" />
+                  <div key={i} className="flex items-start gap-3 text-[13px] text-white/40">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#C41E2A] shrink-0 mt-1.5" />
                     {cert}
                   </div>
                 ))}
