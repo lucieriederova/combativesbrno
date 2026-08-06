@@ -161,11 +161,11 @@ export default function About() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch">
             {/* foto */}
-            <div className="relative overflow-hidden aspect-[3/4] md:aspect-auto md:min-h-[480px]">
+            <div className="relative overflow-hidden aspect-[3/4] md:aspect-auto md:min-h-[480px] bg-[#111] flex items-center justify-center">
               <ImageWithFallback
                 src={jiriPhoto}
                 alt="Jiří Holáň - hlavní instruktor RBSD Combatives Brno"
-                className="w-full h-full object-cover object-top"
+                className="w-full h-full object-contain"
               />
               {/* gradient overlay bottom */}
               <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0A0A0A] to-transparent" />
