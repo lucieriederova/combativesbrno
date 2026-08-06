@@ -159,16 +159,16 @@ export default function About() {
             NÁŠ <span className="text-[#C41E2A]">TÝM</span>
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-stretch">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-0 items-start">
             {/* foto */}
-            <div className="relative overflow-hidden aspect-[3/4] md:aspect-auto md:min-h-[480px] bg-[#111] flex items-center justify-center">
+            <div className="relative overflow-hidden aspect-[592/570] bg-[#111]">
               <ImageWithFallback
                 src={jiriPhoto}
                 alt="Jiří Holáň - hlavní instruktor RBSD Combatives Brno"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-cover"
               />
               {/* gradient overlay bottom */}
-              <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#0A0A0A] to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#0A0A0A] to-transparent" />
               {/* red accent line left */}
               <div className="absolute top-0 left-0 w-[4px] h-full bg-[#C41E2A]" />
             </div>
