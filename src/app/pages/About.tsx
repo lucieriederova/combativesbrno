@@ -45,8 +45,8 @@ export default function About() {
               </h3>
               
               <p className="text-[15px] text-[#0A0A0A]/70 leading-relaxed mb-3.5">
-                RBSD Combatives Brno byla založena s jasným cílem — naučit lidi reálné sebeobrance 
-                bez kompromisů. Žádné fancy techniky, žádné kata, žádný sport. Jen to, co funguje na ulici.
+                Klub RBSD Combatives Brno byl založen s jasným cílem — naučit lidi reálné sebeobrance
+                bez kompromisů. Žádné okázalé techniky, žádné kata, žádný sport. Jen to, co funguje na ulici.
               </p>
 
               <p className="text-[15px] text-[#0A0A0A]/70 leading-relaxed mb-3.5">
@@ -61,17 +61,18 @@ export default function About() {
               </p>
 
               <h3 className="font-serif text-[26px] font-bold text-[#0A0A0A] mb-5 mt-12">
-                Co je RBSD
+                Co je Combatives
               </h3>
 
               <p className="text-[15px] text-[#0A0A0A]/70 leading-relaxed mb-3.5">
-                RBSD (Reality Based Self Defense) je moderní přístup k sebeobrance, který se zaměřuje 
-                výhradně na reálné situace. Bez pravidel, bez rozhodčích, bez sportu.
+                Combatives je mezinárodně uznávaný systém, který učí dovednosti osobní bezpečnosti
+                a sebeobrany jako účinnou odpověď na násilí. Byl vytvořen především pro běžné civilisty,
+                díky své přizpůsobivosti ho ale využívají i bezpečnostní složky, policie a armádní jednotky.
               </p>
 
               <p className="text-[15px] text-[#0A0A0A]/70 leading-relaxed mb-3.5">
-                Trénujeme prevenci, deeskalaci, právní stránku obrany a nejvíc ze všeho —
-                jak přežít konflikt na ulici. Žádné iluze, žádné kompromisy.
+                Combatives se vyučuje úplným začátečníkům až po elitní speciální jednotky po celém
+                světě — pravidla nasazení i cíl výcviku se samozřejmě liší podle toho, komu je určen.
               </p>
 
               <p className="text-[15px] text-[#0A0A0A]/70 leading-relaxed mb-3.5">
@@ -90,28 +91,6 @@ export default function About() {
             </RevealOnScroll>
 
             <div className="space-y-3.5">
-              <div className="bg-[#0A0A0A] border-l-[3px] border-[#C41E2A] p-6 relative overflow-hidden">
-                <div className="relative z-10">
-                  <h4 className="text-[11px] tracking-[3px] font-bold uppercase text-[#C41E2A] mb-2.5">
-                    JAK PRACUJEME
-                  </h4>
-                  <ul className="space-y-2.5 text-[14px] text-white/60">
-                    <li className="flex items-start gap-2.5">
-                      <span className="text-[#C41E2A] font-bold">▸</span>
-                      Modelové situace a simulace
-                    </li>
-                    <li className="flex items-start gap-2.5">
-                      <span className="text-[#C41E2A] font-bold">▸</span>
-                      Mentální příprava
-                    </li>
-                    <li className="flex items-start gap-2.5">
-                      <span className="text-[#C41E2A] font-bold">▸</span>
-                      Právní stránka sebeobrany
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
               <div className="bg-[#0A0A0A] border-l-[3px] border-[#C41E2A] p-6">
                 <h4 className="text-[11px] tracking-[3px] font-bold uppercase text-[#C41E2A] mb-2.5">
                   CO VÁS NAUČÍME

@@ -42,7 +42,7 @@ export default function References() {
             Zkušenosti našich <span className="text-[#C41E2A]">studentů</span>
           </h2>
           <p className="text-base text-[#0A0A0A]/70 leading-relaxed max-w-[580px] mb-14">
-            Poslechněte si, proč lidé trénují RBSD a jak jim to změnilo život.
+            Poslechněte si, proč lidé trénují Combatives a jak jim to změnilo život.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -129,7 +129,7 @@ export default function References() {
                 PRVNÍ LEKCE <span className="text-[#C41E2A]">ZDARMA</span>
               </h2>
               <p className="text-[15px] text-[#0A0A0A]/55 mt-4 max-w-[480px] leading-relaxed">
-                Přijď se podívat. Bez závazku, bez smlouvy. Uvidíš sám, jestli je RBSD to, co hledáš.
+                Přijď se podívat. Bez závazku, bez smlouvy. Uvidíš sám, jestli je Combatives to, co hledáš.
               </p>
             </div>
             <Link

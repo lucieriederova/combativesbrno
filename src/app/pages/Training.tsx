@@ -41,27 +41,32 @@ export default function Training() {
             Bez zbytečností, jen praktická příprava.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
             {[
               {
                 step: '01',
-                title: 'Zahřátí',
-                desc: 'Funkční zahřátí zaměřené na kondici a mobility potřebné pro sebeobranu.',
+                title: 'Diskuse',
+                desc: 'Rozbor problematiky pro daný trénink — psychologie, právo, video ukázky konfliktů.',
               },
               {
                 step: '02',
-                title: 'Technika',
-                desc: 'Nácvik základních principů - úderů, krytu, clinche a pohybu.',
+                title: 'Zahřátí',
+                desc: 'Funkční zahřátí zaměřené na kondici a mobilitu potřebnou pro sebeobranu.',
               },
               {
                 step: '03',
-                title: 'Scénáře',
-                desc: 'Realistické stresové situace. Zde se učíš jednat pod tlakem.',
+                title: 'Technika',
+                desc: 'Nácvik základních elementů — úderů, kopů a práce v pohybu.',
               },
               {
                 step: '04',
-                title: 'Diskuse',
-                desc: 'Rozbor právní stránky, psychologie a prevence konfliktů.',
+                title: 'Taktika',
+                desc: 'Trénink vhodné taktiky pro danou situaci.',
+              },
+              {
+                step: '05',
+                title: 'Scénáře',
+                desc: 'Technika a taktika aplikovaná do dané situace s postupným přidáváním stresu.',
               },
             ].map((phase, i) => (
               <div key={i} className="bg-white p-6 border-l-[3px] border-[#C41E2A]">
@@ -178,11 +183,51 @@ export default function Training() {
         </div>
       </section>
 
-      {/* Co potřebuješ */}
+      {/* Co je Sanda */}
       <section className="py-24 bg-[#F5F3F0]">
         <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5">
+          <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-16 items-start">
+            <div>
+              <span className="block text-[10px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-4">
+                03 — NADSTAVBA
+              </span>
+              <h2 className="font-serif text-[clamp(32px,5vw,56px)] font-bold leading-tight text-[#0A0A0A] mb-6">
+                CO JE <span className="text-[#C41E2A]">SANDA</span>
+              </h2>
+              <p className="text-[15px] leading-relaxed text-[#0A0A0A]/70 mb-3.5">
+                Sanda vám pomůže s vylepšením technik, které znáte z tréninku sebeobrany, v praxi. Pomůže vám vylepšit
+                úderovou a kopací techniku, zlepší vaši práci na nohách a práci se vzdáleností.
+              </p>
+              <p className="text-[15px] leading-relaxed text-[#0A0A0A]/70">
+                S přibývajícími schopnostmi je možné přidat řízený a posléze i volný sparing, který vám pomůže
+                s načasováním a rozhodně i s odolností.
+              </p>
+            </div>
+
+            <div className="bg-[#0A0A0A] p-8">
+              <div className="text-[11px] font-bold tracking-[4px] uppercase text-[#C41E2A] mb-4">
+                PRO KOHO
+              </div>
+              <p className="text-[14px] text-white/60 leading-relaxed mb-6">
+                Pro každého staršího 13 let. Tréninky jsou uzpůsobené pro všechny výkonnostní kategorie —
+                přidat se mohou i začátečníci.
+              </p>
+              <div className="text-[11px] font-bold tracking-[4px] uppercase text-[#C41E2A] mb-2">
+                KDY A KDE
+              </div>
+              <p className="text-[14px] text-white/60 leading-relaxed">
+                Pátek 6:15 – 7:30 · tělocvična Josefská
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Co potřebuješ */}
+      <section className="py-24 bg-white">
+        <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5">
           <span className="block text-[10px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-4">
-            03 — CO POTŘEBUJEŠ
+            04 — CO POTŘEBUJEŠ
           </span>
           <h2 className="font-serif text-[clamp(32px,5vw,56px)] font-bold leading-tight text-[#0A0A0A] mb-16">
             VYBAVENÍ <span className="text-[#C41E2A]">NA TRÉNINK</span>
@@ -235,7 +280,7 @@ export default function Training() {
       <section className="py-24 bg-[#0A0A0A]">
         <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5">
           <span className="block text-[10px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-3">
-            04 — CENÍK
+            05 — CENÍK
           </span>
           <h2 className="font-serif text-[clamp(28px,4vw,46px)] font-bold leading-tight text-white mb-6">
             Kolik to <span className="text-[#C41E2A]">stojí</span>
@@ -244,7 +289,7 @@ export default function Training() {
             Transparentní ceny bez skrytých poplatků. První lekce je vždy zdarma.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
                 name: 'Děti',
@@ -269,6 +314,12 @@ export default function Training() {
                 name: 'Dospělí',
                 price: '2 400 Kč',
                 desc: '3 měsíce',
+                features: [],
+              },
+              {
+                name: 'Osobní trénink',
+                price: '1 100 Kč',
+                desc: 'hodina · až pro 4 osoby',
                 features: [],
               },
             ].map((plan, i) => (

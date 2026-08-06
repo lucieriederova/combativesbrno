@@ -196,20 +196,20 @@ export default function Contact() {
                     label: 'Adresa tréninků', 
                     value: 'Šujanovo náměstí 1\nBrno'
                   },
-                  { 
-                    icon: <Phone size={20} />, 
-                    label: 'Telefon', 
-                    value: '+420 xxx xxx xxx' 
+                  {
+                    icon: <Phone size={20} />,
+                    label: 'Telefon',
+                    value: '+420 605 521 525'
                   },
-                  { 
-                    icon: <Mail size={20} />, 
-                    label: 'E-mail', 
-                    value: 'info@hunggar-brno.cz' 
+                  {
+                    icon: <Mail size={20} />,
+                    label: 'E-mail',
+                    value: 'info@combatives-brno.cz'
                   },
-                  { 
-                    icon: <Clock size={20} />, 
-                    label: 'Odpovídáme', 
-                    value: 'Do 24 hodin · Po–Pá' 
+                  {
+                    icon: <Clock size={20} />,
+                    label: 'Odpovídáme',
+                    value: 'Do 24 hodin'
                   },
                 ].map((item, i) => (
                   <div
@@ -255,8 +255,14 @@ export default function Contact() {
                   Osobní <span className="text-[#C41E2A]">tréninky</span>
                 </h3>
                 <p className="text-[13px] text-white/75 leading-relaxed mb-4 relative z-10">
-                  Nabízíme také individuální lekce přizpůsobené vašim potřebám a tempu. 
+                  Nabízíme také individuální lekce přizpůsobené vašim potřebám a tempu.
                   Ideální pro ty, kdo chtějí rychlejší pokrok nebo mají specifické cíle.
+                </p>
+                <div className="text-[28px] font-bold text-white mb-1 relative z-10">
+                  1 100 Kč<span className="text-[13px] font-normal text-white/60"> / hodina</span>
+                </div>
+                <p className="text-[12px] text-white/60 mb-4 relative z-10">
+                  Až pro 4 osoby
                 </p>
                 <ul className="space-y-2 relative z-10">
                   <li className="flex items-start gap-2 text-[12px] text-white/75">
@@ -273,7 +279,7 @@ export default function Contact() {
                   </li>
                 </ul>
                 <p className="text-[11px] text-[#C41E2A] mt-4 font-medium tracking-wide relative z-10">
-                  Kontaktujte nás pro více informací a ceny
+                  Kontaktujte nás pro rezervaci termínu
                 </p>
               </div>
             </div>

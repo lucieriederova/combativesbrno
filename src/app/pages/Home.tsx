@@ -121,12 +121,13 @@ export default function Home() {
                 </div>
                 <ul className="space-y-4">
                   {[
-                    'Žádné kompromisy — jen co funguje',
-                    'Trénink pod stresem',
-                    'Prevence a deeskalace',
-                    'Právní stránka sebeobrany',
+                    'Prevence a vyhýbání se konfliktům',
+                    'Slovní deeskalace',
+                    'Boj, pokud není jiná možnost',
+                    'Co dělat po skončení konfliktu',
+                    'Boj se zbraní a proti zbrani',
+                    'Právní stránka konfliktu',
                     'Psychologie konfliktu',
-                    'Urban Combatives',
                   ].map((item, i) => (
                     <li key={i} className="flex items-start gap-3 text-white/70 text-[14px]">
                       <span className="text-[#C41E2A] font-bold text-[16px] mt-[-2px]">▸</span>
@@ -175,7 +176,7 @@ export default function Home() {
                 number: '03',
                 title: 'SPORTOVNÍ BOJ',
                 subtitle: 'PRAXE V BEZPEČNÉM PROSTŘEDÍ',
-                desc: 'Vyzkoušej techniky v reálném, ale stále bezpečném prostředí. Sparring ti dá fyzickou kondici, sebedůvěru a zkušenost z práce pod tlakem — přesně to, co na ulici potřebuješ.',
+                desc: 'Vyzkoušej techniky v reálném, ale stále bezpečném prostředí. Trénink ti dá fyzickou kondici, zlepší ti techniku a dá ti zkušenost z práce pod tlakem — přesně to, co na ulici potřebuješ.',
               },
             ].map((pillar, i) => (
               <div key={i} className="bg-[#0A0A0A] p-8 border-l-[3px] border-transparent hover:border-[#C41E2A] transition-all duration-300 group">
@@ -267,7 +268,7 @@ export default function Home() {
               },
               {
                 question: 'Jak vypadá typický trénink?',
-                answer: 'Na úvod teorie na dané téma (právo, stres, první pomoc...), poté základy — technika, taktika, reálné scénáře a scénáře ve stresu.',
+                answer: 'Přednáška/diskuse na dané téma (psychologie konfliktu, právní či zdravotní minimum,…), dále zahřátí, technika, trénink různých modelových situací. Každý trénink je intenzivní a praktický.',
               },
               {
                 question: 'Je RBSD sport nebo bojové umění?',
