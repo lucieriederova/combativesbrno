@@ -62,7 +62,6 @@ export default function Home() {
               </p>
 
               <p className="text-base leading-relaxed text-white/80 mb-10 max-w-[440px] max-[880px]:mx-auto">
-                Bez kompromisů. Bez pravidel. Jen to, co funguje v reálném konfliktu.
                 Naučíme tě, jak se dostat domů v pořádku.
               </p>
 

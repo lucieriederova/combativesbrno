@@ -196,15 +196,15 @@ export default function About() {
 
               <div className="border-t border-white/10 pt-8 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3">
                 {[
-                  'Instruktor Urban Combatives pod vedením Lee Morrisona',
-                  'Instruktor systému RED ZONE (Level 1)',
-                  'Instruktor RBSD',
-                  'Vede pravidelné tréninky sebeobrany pro děti a dospělé v Brně',
+                  'Certifikovaný instruktor Urban Combatives pod vedením Lee Morrisona',
+                  'Instruktor RBSD u Martina Mikoláška',
+                  'Specializuje se na reálnou sebeobranu, modelové situace a psychologii konfliktu',
                   'Zkušenost se systémy Red Zone, Crazy Monkey Defense Program, Krav Maga a další',
-                  'Zkušenosti s ochranou osob a majetku',
-                  'Trenérská licence 2. třídy (FTVS – UK Praha)',
-                  'Certifikovaný DNS trenér',
                   'Zdravotnická školení ZDrSEM, CACM a další',
+                  'Zkušenosti s ostrahou osob a majetku',
+                  'Certifikovaný DNS trenér',
+                  'Hung Gar Kung Fu',
+                  'Právní aspekty sebeobrany, modelové situace & psychologie konfliktu',
                 ].map((cert, i) => (
                   <div key={i} className="flex items-start gap-3 text-[13px] text-white/40">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#C41E2A] shrink-0 mt-1.5" />

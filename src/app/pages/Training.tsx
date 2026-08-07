@@ -37,8 +37,8 @@ export default function Training() {
             JAK PROBÍHÁ <span className="text-[#C41E2A]">TRÉNINK</span>
           </h2>
           <p className="text-base text-[#0A0A0A]/70 leading-relaxed max-w-[700px] mb-14">
-            Každý trénink je navržen tak, aby maximalizoval tvou přípravu na reálnou situaci. 
-            Bez zbytečností, jen praktická příprava.
+            Každý trénink je navržen tak, aby maximalizoval tvou přípravu na reálnou situaci.
+            Bez zbytečností, jen praktická příprava. Každý trénink je intenzivní a praktický.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
@@ -130,8 +130,8 @@ export default function Training() {
               </thead>
               <tbody>
                 {[
-                  { day: 'Úterý', time: '16:00 – 17:00', program: 'Sebeobrana', level: 'Děti 6–11 let', levelColor: 'red', location: 'Šujanovo náměstí 1' },
-                  { day: 'Úterý', time: '17:00 – 18:00', program: 'Sebeobrana', level: 'Junioři', levelColor: 'red', location: 'Šujanovo náměstí 1' },
+                  { day: 'Úterý', time: '16:00 – 17:00', program: 'Sebeobrana', level: 'Děti 6–10 let', levelColor: 'red', location: 'Šujanovo náměstí 1' },
+                  { day: 'Úterý', time: '17:00 – 18:00', program: 'Sebeobrana', level: 'Junioři 11–16 let', levelColor: 'red', location: 'Šujanovo náměstí 1' },
                   { day: 'Úterý', time: '18:00 – 19:30', program: 'Sebeobrana', level: 'Dospělí', levelColor: 'red', location: 'Šujanovo náměstí 1' },
                   { day: 'Středa', time: '11:00 – 12:15', program: 'Sebeobrana', level: 'Studenti VUT', levelColor: 'red', location: 'Tělocvična Machina' },
                   { day: 'Čtvrtek', time: '16:00 – 17:00', program: 'Kondiční trénink', level: 'Plně obsazeno', levelColor: 'muted', location: 'Josefská' },
@@ -195,8 +195,9 @@ export default function Training() {
                 CO JE <span className="text-[#C41E2A]">SANDA</span>
               </h2>
               <p className="text-[15px] leading-relaxed text-[#0A0A0A]/70 mb-3.5">
-                Sanda vám pomůže s vylepšením technik, které znáte z tréninku sebeobrany, v praxi. Pomůže vám vylepšit
-                úderovou a kopací techniku, zlepší vaši práci na nohách a práci se vzdáleností.
+                Sanda je (plno)kontaktní sport, kombinující údery, kopy a hody. Sanda vám pomůže s vylepšením technik,
+                které znáte z tréninku sebeobrany, do praxe. Pomůže vám vylepšit úderovou a kopací techniku, zlepší
+                vaši práci na nohách, práci se vzdáleností.
               </p>
               <p className="text-[15px] leading-relaxed text-[#0A0A0A]/70">
                 S přibývajícími schopnostmi je možné přidat řízený a posléze i volný sparing, který vám pomůže
@@ -240,10 +241,8 @@ export default function Training() {
               </h3>
               <ul className="space-y-4">
                 {[
-                  'Sportovní oblečení (kraťasy, tričko)',
+                  'Kraťasy',
                   'Sálová obuv',
-                  'Voda',
-                  'Chuť se učit',
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-[15px] text-[#0A0A0A]/70">
                     <span className="text-[#C41E2A] font-bold">✓</span>

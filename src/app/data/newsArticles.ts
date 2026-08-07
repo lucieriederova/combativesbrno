@@ -30,6 +30,9 @@ export const newsArticles: NewsArticleData[] = [
     image: matyPhoto,
     content: [
       { text: 'Momentálně jsme uzavřeli nábor nováčků. Další nábor na sebeobranu bude probíhat až v září 2026.' },
+      {
+        text: '22. září proběhnou ukázkové tréninky pro děti, juniory i dospělé. Tréninky jsou zdarma, nicméně je potřeba si rezervovat místo. Na tréninky si vezměte vhodné tréninkové oblečení, sálovou obuv a pití.',
+      },
       { text: 'Pokud máte zájem o naše tréninky, sledujte náš web nebo Facebook. Další informace budou k dispozici během června.' },
       { text: 'Budeme se na vás těšit.' },
       {

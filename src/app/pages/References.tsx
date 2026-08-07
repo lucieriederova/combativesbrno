@@ -49,7 +49,7 @@ export default function References() {
             {[
               {
                 name: 'Áďa',
-                program: 'RBSD Začátečníci',
+                program: 'Combatives Začátečníci',
                 duration: 'Trénuje 1 rok',
                 photo: adaPhoto,
                 quote: 'Konečně něco, co má smysl. Žádné zbytečnosti, jen praktická obrana. Cítím se mnohem bezpečněji.',
@@ -66,14 +66,14 @@ export default function References() {
                 program: 'Urban Combatives',
                 duration: 'Trénuje 3 roky',
                 photo: krystofPhoto,
-                quote: 'Nejlepší rozhodnutí mého života. RBSD mě naučilo, jak zvládat stres a jednat pod tlakem. To se hodí i v běžném životě.',
+                quote: 'Nejlepší rozhodnutí mého života. Combatives mě naučilo, jak zvládat stres a jednat pod tlakem. To se hodí i v běžném životě.',
               },
               {
                 name: 'Maty',
                 program: 'Pokročilí',
                 duration: 'Trénuje 2 roky',
                 photo: matyPhoto,
-                quote: 'Měl jsem zkušenosti s boxem a BJJ, ale RBSD mi ukázalo, jak to vypadá doopravdy. Bez pravidel, bez rozhodčích.',
+                quote: 'Měl jsem zkušenosti s boxem a BJJ, ale Combatives mi ukázalo, jak to vypadá doopravdy. Bez pravidel, bez rozhodčích.',
               },
             ].map((testimonial, i) => (
               <div key={i} className="bg-white border-l-[4px] border-[#C41E2A] flex flex-col sm:flex-row overflow-hidden">
