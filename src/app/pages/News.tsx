@@ -44,11 +44,11 @@ export default function News() {
             <div className="space-y-8">
               {newsArticles.map((article) => (
                 <div key={article.slug} className="bg-white border-l-[4px] border-[#C41E2A] overflow-hidden hover:shadow-lg transition-shadow">
-                  <div className="aspect-video bg-[#0A0A0A] flex items-center justify-center relative overflow-hidden">
+                  <div className={`aspect-video flex items-center justify-center relative overflow-hidden ${article.imageFit === 'contain' ? 'bg-[#C41E2A]' : 'bg-[#0A0A0A]'}`}>
                     <img
                       src={article.image}
                       alt={article.title}
-                      className="w-full h-full object-cover"
+                      className={article.imageFit === 'contain' ? 'w-full h-full object-contain' : 'w-full h-full object-cover'}
                     />
                     {/* Červená linka jako brand element */}
                     <div className="absolute bottom-0 left-0 w-full h-[4px] bg-[#C41E2A]" />

@@ -58,8 +58,12 @@ export default function NewsArticle() {
       {/* Article Content */}
       <section className="py-20 bg-[#F5F3F0]">
         <div className="max-w-[800px] mx-auto px-12 max-[880px]:px-5">
-          <div className="aspect-video overflow-hidden mb-14 border-l-[4px] border-[#C41E2A]">
-            <img src={article.image} alt={article.title} className="w-full h-full object-cover" />
+          <div className={`overflow-hidden mb-14 border-l-[4px] border-[#C41E2A] ${article.imageFit === 'contain' ? 'bg-[#C41E2A]' : 'aspect-video'}`}>
+            <img
+              src={article.image}
+              alt={article.title}
+              className={article.imageFit === 'contain' ? 'w-full h-auto object-contain' : 'w-full h-full object-cover'}
+            />
           </div>
 
           <div className="space-y-6">

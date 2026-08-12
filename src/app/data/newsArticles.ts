@@ -17,6 +17,9 @@ export type NewsArticleData = {
   date: string;
   excerpt: string;
   image: string;
+  // Wide promo banners get cropped by the default 16:9 object-cover framing —
+  // 'contain' shows them in full on a red backdrop instead.
+  imageFit?: 'cover' | 'contain';
   content: NewsContentBlock[];
 };
 
@@ -27,7 +30,8 @@ export const newsArticles: NewsArticleData[] = [
     title: 'Nábor Kung-fu od září',
     date: '12. srpna 2026',
     excerpt: 'Od září otevíráme nábor do Kung-fu tréninků — bereme děti i dospělé, úplné začátečníky i pokročilé. Ukázkový trénink je zdarma a bez závazku.',
-    image: kataPhoto,
+    image: '/nabor-kung-fu-2026.png',
+    imageFit: 'contain',
     content: [
       { text: 'Od září znovu otevíráme nábor do Kung-fu tréninků, které vedeme na hunggar.cz. Bereme jak úplné začátečníky, tak i ty, co už mají nějakou zkušenost s bojovými uměními — od dětí přes juniory až po dospělé.' },
       {
