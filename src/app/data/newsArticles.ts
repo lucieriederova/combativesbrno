@@ -24,28 +24,6 @@ export type NewsArticleData = {
 
 export const newsArticles: NewsArticleData[] = [
   {
-    slug: 'nabor-kung-fu-2026',
-    tag: 'Nábor',
-    title: 'Nábor Kung-fu od září',
-    date: '12. srpna 2026',
-    excerpt: 'Od září otevíráme nábor do Kung-fu tréninků — bereme děti i dospělé, úplné začátečníky i pokročilé. Ukázkový trénink je zdarma a bez závazku.',
-    image: '/nabor-kung-fu-2026.png',
-    imageFit: 'contain',
-    content: [
-      { text: 'Od září znovu otevíráme nábor do Kung-fu tréninků, které vedeme na hunggar.cz. Bereme jak úplné začátečníky, tak i ty, co už mají nějakou zkušenost s bojovými uměními — od dětí přes juniory až po dospělé.' },
-      {
-        text: 'Přijďte si vyzkoušet ukázkový trénink zdarma a bez závazku. Vezměte si s sebou pohodlné sportovní oblečení, sálovou obuv nebo ponožky a pití.',
-      },
-      { text: 'Pokud máte zájem, sledujte web hunggar.cz nebo náš Facebook, kde budou k dispozici aktuální termíny.' },
-      { text: 'Budeme se na vás těšit.' },
-      {
-        heading: 'Rozvrh tréninků a ceník',
-        text: 'Kompletní rozvrh a ceník Kung-fu tréninků najdete na',
-        link: { href: 'https://hunggar.cz/treninky', label: 'hunggar.cz' },
-      },
-    ],
-  },
-  {
     slug: 'nabor-combatives-brno',
     tag: 'Nábor',
     title: 'Nábor sebeobrany Combatives Brno od září',
