@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { MapPin, Phone, Mail, Clock, Send, User, MessageSquare } from 'lucide-react';
+import { MapPin, Phone, Mail, User, MessageSquare } from 'lucide-react';
 import { RevealOnScroll } from '../components/RevealOnScroll';
 
 export default function Contact() {
@@ -69,7 +69,7 @@ export default function Contact() {
                 Máte <span className="text-[#C41E2A]">dotaz?</span>
               </h2>
               <p className="text-[15px] text-[#0A0A0A]/70 mb-7">
-                Neváhejte se na nás obrátit s jakýmkoliv dotazem. Odpovídáme do 24 hodin.
+                Neváhejte se na nás obrátit s jakýmkoliv dotazem.
               </p>
 
               {submitted ? (
@@ -78,7 +78,7 @@ export default function Contact() {
                     <Mail className="text-green-600" size={24} />
                   </div>
                   <h3 className="text-xl font-semibold text-green-900 mb-2">Zpráva odeslána!</h3>
-                  <p className="text-green-700">Děkujeme za vaši zprávu. Ozveme se vám do 24 hodin.</p>
+                  <p className="text-green-700">Děkujeme za vaši zprávu.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5">
@@ -174,7 +174,7 @@ export default function Contact() {
                   </button>
 
                   <p className="text-[11px] text-[var(--kung-fu-g400)] text-center">
-                    * Povinné pole · Odpovídáme do 24 hodin
+                    * Povinné pole
                   </p>
                 </form>
               )}
@@ -205,11 +205,6 @@ export default function Contact() {
                     icon: <Mail size={20} />,
                     label: 'E-mail',
                     value: 'info@combatives-brno.cz'
-                  },
-                  {
-                    icon: <Clock size={20} />,
-                    label: 'Odpovídáme',
-                    value: 'Do 24 hodin'
                   },
                 ].map((item, i) => (
                   <div
