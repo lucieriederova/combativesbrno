@@ -1,6 +1,5 @@
 import adaPhoto from '@/imports/ada.jpg';
 import krystofPhoto from '@/imports/krystof.jpg';
-import matyPhoto from '@/imports/maty.jpg';
 import kataPhoto from '@/imports/kata.jpg';
 
 export type NewsContentBlock = {
@@ -49,21 +48,22 @@ export const newsArticles: NewsArticleData[] = [
   {
     slug: 'nabor-combatives-brno',
     tag: 'Nábor',
-    title: 'Nábor sebeobrana Combatives Brno',
-    date: 'Léto 2026',
-    excerpt: 'Momentálně jsme uzavřeli nábor nováčků. Další nábor na sebeobranu bude probíhat až v září 2026.',
-    image: matyPhoto,
+    title: 'Nábor sebeobrany Combatives Brno od září',
+    date: '12. srpna 2026',
+    excerpt: 'Od září otevíráme nábor do tréninků reálné sebeobrany — bereme děti i dospělé, úplné začátečníky i pokročilé. Ukázkový trénink je zdarma a bez závazku.',
+    image: '/nabor-sebeobrany-2026.png',
+    imageFit: 'contain',
     content: [
-      { text: 'Momentálně jsme uzavřeli nábor nováčků. Další nábor na sebeobranu bude probíhat až v září 2026.' },
+      { text: 'Od září znovu otevíráme nábor do tréninků reálné sebeobrany Combatives Brno. Bereme jak úplné začátečníky, tak i ty, co už mají nějakou zkušenost se sebeobranou — od dětí přes juniory až po dospělé.' },
       {
-        text: '22. září proběhnou ukázkové tréninky pro děti, juniory i dospělé. Tréninky jsou zdarma, nicméně je potřeba si rezervovat místo. Na tréninky si vezměte vhodné tréninkové oblečení, sálovou obuv a pití.',
+        text: '22. září proběhnou ukázkové tréninky pro děti, juniory i dospělé. Přijďte si vyzkoušet ukázkový trénink zdarma a bez závazku, jen je potřeba si předem rezervovat místo. Vezměte si s sebou kraťasy, sálovou obuv a pití.',
       },
-      { text: 'Pokud máte zájem o naše tréninky, sledujte náš web nebo Facebook. Další informace budou k dispozici během června.' },
+      { text: 'Tréninky probíhají na adrese Šujanovo náměstí 1, Brno. Pokud máte zájem, sledujte náš web nebo Facebook, kde budou k dispozici aktuální termíny.' },
       { text: 'Budeme se na vás těšit.' },
       {
-        heading: 'Informace k rozvrhu tréninků a ceny',
-        text: 'Rozpis tréninků kung-fu, které také vedeme, najdete na',
-        link: { href: 'https://hunggar.cz', label: 'hunggar.cz' },
+        heading: 'Rozvrh tréninků a ceník',
+        text: 'Kompletní rozvrh a ceník najdete na stránce',
+        link: { href: '/treninky', label: 'Tréninky' },
       },
     ],
   },
