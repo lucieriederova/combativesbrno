@@ -219,11 +219,11 @@ export default function About() {
           <div className="grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-10 items-start mt-16 pt-16 border-t border-white/10">
             {/* foto + citace */}
             <div className="lg:sticky lg:top-28">
-              <div className="relative overflow-hidden aspect-[4/5] bg-[#111]">
+              <div className="relative overflow-hidden aspect-[712/696] bg-[#111]">
                 <ImageWithFallback
-                  src="/simon.jpg"
+                  src="/simon.png"
                   alt="Šimon Klein - instruktor Sandy RBSD Combatives Brno"
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-cover"
                 />
                 {/* gradient overlay bottom */}
                 <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#0A0A0A] to-transparent" />
