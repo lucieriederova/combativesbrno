@@ -223,7 +223,7 @@ export default function Training() {
           </div>
 
           {/* Rozhovor s trenérem Sandy */}
-          <div className="mt-20 pt-16 border-t border-[#0A0A0A]/10 flex flex-col items-center text-center">
+          <div className="mt-20 pt-16 border-t border-[#0A0A0A]/10">
             <span className="block text-[11px] font-bold tracking-[4px] uppercase text-[#C41E2A] mb-4">
               Poznejte trenéra
             </span>
@@ -231,17 +231,42 @@ export default function Training() {
               Rozhovor se <span className="text-[#C41E2A]">Šimonem Kleinem</span>
             </h3>
 
-            <div className="relative w-full max-w-[800px]">
-              <div className="absolute -inset-3 bg-[#C41E2A]/10 blur-2xl pointer-events-none" />
-              <div className="relative aspect-video bg-black shadow-[0_20px_60px_-15px_rgba(0,0,0,0.35)] overflow-hidden">
-                <div className="absolute top-0 left-0 right-0 h-[3px] bg-[#C41E2A] z-10" />
-                <iframe
-                  className="w-full h-full relative z-0"
-                  src="https://www.youtube.com/embed/9ePO9NbeRTg"
-                  title="Rozhovor se Šimonem Kleinem"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                />
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              {/* otázky */}
+              <div className="order-2 lg:order-1">
+                <ul className="space-y-7">
+                  {[
+                    'Představ se nám na úvod – jaké všechny disciplíny vlastně trénuješ a co tě na téhle pestré kombinaci nejvíc baví?',
+                    'Hodně lidí má z bojových sportů strach. Jak u vás vypadá trénink úplného nováčka – dostane hned na první lekci „nakládačku“?',
+                    'Musím mít skvělou fyzičku a drahou výbavu, než k vám vůbec poprvé přijdu, nebo mi stačí tričko a kraťasy?',
+                    'Když někdo nechce zápasit, ale chce se jen naučit bránit, shodit kila a vyčistit si hlavu – má smysl k vám chodit?',
+                    'Co bys vzkázal lidem, kteří o tréninku už dlouho uvažují, ale pořád sbírají odvahu?',
+                  ].map((q, i) => (
+                    <li key={i} className="flex gap-4">
+                      <span className="font-serif text-[26px] font-bold text-[#C41E2A]/25 leading-none shrink-0 tabular-nums">
+                        {String(i + 1).padStart(2, '0')}
+                      </span>
+                      <p className="text-[15px] text-[#0A0A0A]/70 leading-relaxed pt-1">{q}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* video */}
+              <div className="order-1 lg:order-2">
+                <div className="relative">
+                  <div className="absolute -inset-3 bg-[#C41E2A]/10 blur-2xl pointer-events-none" />
+                  <div className="relative aspect-video bg-black shadow-[0_20px_60px_-15px_rgba(0,0,0,0.35)] overflow-hidden">
+                    <div className="absolute top-0 left-0 right-0 h-[3px] bg-[#C41E2A] z-10" />
+                    <iframe
+                      className="w-full h-full relative z-0"
+                      src="https://www.youtube.com/embed/9ePO9NbeRTg"
+                      title="Rozhovor se Šimonem Kleinem"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
