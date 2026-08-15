@@ -215,10 +215,10 @@ export default function About() {
             </div>
           </div>
 
-          {/* Šimon Klein - instruktor Sandy */}
-          <div className="grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-10 items-start mt-16 pt-16 border-t border-white/10">
+          {/* Šimon Klein - instruktor Sandy — foto na opačné straně než u Jiřího pro vizuální rozmanitost */}
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_420px] gap-10 items-start mt-16 pt-16 border-t border-white/10">
             {/* foto + citace */}
-            <div className="lg:sticky lg:top-28">
+            <div className="lg:sticky lg:top-28 lg:order-2">
               <div className="relative overflow-hidden aspect-[712/696] bg-[#111]">
                 <ImageWithFallback
                   src="/simon.png"
@@ -227,11 +227,11 @@ export default function About() {
                 />
                 {/* gradient overlay bottom */}
                 <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#0A0A0A] to-transparent" />
-                {/* red accent line left */}
-                <div className="absolute top-0 left-0 w-[4px] h-full bg-[#C41E2A]" />
+                {/* red accent line right, zrcadlené vůči Jiřího kartě */}
+                <div className="absolute top-0 right-0 w-[4px] h-full bg-[#C41E2A]" />
               </div>
 
-              <blockquote className="bg-[#111] border-l-[3px] border-[#C41E2A] p-6">
+              <blockquote className="bg-[#111] border-r-[3px] border-[#C41E2A] p-6 text-right">
                 <p className="text-[14px] font-serif italic text-white/70 leading-relaxed">
                   „Nejvíc zkušeností jsem nasbíral přímo na žíněnce — a přesně tam se na vás těším.“
                 </p>
@@ -239,7 +239,7 @@ export default function About() {
             </div>
 
             {/* info */}
-            <div className="bg-[#111] border border-white/5 p-10">
+            <div className="bg-[#111] border border-white/5 p-10 lg:order-1">
               <div className="text-[10px] tracking-[4px] uppercase text-[#C41E2A] mb-3">
                 Instruktor — Sanda
               </div>
