@@ -77,11 +77,11 @@ export default function References() {
               },
             ].map((testimonial, i) => (
               <div key={i} className="bg-white border-l-[4px] border-[#C41E2A] flex flex-col sm:flex-row overflow-hidden">
-                <div className="w-full h-72 sm:h-auto sm:w-[220px] shrink-0">
+                <div className="w-full h-72 sm:h-auto sm:w-[220px] shrink-0 overflow-hidden">
                   <img
                     src={testimonial.photo}
                     alt={testimonial.name}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover scale-[1.6]"
                   />
                 </div>
 
