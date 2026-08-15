@@ -282,21 +282,27 @@ export default function About() {
           </div>
 
           {/* Rozhovor se Šimonem Kleinem */}
-          <div className="mt-16 pt-16 border-t border-white/10 max-w-[800px]">
-            <div className="text-[10px] tracking-[4px] uppercase text-[#C41E2A] mb-3">
+          <div className="mt-20 pt-16 border-t border-white/10 flex flex-col items-center text-center">
+            <span className="block text-[10px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-4">
               Rozhovor
-            </div>
-            <h3 className="font-serif text-[28px] font-bold text-white mb-6 leading-tight">
-              Poznejte Šimona blíž
+            </span>
+            <h3 className="font-serif text-[clamp(26px,3.5vw,40px)] font-bold text-white mb-10 leading-tight">
+              Poznejte <span className="text-[#C41E2A]">Šimona</span> blíž
             </h3>
-            <div className="aspect-video bg-[#111] border border-white/5 overflow-hidden">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/9ePO9NbeRTg"
-                title="Rozhovor se Šimonem Kleinem"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              />
+
+            <div className="relative w-full max-w-[800px]">
+              {/* red glow zarámování ladící se zbytkem stránky */}
+              <div className="absolute -inset-3 bg-[#C41E2A]/10 blur-2xl pointer-events-none" />
+              <div className="relative aspect-video bg-black border border-white/10 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.6)] overflow-hidden">
+                <div className="absolute top-0 left-0 right-0 h-[3px] bg-[#C41E2A] z-10" />
+                <iframe
+                  className="w-full h-full relative z-0"
+                  src="https://www.youtube.com/embed/9ePO9NbeRTg"
+                  title="Rozhovor se Šimonem Kleinem"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              </div>
             </div>
           </div>
         </div>

@@ -223,21 +223,26 @@ export default function Training() {
           </div>
 
           {/* Rozhovor s trenérem Sandy */}
-          <div className="mt-16 pt-16 border-t border-[#0A0A0A]/10 max-w-[800px]">
-            <div className="text-[11px] font-bold tracking-[4px] uppercase text-[#C41E2A] mb-4">
+          <div className="mt-20 pt-16 border-t border-[#0A0A0A]/10 flex flex-col items-center text-center">
+            <span className="block text-[11px] font-bold tracking-[4px] uppercase text-[#C41E2A] mb-4">
               Poznejte trenéra
-            </div>
-            <h3 className="font-serif text-[26px] font-bold text-[#0A0A0A] mb-6 leading-tight">
-              Rozhovor se Šimonem Kleinem
+            </span>
+            <h3 className="font-serif text-[clamp(26px,3.5vw,38px)] font-bold text-[#0A0A0A] mb-10 leading-tight">
+              Rozhovor se <span className="text-[#C41E2A]">Šimonem Kleinem</span>
             </h3>
-            <div className="aspect-video bg-[#0A0A0A] overflow-hidden">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/9ePO9NbeRTg"
-                title="Rozhovor se Šimonem Kleinem"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              />
+
+            <div className="relative w-full max-w-[800px]">
+              <div className="absolute -inset-3 bg-[#C41E2A]/10 blur-2xl pointer-events-none" />
+              <div className="relative aspect-video bg-black shadow-[0_20px_60px_-15px_rgba(0,0,0,0.35)] overflow-hidden">
+                <div className="absolute top-0 left-0 right-0 h-[3px] bg-[#C41E2A] z-10" />
+                <iframe
+                  className="w-full h-full relative z-0"
+                  src="https://www.youtube.com/embed/9ePO9NbeRTg"
+                  title="Rozhovor se Šimonem Kleinem"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              </div>
             </div>
           </div>
         </div>
