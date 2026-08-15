@@ -280,6 +280,25 @@ export default function About() {
               </div>
             </div>
           </div>
+
+          {/* Rozhovor se Šimonem Kleinem */}
+          <div className="mt-16 pt-16 border-t border-white/10 max-w-[800px]">
+            <div className="text-[10px] tracking-[4px] uppercase text-[#C41E2A] mb-3">
+              Rozhovor
+            </div>
+            <h3 className="font-serif text-[28px] font-bold text-white mb-6 leading-tight">
+              Poznejte Šimona blíž
+            </h3>
+            <div className="aspect-video bg-[#111] border border-white/5 overflow-hidden">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/9ePO9NbeRTg"
+                title="Rozhovor se Šimonem Kleinem"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
+          </div>
         </div>
       </section>
 
