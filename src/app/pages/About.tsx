@@ -142,7 +142,7 @@ export default function About() {
 
         <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5 relative z-10">
           <span className="block text-[10px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-4">
-            Hlavní instruktor
+            Náš tým
           </span>
           <h2 className="font-serif text-[clamp(32px,5vw,56px)] font-bold leading-tight text-white mb-16">
             NÁŠ <span className="text-[#C41E2A]">TÝM</span>
@@ -209,6 +209,72 @@ export default function About() {
                   <div key={i} className="flex items-start gap-3 text-[13px] text-white/40">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#C41E2A] shrink-0 mt-1.5" />
                     {cert}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          {/* Šimon Klein - instruktor Sandy */}
+          <div className="grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-10 items-start mt-16 pt-16 border-t border-white/10">
+            {/* foto + citace */}
+            <div className="lg:sticky lg:top-28">
+              <div className="relative overflow-hidden aspect-[4/5] bg-[#111]">
+                <ImageWithFallback
+                  src="/simon.jpg"
+                  alt="Šimon Klein - instruktor Sandy RBSD Combatives Brno"
+                  className="w-full h-full object-cover object-top"
+                />
+                {/* gradient overlay bottom */}
+                <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-[#0A0A0A] to-transparent" />
+                {/* red accent line left */}
+                <div className="absolute top-0 left-0 w-[4px] h-full bg-[#C41E2A]" />
+              </div>
+
+              <blockquote className="bg-[#111] border-l-[3px] border-[#C41E2A] p-6">
+                <p className="text-[14px] font-serif italic text-white/70 leading-relaxed">
+                  „Nejvíc zkušeností jsem nasbíral přímo na žíněnce — a přesně tam se na vás těším.“
+                </p>
+              </blockquote>
+            </div>
+
+            {/* info */}
+            <div className="bg-[#111] border border-white/5 p-10">
+              <div className="text-[10px] tracking-[4px] uppercase text-[#C41E2A] mb-3">
+                Instruktor — Sanda
+              </div>
+              <h3 className="font-serif text-[36px] font-bold text-white mb-6 leading-tight">
+                Šimon Klein
+              </h3>
+
+              <p className="text-[14px] text-white/60 leading-relaxed mb-6">
+                Šimon se bojovým sportům věnuje už 16 let, přestože je mu teprve 22. Pochází ze
+                slovenského Martina a dnes trénuje a zápasí v Brně. Za sebou má přes 400 grapplingových
+                zápasů, 24 zápasů v amatérském MMA a úspěšný vstup do profesionálního MMA s bilancí 1-0.
+              </p>
+
+              <p className="text-[14px] text-white/60 leading-relaxed mb-6">
+                Patří mezi nejúspěšnější grapplery své generace — je mistrem Evropy v profesionální
+                kategorii, 12násobným mistrem Slovenska, 4násobným mistrem České republiky a šampionem
+                Polska i Rakouska. Titul mistra Slovenska získal také v amatérském MMA.
+              </p>
+
+              <p className="text-[14px] text-white/60 leading-relaxed mb-8">
+                Na trénincích sandy předává především to, co sám léta sbíral v ringu a na žíněnce:
+                praktickou techniku, kondici a chladnou hlavu v zápase.
+              </p>
+
+              <div className="border-t border-white/10 pt-8 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3">
+                {[
+                  'Mistr Evropy v grapplingu',
+                  '12× mistr Slovenska',
+                  '4× mistr ČR',
+                  '400+ zápasů',
+                  'Profesionální MMA zápasník',
+                ].map((badge, i) => (
+                  <div key={i} className="flex items-start gap-3 text-[13px] text-white/40">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#C41E2A] shrink-0 mt-1.5" />
+                    {badge}
                   </div>
                 ))}
               </div>
