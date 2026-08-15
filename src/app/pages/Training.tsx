@@ -239,6 +239,7 @@ export default function Training() {
                     'Představ se nám na úvod – jaké všechny disciplíny vlastně trénuješ a co tě na téhle pestré kombinaci nejvíc baví?',
                     'Hodně lidí má z bojových sportů strach. Jak u vás vypadá trénink úplného nováčka – dostane hned na první lekci „nakládačku“?',
                     'Musím mít skvělou fyzičku a drahou výbavu, než k vám vůbec poprvé přijdu, nebo mi stačí tričko a kraťasy?',
+                    'Pro koho je váš trénink určen?',
                     'Když někdo nechce zápasit, ale chce se jen naučit bránit, shodit kila a vyčistit si hlavu – má smysl k vám chodit?',
                     'Co bys vzkázal lidem, kteří o tréninku už dlouho uvažují, ale pořád sbírají odvahu?',
                   ].map((q, i) => (
