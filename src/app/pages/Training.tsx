@@ -221,6 +221,25 @@ export default function Training() {
               </p>
             </div>
           </div>
+
+          {/* Rozhovor s trenérem Sandy */}
+          <div className="mt-16 pt-16 border-t border-[#0A0A0A]/10 max-w-[800px]">
+            <div className="text-[11px] font-bold tracking-[4px] uppercase text-[#C41E2A] mb-4">
+              Poznejte trenéra
+            </div>
+            <h3 className="font-serif text-[26px] font-bold text-[#0A0A0A] mb-6 leading-tight">
+              Rozhovor se Šimonem Kleinem
+            </h3>
+            <div className="aspect-video bg-[#0A0A0A] overflow-hidden">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/9ePO9NbeRTg"
+                title="Rozhovor se Šimonem Kleinem"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
+          </div>
         </div>
       </section>
 
