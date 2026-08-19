@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { MapPin, Phone, Mail, User, MessageSquare } from 'lucide-react';
+import { MapPin, Phone, Mail, User, MessageSquare, TramFront } from 'lucide-react';
 import { RevealOnScroll } from '../components/RevealOnScroll';
 
 export default function Contact() {
@@ -227,14 +227,23 @@ export default function Contact() {
               </div>
 
               {/* Mapa */}
-              <div className="mt-8 h-60 border border-black/[0.08] rounded-sm overflow-hidden">
-                <iframe
-                  src="https://maps.google.com/maps?q=%C5%A0ujanovo%20n%C3%A1m%C4%9Bst%C3%AD%201%2C%20Brno&z=16&output=embed"
-                  className="w-full h-full border-0"
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="Mapa - Šujanovo náměstí 1, Brno"
-                />
+              <div className="mt-8 border border-black/[0.08] rounded-sm overflow-hidden">
+                <div className="h-60">
+                  <iframe
+                    src="https://maps.google.com/maps?q=%C5%A0ujanovo%20n%C3%A1m%C4%9Bst%C3%AD%201%2C%20Brno&z=16&output=embed"
+                    className="w-full h-full border-0"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                    title="Mapa - Šujanovo náměstí 1, Brno"
+                  />
+                </div>
+                <div className="px-4 py-3 border-t border-black/[0.08] flex items-start gap-2.5 text-[12px] text-[#0A0A0A]/60 leading-relaxed">
+                  <TramFront size={14} className="text-[#C41E2A] mt-0.5 shrink-0" />
+                  <span>
+                    <strong className="text-[#0A0A0A] font-semibold">ZŠ a MŠ Basic</strong> (Brno-střed) — zastávka Vlhká (tramvaje 8, 10, 12).
+                    Z ulice Křenová je to ke škole zhruba 3 minuty chůze.
+                  </span>
+                </div>
               </div>
 
               {/* Osobní tréninky */}

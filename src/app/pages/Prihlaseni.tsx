@@ -107,10 +107,6 @@ export default function Prihlaseni() {
                   q: 'Jak vypadá typický trénink?',
                   a: 'Na úvod teorie na dané téma (právo, stres, první pomoc...), poté základy — technika, taktika, reálné scénáře a scénáře ve stresu.'
                 },
-                {
-                  q: 'Kolik stojí členství?',
-                  a: 'Měsíční členství je 1 200 Kč. Zahrnuje neomezený počet tréninků týdně. Studenti a senioři mají 20% slevu.'
-                },
               ].map((faq, i) => (
                 <div key={i} className="bg-white/5 border border-white/10 p-6">
                   <div className="flex items-start gap-3">

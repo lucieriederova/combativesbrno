@@ -110,7 +110,7 @@ export default function Footer() {
               </div>
               <div className="flex items-start gap-2.5">
                 <span className="text-sm mt-0.5">📞</span>
-                <p className="text-[13px] text-white/45">+420 777 123 456</p>
+                <a href="tel:+420605521525" className="text-[13px] text-white/45 hover:text-[#C41E2A] transition-colors">+420 605 521 525</a>
               </div>
               <div className="flex items-start gap-2.5">
                 <span className="text-sm mt-0.5">✉️</span>
