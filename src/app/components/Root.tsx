@@ -3,6 +3,7 @@ import Navigation from './Navigation';
 import Footer from './Footer';
 import CookieConsent from './CookieConsent';
 import ScrollToTop from './ScrollToTop';
+import Analytics from './Analytics';
 
 export default function Root() {
   return (
@@ -14,6 +15,7 @@ export default function Root() {
       </main>
       <Footer />
       <CookieConsent />
+      <Analytics />
     </div>
   );
 }
