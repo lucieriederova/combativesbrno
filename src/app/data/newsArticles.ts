@@ -200,6 +200,6 @@ export const newsArticles: NewsArticleData[] = [
   },
 ];
 
-export const newsSidebarExtras: { title: string; date: string }[] = [
-  { title: 'Tréninky dětí 11. 2. zrušeny z důvodu jarních prázdnin', date: '11. února 2025' },
+export const newsSidebarExtras: { title: string; date: string; link: string }[] = [
+  { title: 'Tréninky dětí 11. 2. zrušeny z důvodu jarních prázdnin', date: '11. února 2025', link: '/aktuality' },
 ];
