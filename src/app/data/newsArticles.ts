@@ -34,13 +34,24 @@ export const newsArticles: NewsArticleData[] = [
     content: [
       { text: 'Od září znovu otevíráme nábor do tréninků reálné sebeobrany Combatives Brno. Bereme jak úplné začátečníky, tak i ty, co už mají nějakou zkušenost se sebeobranou — od dětí přes juniory až po dospělé.' },
       {
-        text: '22. září proběhnou ukázkové tréninky pro děti, juniory i dospělé. Přijďte si vyzkoušet ukázkový trénink zdarma a bez závazku, jen je potřeba si předem rezervovat místo. Vezměte si s sebou triko, kraťasy, sálovou obuv a pití.',
+        text: '22. září proběhnou ukázkové tréninky pro děti, juniory i dospělé. Vezměte si s sebou triko, kraťasy, sálovou obuv a pití.',
+      },
+      {
+        text: 'Přijďte si vyzkoušet ukázkový trénink zdarma a bez závazku — stačí se předem',
+        link: { href: 'https://combatives.reenio.cz/cs/terms/2026-09-22;viewMode=3-days', label: 'zarezervovat místo přes Reenio' },
       },
       {
         text: 'Tréninky probíhají na adrese',
         link: { href: 'https://www.google.com/maps/search/?api=1&query=%C5%A0ujanovo+n%C3%A1m%C4%9Bst%C3%AD+1+Brno', label: 'Šujanovo náměstí 1, Brno' },
       },
-      { text: 'Pokud máte zájem, sledujte náš web nebo Facebook, kde budou k dispozici aktuální termíny.' },
+      {
+        text: 'Pokud máte zájem, sledujte aktuální termíny na našem',
+        link: { href: '/', label: 'webu' },
+      },
+      {
+        text: 'Sledujte nás i na',
+        link: { href: 'https://www.facebook.com/CombativesBrno', label: 'Facebooku' },
+      },
       { text: 'Pokud vám tento termín nevyhovuje, zavolejte nebo napište — nějak to spolu vyřešíme.' },
       { text: 'Budeme se na vás těšit.' },
       {
