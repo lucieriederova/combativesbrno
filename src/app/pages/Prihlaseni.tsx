@@ -20,9 +20,12 @@ export default function Prihlaseni() {
             <div className="text-[10px] tracking-[4px] uppercase text-white/60 mb-3.5">
               RBSD Combatives Brno <span className="text-white">/ Chci začít</span>
             </div>
-            <h1 className="font-serif text-[clamp(34px,5vw,58px)] font-bold text-white leading-tight">
+            <h1 className="font-serif text-[clamp(34px,5vw,58px)] font-bold text-white leading-tight mb-3">
               Domluv si <span className="text-white/90">první trénink</span>
             </h1>
+            <p className="text-[14px] text-white/70">
+              Nábor probíhá od 22. 9. 2026. Ukázkový trénink je zdarma a bez závazku — stačí se zaregistrovat.
+            </p>
           </div>
         </RevealOnScroll>
       </section>
