@@ -41,6 +41,7 @@ export const newsArticles: NewsArticleData[] = [
         link: { href: 'https://www.google.com/maps/search/?api=1&query=%C5%A0ujanovo+n%C3%A1m%C4%9Bst%C3%AD+1+Brno', label: 'Šujanovo náměstí 1, Brno' },
       },
       { text: 'Pokud máte zájem, sledujte náš web nebo Facebook, kde budou k dispozici aktuální termíny.' },
+      { text: 'Pokud vám tento termín nevyhovuje, zavolejte nebo napište — nějak to spolu vyřešíme.' },
       { text: 'Budeme se na vás těšit.' },
       {
         heading: 'Rozvrh tréninků a ceník',
