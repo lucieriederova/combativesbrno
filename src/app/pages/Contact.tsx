@@ -13,8 +13,30 @@ export default function Contact() {
 
   const [submitted, setSubmitted] = useState(false);
 
+  const subjectLabels: Record<string, string> = {
+    general: 'Obecný dotaz',
+    private: 'Osobní trénink',
+    pricing: 'Ceny a členství',
+    schedule: 'Rozvrh tréninků',
+    other: 'Jiné',
+  };
+
+  // The site has no backend to receive form submissions, so a "real" send
+  // means handing the message to the visitor's own mail client via mailto: —
+  // it opens pre-filled, the visitor still has to hit send there.
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    const subject = subjectLabels[formData.subject] || 'Dotaz z webu';
+    const bodyLines = [
+      `Jméno: ${formData.name}`,
+      `E-mail: ${formData.email}`,
+      formData.phone && `Telefon: ${formData.phone}`,
+      '',
+      formData.message,
+    ].filter(Boolean);
+    const mailtoUrl = `mailto:info@combatives-brno.cz?subject=${encodeURIComponent(`Web: ${subject}`)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
+    window.location.href = mailtoUrl;
+
     setSubmitted(true);
     setTimeout(() => {
       setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
@@ -77,8 +99,8 @@ export default function Contact() {
                   <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Mail className="text-green-600" size={24} />
                   </div>
-                  <h3 className="text-xl font-semibold text-green-900 mb-2">Zpráva odeslána!</h3>
-                  <p className="text-green-700">Děkujeme za vaši zprávu.</p>
+                  <h3 className="text-xl font-semibold text-green-900 mb-2">Otevřeli jsme ti e-mail!</h3>
+                  <p className="text-green-700">V e-mailovém klientovi ti vyskočila předvyplněná zpráva na info@combatives-brno.cz — stačí ji tam už jen odeslat.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5">
