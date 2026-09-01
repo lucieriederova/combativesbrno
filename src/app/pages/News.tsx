@@ -92,7 +92,7 @@ export default function News() {
                       {String(i + 1).padStart(2, '0')}
                     </div>
                     <div className="flex-1">
-                      <h3 className="text-[15px] font-bold text-[#0A0A0A] mb-1 leading-tight group-hover:text-[#C41E2A] transition-colors">
+                      <h3 className="text-[16px] font-bold text-[#0A0A0A] mb-1 leading-tight group-hover:text-[#C41E2A] transition-colors">
                         {item.title}
                       </h3>
                       <div className="flex items-center gap-1.5 text-[11px] text-[#0A0A0A]/40">
@@ -106,16 +106,16 @@ export default function News() {
 
               {/* Newsletter */}
               <div className="mt-8 bg-[#C41E2A] p-6">
-                <h3 className="text-[13px] font-bold tracking-[2px] uppercase text-white mb-3">
+                <h3 className="text-[14px] font-bold tracking-[2px] uppercase text-white mb-3">
                   Buď v obraze
                 </h3>
-                <p className="text-[13px] text-white/80 mb-4">
+                <p className="text-[14px] text-white/80 mb-4">
                   Přihlas se k odběru novinek a nezmeškej žádnou událost.
                 </p>
                 <input
                   type="email"
                   placeholder="tvuj@email.cz"
-                  className="w-full px-4 py-2.5 text-[13px] text-[#0A0A0A] mb-3 outline-none"
+                  className="w-full px-4 py-2.5 text-[14px] text-[#0A0A0A] mb-3 outline-none"
                 />
                 <button className="w-full bg-[#0A0A0A] hover:bg-[#111] text-white py-2.5 text-[11px] font-bold tracking-[2px] uppercase transition-colors">
                   Přihlásit se
@@ -130,7 +130,7 @@ export default function News() {
       <div className="sticky bottom-0 left-0 right-0 bg-[#0A0A0A] border-t-[3px] border-[#C41E2A] py-4 px-6 z-40 shadow-[0_-4px_20px_rgba(0,0,0,0.25)]">
         <div className="max-w-[1100px] mx-auto flex items-center justify-between gap-5 max-[768px]:flex-col max-[768px]:gap-3">
           <div>
-            <p className="text-[13px] font-bold text-white mb-0.5">
+            <p className="text-[14px] font-bold text-white mb-0.5">
               Zaujal tě nějaký článek?
             </p>
             <p className="text-[11px] text-white/50">

@@ -94,7 +94,7 @@ export default function References() {
                         <h3 className="text-[20px] font-bold text-[#0A0A0A] mb-1">
                           {testimonial.name}
                         </h3>
-                        <div className="text-[12px] text-[#0A0A0A]/50">
+                        <div className="text-[13px] text-[#0A0A0A]/50">
                           {testimonial.program}
                         </div>
                       </div>
@@ -103,7 +103,7 @@ export default function References() {
                       </div>
                     </div>
 
-                    <p className="text-[15px] text-[#0A0A0A]/70 leading-relaxed italic">
+                    <p className="text-[16px] text-[#0A0A0A]/70 leading-relaxed italic">
                       "{testimonial.quote}"
                     </p>
                   </div>
@@ -128,13 +128,13 @@ export default function References() {
               <h2 className="font-serif text-[clamp(30px,4vw,48px)] font-bold text-[#0A0A0A] leading-tight">
                 PRVNÍ LEKCE <span className="text-[#C41E2A]">ZDARMA</span>
               </h2>
-              <p className="text-[15px] text-[#0A0A0A]/55 mt-4 max-w-[480px] leading-relaxed">
+              <p className="text-[16px] text-[#0A0A0A]/55 mt-4 max-w-[480px] leading-relaxed">
                 Přijď se podívat. Bez závazku, bez smlouvy. Uvidíš sám, jestli je Combatives to, co hledáš.
               </p>
             </div>
             <Link
               to="/prihlaseni"
-              className="shrink-0 inline-flex items-center justify-center bg-[#C41E2A] hover:bg-[#A01822] text-white px-12 py-5 text-[13px] font-bold tracking-[3px] uppercase transition-colors"
+              className="shrink-0 inline-flex items-center justify-center bg-[#C41E2A] hover:bg-[#A01822] text-white px-12 py-5 text-[14px] font-bold tracking-[3px] uppercase transition-colors"
             >
               Rezervovat lekci →
             </Link>

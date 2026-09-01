@@ -90,7 +90,7 @@ export default function Contact() {
               <h2 className="font-serif text-[clamp(28px,4vw,46px)] font-bold leading-tight text-[#0A0A0A] mb-6">
                 Máte <span className="text-[#C41E2A]">dotaz?</span>
               </h2>
-              <p className="text-[15px] text-[#0A0A0A]/70 mb-7">
+              <p className="text-[16px] text-[#0A0A0A]/70 mb-7">
                 Neváhejte se na nás obrátit s jakýmkoliv dotazem.
               </p>
 
@@ -190,7 +190,7 @@ export default function Contact() {
 
                   <button
                     type="submit"
-                    className="w-full bg-[var(--kung-fu-red)] hover:bg-[var(--kung-fu-red-hover)] text-white px-7 py-4 rounded-sm text-[13px] font-semibold tracking-[2px] uppercase transition-colors"
+                    className="w-full bg-[var(--kung-fu-red)] hover:bg-[var(--kung-fu-red-hover)] text-white px-7 py-4 rounded-sm text-[14px] font-semibold tracking-[2px] uppercase transition-colors"
                   >
                     Odeslat zprávu →
                   </button>
@@ -240,7 +240,7 @@ export default function Contact() {
                       <div className="text-[10px] font-semibold tracking-[3px] uppercase text-[#0A0A0A]/40 mb-1">
                         {item.label}
                       </div>
-                      <div className="text-[15px] font-medium text-[#0A0A0A] whitespace-pre-line">
+                      <div className="text-[16px] font-medium text-[#0A0A0A] whitespace-pre-line">
                         {item.value}
                       </div>
                     </div>
@@ -259,7 +259,7 @@ export default function Contact() {
                     title="Mapa - Šujanovo náměstí 1, Brno"
                   />
                 </div>
-                <div className="px-4 py-3 border-t border-black/[0.08] flex items-start gap-2.5 text-[12px] text-[#0A0A0A]/60 leading-relaxed">
+                <div className="px-4 py-3 border-t border-black/[0.08] flex items-start gap-2.5 text-[13px] text-[#0A0A0A]/60 leading-relaxed">
                   <TramFront size={14} className="text-[#C41E2A] mt-0.5 shrink-0" />
                   <span>
                     <strong className="text-[#0A0A0A] font-semibold">ZŠ a MŠ Basic</strong> (Brno-střed) — zastávka Vlhká (tramvaje 8, 10, 12).
@@ -280,26 +280,26 @@ export default function Contact() {
                 <h3 className="font-serif text-[20px] font-semibold mb-3 relative z-10">
                   Osobní <span className="text-[#C41E2A]">tréninky</span>
                 </h3>
-                <p className="text-[13px] text-white/75 leading-relaxed mb-4 relative z-10">
+                <p className="text-[14px] text-white/75 leading-relaxed mb-4 relative z-10">
                   Nabízíme také individuální lekce přizpůsobené vašim potřebám a tempu.
                   Ideální pro ty, kdo chtějí rychlejší pokrok nebo mají specifické cíle.
                 </p>
                 <div className="text-[28px] font-bold text-white mb-1 relative z-10">
-                  1 100 Kč<span className="text-[13px] font-normal text-white/60"> / hodina</span>
+                  1 100 Kč<span className="text-[14px] font-normal text-white/60"> / hodina</span>
                 </div>
-                <p className="text-[12px] text-white/60 mb-4 relative z-10">
+                <p className="text-[13px] text-white/60 mb-4 relative z-10">
                   Až pro 4 osoby
                 </p>
                 <ul className="space-y-2 relative z-10">
-                  <li className="flex items-start gap-2 text-[12px] text-white/75">
+                  <li className="flex items-start gap-2 text-[13px] text-white/75">
                     <span className="text-[#C41E2A] mt-0.5">→</span>
                     <span>Individuální přístup</span>
                   </li>
-                  <li className="flex items-start gap-2 text-[12px] text-white/75">
+                  <li className="flex items-start gap-2 text-[13px] text-white/75">
                     <span className="text-[#C41E2A] mt-0.5">→</span>
                     <span>Flexibilní termíny</span>
                   </li>
-                  <li className="flex items-start gap-2 text-[12px] text-white/75">
+                  <li className="flex items-start gap-2 text-[13px] text-white/75">
                     <span className="text-[#C41E2A] mt-0.5">→</span>
                     <span>Zaměření na vaše cíle</span>
                   </li>

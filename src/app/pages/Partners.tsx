@@ -133,7 +133,7 @@ export default function Partners() {
                     {partner.name}
                   </h3>
                   
-                  <p className="text-[13px] text-[var(--kung-fu-g600)] leading-normal mb-4">
+                  <p className="text-[14px] text-[var(--kung-fu-g600)] leading-normal mb-4">
                     {partner.desc}
                   </p>
                   
@@ -174,7 +174,7 @@ export default function Partners() {
                   </span>
                 </div>
                 <h3 className="font-semibold text-[var(--kung-fu-black)] mb-1.5">{benefit.title}</h3>
-                <p className="text-[13px] text-[var(--kung-fu-g500)]">{benefit.desc}</p>
+                <p className="text-[14px] text-[var(--kung-fu-g500)]">{benefit.desc}</p>
               </div>
             ))}
           </div>

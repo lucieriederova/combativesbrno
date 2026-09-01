@@ -29,7 +29,7 @@ export default function PersonalData() {
       {/* Obsah */}
       <section className="py-20 bg-white">
         <div className="max-w-[800px] mx-auto px-12 max-[880px]:px-5">
-          <div className="space-y-10 text-[15px] text-[#0A0A0A]/70 leading-relaxed">
+          <div className="space-y-10 text-[16px] text-[#0A0A0A]/70 leading-relaxed">
             <p>
               V naší společnosti řešíme ochranu osobních údajů dle patřičných zákonů. Veškeré osobní
               údaje poskytované návštěvníkem jsou shromažďovány, zpracovávány a uchovávány v souladu
@@ -246,7 +246,7 @@ export default function PersonalData() {
                   formulář, souhlasíte s uchováním osobních údajů pro účely komunikace o tématu, kvůli
                   kterému nás oslovujete.
                 </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-[13px]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-[14px]">
                   <div>
                     <span className="font-bold text-[#0A0A0A]">Osobní údaj: </span>
                     E-mailová adresa, jméno, telefon, zpráva

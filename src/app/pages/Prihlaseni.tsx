@@ -47,7 +47,7 @@ export default function Prihlaseni() {
               <h3 className="font-serif text-[24px] font-bold text-[#0A0A0A] mb-3">
                 Rezervační kalendář Reenio
               </h3>
-              <p className="text-[14px] text-[#0A0A0A]/60 leading-relaxed max-w-[420px] mx-auto mb-8">
+              <p className="text-[15px] text-[#0A0A0A]/60 leading-relaxed max-w-[420px] mx-auto mb-8">
                 Vyber si volný termín a přihlas se na trénink přímo online — kalendář se otevře v nové záložce.
               </p>
               <a
@@ -83,7 +83,7 @@ export default function Prihlaseni() {
                   className="flex items-start gap-3 bg-white/5 border border-white/10 p-5"
                 >
                   <CheckCircle2 className="text-[#C41E2A] flex-shrink-0 mt-0.5" size={20} />
-                  <span className="text-[15px] text-white/80">{item}</span>
+                  <span className="text-[16px] text-white/80">{item}</span>
                 </div>
               ))}
             </div>
@@ -123,7 +123,7 @@ export default function Prihlaseni() {
                       <h3 className="text-[17px] font-bold text-white mb-2">
                         {faq.q}
                       </h3>
-                      <p className="text-[15px] text-white/70 leading-relaxed">
+                      <p className="text-[16px] text-white/70 leading-relaxed">
                         {faq.a}
                       </p>
                     </div>

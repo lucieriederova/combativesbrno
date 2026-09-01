@@ -189,7 +189,7 @@ export default function Training() {
                 <h3 className="text-[18px] font-bold text-[#0A0A0A] mb-2">
                   {phase.title}
                 </h3>
-                <p className="text-[13px] text-[#0A0A0A]/60 leading-relaxed mt-3">
+                <p className="text-[14px] text-[#0A0A0A]/60 leading-relaxed mt-3">
                   {phase.desc}
                 </p>
               </div>
@@ -236,7 +236,7 @@ export default function Training() {
                   <div className={`font-serif text-[20px] font-bold mb-2 leading-tight transition-colors ${isActive ? 'text-white' : 'text-[#0A0A0A]'}`}>
                     {g.label}
                   </div>
-                  <p className={`text-[12px] leading-normal transition-colors ${isActive ? 'text-white/50' : 'text-[#0A0A0A]/60'}`}>
+                  <p className={`text-[13px] leading-normal transition-colors ${isActive ? 'text-white/50' : 'text-[#0A0A0A]/60'}`}>
                     {g.desc}
                   </p>
 
@@ -277,15 +277,15 @@ export default function Training() {
                     <tbody>
                       {section.rows.map((row, ri) => (
                         <tr key={ri} className="border-b border-white/[0.06] hover:bg-white/[0.03] transition-colors">
-                          <td className="px-5 py-4 text-[14px] font-medium text-white">
+                          <td className="px-5 py-4 text-[15px] font-medium text-white">
                             {row.name}
                             {row.note && <span className="ml-2 text-[10px] text-[#C41E2A] font-bold tracking-wide uppercase">{row.note}</span>}
                           </td>
-                          <td className="px-5 py-4 text-[13px] text-white/60">{row.day}</td>
-                          <td className="px-5 py-4 text-[13px] text-white/60 whitespace-nowrap">
+                          <td className="px-5 py-4 text-[14px] text-white/60">{row.day}</td>
+                          <td className="px-5 py-4 text-[14px] text-white/60 whitespace-nowrap">
                             <Clock size={11} className="inline mr-1.5 opacity-40" />{row.time}
                           </td>
-                          <td className="px-5 py-4 text-[13px] text-white/60 whitespace-nowrap">
+                          <td className="px-5 py-4 text-[14px] text-white/60 whitespace-nowrap">
                             <a
                               href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(row.place + ', Brno')}`}
                               target="_blank"
@@ -301,7 +301,7 @@ export default function Training() {
                   </table>
                 </div>
                 {section.note && (
-                  <p className="mt-3 text-[12px] text-white/35 italic">{section.note}</p>
+                  <p className="mt-3 text-[13px] text-white/35 italic">{section.note}</p>
                 )}
               </div>
             ))}
@@ -318,10 +318,10 @@ export default function Training() {
                 <div className="space-y-4">
                   {scheduleData[active].pricing.main?.map((item, i) => (
                     <div key={i} className="bg-white/[0.04] border border-white/[0.08] p-6 flex items-center justify-between gap-4 flex-wrap">
-                      <span className="text-[15px] text-white font-medium">
+                      <span className="text-[16px] text-white font-medium">
                         {item.label}
                       </span>
-                      <span className="font-serif text-[28px] font-bold text-[#C41E2A]">{item.price} <span className="text-[14px] text-white/40 font-sans font-normal">{item.period}</span></span>
+                      <span className="font-serif text-[28px] font-bold text-[#C41E2A]">{item.price} <span className="text-[15px] text-white/40 font-sans font-normal">{item.period}</span></span>
                     </div>
                   ))}
                 </div>
@@ -337,7 +337,7 @@ export default function Training() {
                           Nejvýhodnější
                         </span>
                       )}
-                      <span className={`text-[13px] ${item.featured ? 'text-white/90' : 'text-white/70'}`}>{item.label}</span>
+                      <span className={`text-[14px] ${item.featured ? 'text-white/90' : 'text-white/70'}`}>{item.label}</span>
                       <span className="text-[20px] font-bold text-white whitespace-nowrap">{item.price}</span>
                     </div>
                   ))}
@@ -348,12 +348,12 @@ export default function Training() {
             {/* S sebou */}
             <div className="mt-12 bg-white/[0.03] border border-white/[0.07] p-6">
               <h4 className="text-[10px] font-bold tracking-[4px] uppercase text-white/70 mb-3">S sebou na trénink</h4>
-              <p className="text-[14px] text-white/60">{scheduleData[active].gear}</p>
+              <p className="text-[15px] text-white/60">{scheduleData[active].gear}</p>
             </div>
 
             {/* CTA */}
             <div className="mt-12 text-center">
-              <Link to="/prihlaseni" className="inline-flex items-center gap-2 bg-[#C41E2A] hover:bg-[#A01822] text-white px-9 py-4 text-[12px] font-bold tracking-[2px] uppercase transition-colors">
+              <Link to="/prihlaseni" className="inline-flex items-center gap-2 bg-[#C41E2A] hover:bg-[#A01822] text-white px-9 py-4 text-[13px] font-bold tracking-[2px] uppercase transition-colors">
                 Rezervovat trénink →
               </Link>
               <p className="text-[11px] text-white/30 mt-3">První lekce je vždy zdarma</p>
@@ -370,7 +370,7 @@ export default function Training() {
             <h2 className="font-serif text-[clamp(26px,3.5vw,42px)] font-bold text-white mb-6">
               Sanda — <span className="text-[#C41E2A]">sportovní boj</span>
             </h2>
-            <p className="text-[15px] text-white/60 leading-relaxed mb-10 max-w-[700px]">
+            <p className="text-[16px] text-white/60 leading-relaxed mb-10 max-w-[700px]">
               Sanda je (plno)kontaktní sport, kombinující údery, kopy a hody. Sanda vám pomůže s vylepšením technik,
               které znáte z tréninku sebeobrany, do praxe. Pomůže vám vylepšit úderovou a kopací techniku, zlepší
               vaši práci na nohách, práci se vzdáleností. S přibývajícími schopnostmi je možné přidat řízený
@@ -386,13 +386,13 @@ export default function Training() {
               ].map((item, i) => (
                 <div key={i} className="bg-[#0A0A0A] p-6 border border-white/[0.07]">
                   <div className="text-[10px] font-bold tracking-[3px] uppercase text-white/30 mb-2">{item.label}</div>
-                  <div className="text-[15px] text-white font-medium">{item.price}</div>
+                  <div className="text-[16px] text-white font-medium">{item.price}</div>
                 </div>
               ))}
             </div>
 
             <div className="flex flex-wrap gap-4 mb-16">
-              <Link to="/prihlaseni" className="inline-flex items-center gap-2 bg-[#C41E2A] hover:bg-[#A01822] text-white px-9 py-4 text-[12px] font-bold tracking-[2px] uppercase transition-colors">
+              <Link to="/prihlaseni" className="inline-flex items-center gap-2 bg-[#C41E2A] hover:bg-[#A01822] text-white px-9 py-4 text-[13px] font-bold tracking-[2px] uppercase transition-colors">
                 Rezervovat →
               </Link>
             </div>
@@ -422,7 +422,7 @@ export default function Training() {
                         <span className="font-serif text-[26px] font-bold text-[#C41E2A]/25 leading-none shrink-0 tabular-nums">
                           {String(i + 1).padStart(2, '0')}
                         </span>
-                        <p className="text-[15px] text-white/60 leading-relaxed pt-1">{q}</p>
+                        <p className="text-[16px] text-white/60 leading-relaxed pt-1">{q}</p>
                       </li>
                     ))}
                   </ul>
@@ -458,7 +458,7 @@ export default function Training() {
             <h2 className="font-serif text-[clamp(26px,3.5vw,42px)] font-bold text-white mb-6">
               Trénink <span className="text-[#C41E2A]">na míru</span>
             </h2>
-            <p className="text-[15px] text-white/60 leading-relaxed mb-10 max-w-[620px]">
+            <p className="text-[16px] text-white/60 leading-relaxed mb-10 max-w-[620px]">
               Mimo pravidelné skupinové tréninky nabízíme i individuální výuku pro 1–4 osoby. Hodí se, když
               potřebuješ doladit konkrétní techniku, řešíš specifickou situaci, nebo ti nesedí čas skupinových
               tréninků. Témata i tempo přizpůsobíme přesně tobě.
@@ -472,11 +472,11 @@ export default function Training() {
               ].map((item, i) => (
                 <div key={i} className="bg-[#0A0A0A] p-6 border border-white/[0.07]">
                   <div className="text-[10px] font-bold tracking-[3px] uppercase text-white/30 mb-2">{item.label}</div>
-                  <div className="text-[15px] text-white font-medium">{item.price}</div>
+                  <div className="text-[16px] text-white font-medium">{item.price}</div>
                 </div>
               ))}
             </div>
-            <Link to="/kontakt" className="inline-flex items-center gap-2 bg-[#C41E2A] hover:bg-[#A01822] text-white px-9 py-4 text-[12px] font-bold tracking-[2px] uppercase transition-colors">
+            <Link to="/kontakt" className="inline-flex items-center gap-2 bg-[#C41E2A] hover:bg-[#A01822] text-white px-9 py-4 text-[13px] font-bold tracking-[2px] uppercase transition-colors">
               Kontaktujte nás →
             </Link>
           </div>
@@ -497,7 +497,7 @@ export default function Training() {
           </p>
           <Link
             to="/prihlaseni"
-            className="inline-flex items-center justify-center bg-[#0A0A0A] hover:bg-[#111] text-white px-12 py-5 text-[14px] font-bold tracking-[3px] uppercase transition-colors"
+            className="inline-flex items-center justify-center bg-[#0A0A0A] hover:bg-[#111] text-white px-12 py-5 text-[15px] font-bold tracking-[3px] uppercase transition-colors"
           >
             Rezervovat lekci zdarma →
           </Link>

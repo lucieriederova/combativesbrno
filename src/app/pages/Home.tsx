@@ -57,7 +57,7 @@ export default function Home() {
                 REÁLNÁ <span className="text-[#C41E2A]">SEBEOBRANA</span>
               </h1>
 
-              <p className="text-[13px] font-light tracking-[6px] uppercase text-white/50 mb-8">
+              <p className="text-[14px] font-light tracking-[6px] uppercase text-white/50 mb-8">
                 Combatives Brno
               </p>
 
@@ -102,10 +102,10 @@ export default function Home() {
               <h2 className="font-serif text-[clamp(32px,5vw,56px)] font-bold leading-tight text-[#0A0A0A] mb-6">
                 CO JE <span className="text-[#C41E2A]">COMBATIVES</span>
               </h2>
-              <p className="text-[15px] leading-relaxed text-[#0A0A0A]/70 mb-6">
+              <p className="text-[16px] leading-relaxed text-[#0A0A0A]/70 mb-6">
                 <strong className="text-[#0A0A0A] font-bold">Urban Combatives</strong> je mezinárodně uznávaná organizace, která vyučuje dovednosti v oblasti osobní bezpečnosti a sebeobrany jako metodu boje proti násilí. Byla vytvořena primárně pro běžné civilisty, ale je přizpůsobitelná i pro potřeby bezpečnostních služeb, policie a vojenských jednotek. Systém Urban Combatives se vyučuje napříč všemi úrovněmi, a to až po elitní speciální jednotky po celém světě, kde se samozřejmě pravidla boje i samotné cíle budou lišit.
               </p>
-              <p className="text-[15px] leading-relaxed text-[#0A0A0A]/70">
+              <p className="text-[16px] leading-relaxed text-[#0A0A0A]/70">
                 Nejde o sport ani tradiční bojové umění s pravidly, ale o čistě „pouliční“ metodu zaměřenou na osobní bezpečnost a obranu proti skutečnému násilí. Vše je postaveno na budování odolné psychiky a schopnosti fungovat i pod obrovským stresem, zmatkem a návalem adrenalinu.
               </p>
             </div>
@@ -128,7 +128,7 @@ export default function Home() {
                     'Právní stránka konfliktu',
                     'Psychologie konfliktu',
                   ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-3 text-white/70 text-[14px]">
+                    <li key={i} className="flex items-start gap-3 text-white/70 text-[15px]">
                       <span className="text-[#C41E2A] font-bold text-[16px] mt-[-2px]">▸</span>
                       {item}
                     </li>
@@ -188,7 +188,7 @@ export default function Home() {
                 <h3 className="text-[20px] font-bold text-white mb-4 leading-tight">
                   {pillar.title}
                 </h3>
-                <p className="text-[13px] text-white/50 leading-relaxed">
+                <p className="text-[14px] text-white/50 leading-relaxed">
                   {pillar.desc}
                 </p>
               </div>
@@ -206,7 +206,7 @@ export default function Home() {
           <h2 className="font-serif text-[clamp(32px,5vw,56px)] font-bold leading-tight text-[#0A0A0A] mb-6">
             KOMU JE <span className="text-[#C41E2A]">COMBATIVES URČENO</span>
           </h2>
-          <p className="text-[15px] text-[#0A0A0A]/70 leading-relaxed max-w-[700px] mb-16">
+          <p className="text-[16px] text-[#0A0A0A]/70 leading-relaxed max-w-[700px] mb-16">
             Combatives je pro každého, kdo chce být připraven na reálnou konfrontaci. Bez ohledu na věk, pohlaví nebo fyzickou kondici.
           </p>
 
@@ -240,7 +240,7 @@ export default function Home() {
                 <h3 className="text-[18px] font-bold text-[#0A0A0A] mb-3">
                   {item.title}
                 </h3>
-                <p className="text-[14px] text-[#0A0A0A]/60 leading-relaxed">
+                <p className="text-[15px] text-[#0A0A0A]/60 leading-relaxed">
                   {item.desc}
                 </p>
               </div>
@@ -300,7 +300,7 @@ export default function Home() {
                 </button>
                 {openFaqIndex === i && (
                   <div className="px-6 pb-6 pt-0">
-                    <p className="text-[14px] text-white/60 leading-relaxed">
+                    <p className="text-[15px] text-white/60 leading-relaxed">
                       {faq.answer}
                     </p>
                   </div>
@@ -325,7 +325,7 @@ export default function Home() {
           </p>
           <Link
             to="/prihlaseni"
-            className="inline-flex items-center justify-center bg-[#0A0A0A] hover:bg-[#111] text-white px-12 py-5 text-[14px] font-bold tracking-[3px] uppercase transition-colors"
+            className="inline-flex items-center justify-center bg-[#0A0A0A] hover:bg-[#111] text-white px-12 py-5 text-[15px] font-bold tracking-[3px] uppercase transition-colors"
           >
             Rezervovat lekci zdarma →
           </Link>
