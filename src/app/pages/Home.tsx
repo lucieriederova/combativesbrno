@@ -14,13 +14,13 @@ export default function Home() {
   return (
     <div className="pt-[88px]">
       {/* Hero Section - VIDEO POZADÍ S RBSD */}
-      <section className="min-h-screen bg-[#0A0A0A] flex items-center relative overflow-hidden">
+      <section className="min-h-dvh bg-[#0A0A0A] flex items-center relative overflow-hidden">
         {/* YouTube Background Video */}
-        <div className="absolute inset-0 w-full h-full">
+        <div className="absolute inset-0 w-full h-full pointer-events-none">
           <iframe
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none grayscale"
             style={{ width: '177.78vh', height: '100vh', minWidth: '100%', minHeight: '56.25vw' }}
-            src="https://www.youtube.com/embed/SEXxYrSSfsY?autoplay=1&mute=1&loop=1&playlist=SEXxYrSSfsY&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&disablekb=1&fs=0"
+            src="https://www.youtube.com/embed/SEXxYrSSfsY?autoplay=1&mute=1&loop=1&playlist=SEXxYrSSfsY&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&disablekb=1&fs=0&playsinline=1"
             title="RBSD Training Background"
             allow="autoplay; encrypted-media"
             allowFullScreen
@@ -28,10 +28,10 @@ export default function Home() {
         </div>
 
         {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/65" />
+        <div className="absolute inset-0 bg-black/65 pointer-events-none" />
 
         {/* Červený gradient overlay */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_55%_80%_at_75%_50%,rgba(196,30,42,0.2)_0%,transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_55%_80%_at_75%_50%,rgba(196,30,42,0.2)_0%,transparent_60%)] pointer-events-none" />
 
         {/* Scan lines texture */}
         <div
@@ -40,7 +40,7 @@ export default function Home() {
         />
 
         {/* Gradient transition na spodku */}
-        <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-b from-transparent via-black/60 to-[#F5F3F0] z-[1]" />
+        <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-b from-transparent via-black/60 to-[#F5F3F0] z-[1] pointer-events-none" />
 
         {/* Content */}
         <div className="relative z-10 w-full max-w-[1100px] mx-auto px-12 max-[880px]:px-5">
