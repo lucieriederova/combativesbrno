@@ -10,16 +10,16 @@ const groups = [
   {
     id: 'deti' as Group,
     label: 'Sebeobrana pro děti',
-    sub: '6–10 let',
+    sub: '6–10 let · zrušeno',
     Icon: Shield,
-    desc: 'Základy sebeobrany hrou, pohybová všestrannost a sebedůvěra v bezpečném prostředí.',
+    desc: 'Tréninky jsme bohužel museli zrušit ze zdravotních důvodů trenéra. Zkuste Kung-fu pro děti na hunggar.cz.',
   },
   {
     id: 'juniori' as Group,
     label: 'Sebeobrana pro juniory',
-    sub: '11–16 let',
+    sub: '11–16 let · zrušeno',
     Icon: Users,
-    desc: 'Reálná sebeobrana přizpůsobená věku — technika, sebevědomí a zvládání konfliktu.',
+    desc: 'Tréninky jsme bohužel museli zrušit ze zdravotních důvodů trenéra. Zkuste Kung-fu pro juniory na hunggar.cz.',
   },
   {
     id: 'dospeli' as Group,
@@ -47,13 +47,16 @@ const groups = [
 const gearNote =
   'Na první lekci stačí kraťasy a sálová obuv. Pro pravidelný trénink doporučujeme i chránič zubů a suspenzor — vybavení lze zakoupit přes nás za zvýhodněnou cenu.';
 
+const cancelledNote =
+  'Tréninky sebeobrany jsme bohužel museli ze zdravotních důvodů trenéra zrušit. Omlouváme se za komplikace — mrkněte na Kung-fu, který kombinuje sebeobranu s bojovým uměním a vedeme ho na hunggar.cz.';
+
 const scheduleData = {
   deti: {
     sections: [
       {
         title: 'Sebeobrana — děti',
         rows: [
-          { name: 'Sebeobrana děti 6–10 let', day: 'Úterý', time: '16:00–17:00', place: 'Šujanovo náměstí 1', note: '' },
+          { name: 'Sebeobrana děti 6–10 let', day: 'Úterý', time: '16:00–17:00', place: 'Šujanovo náměstí 1', note: 'zrušeno' },
         ],
         note: '',
       },
@@ -63,13 +66,14 @@ const scheduleData = {
       notes: [] as ReactNode[],
     },
     gear: gearNote,
+    cancelled: cancelledNote,
   },
   juniori: {
     sections: [
       {
         title: 'Sebeobrana — junioři',
         rows: [
-          { name: 'Sebeobrana junioři 11–16 let', day: 'Úterý', time: '17:00–18:00', place: 'Šujanovo náměstí 1', note: '' },
+          { name: 'Sebeobrana junioři 11–16 let', day: 'Úterý', time: '17:00–18:00', place: 'Šujanovo náměstí 1', note: 'zrušeno' },
         ],
         note: '',
       },
@@ -79,6 +83,7 @@ const scheduleData = {
       notes: [] as ReactNode[],
     },
     gear: gearNote,
+    cancelled: cancelledNote,
   },
   dospeli: {
     sections: [
@@ -100,6 +105,7 @@ const scheduleData = {
       notes: [] as ReactNode[],
     },
     gear: gearNote,
+    cancelled: undefined as string | undefined,
   },
 };
 
@@ -254,6 +260,27 @@ export default function Training() {
       {(active === 'deti' || active === 'juniori' || active === 'dospeli') && (
         <section ref={contentRef as RefObject<HTMLElement>} className="bg-[#0A0A0A] py-20 scroll-mt-20">
           <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5">
+            {scheduleData[active].cancelled && (
+              <RevealOnScroll>
+                <div className="bg-[#C41E2A]/10 border-l-[3px] border-[#C41E2A] p-8 mb-4">
+                  <div className="text-[11px] font-bold tracking-[4px] uppercase text-[#C41E2A] mb-3">
+                    Tréninky zrušeny
+                  </div>
+                  <p className="text-[16px] text-white/80 leading-relaxed mb-6 max-w-[640px]">
+                    {scheduleData[active].cancelled}
+                  </p>
+                  <a
+                    href="https://hunggar.cz/treninky"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 bg-[#C41E2A] hover:bg-[#A01822] text-white px-9 py-4 text-[13px] font-bold tracking-[2px] uppercase transition-colors"
+                  >
+                    Kung-fu na hunggar.cz →
+                  </a>
+                </div>
+              </RevealOnScroll>
+            )}
+
             {/* Rozvrh */}
             <RevealOnScroll>
               <span className="block text-[10px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-3">Rozvrh</span>
@@ -306,58 +333,62 @@ export default function Training() {
               </div>
             ))}
 
-            {/* Ceník */}
-            <div className="mt-16 pt-16 border-t border-white/10">
-              <span className="block text-[10px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-3">Ceník</span>
-              <h2 className="font-serif text-[clamp(26px,3.5vw,42px)] font-bold text-white mb-10">
-                Transparentní <span className="text-[#C41E2A]">ceny</span>
-              </h2>
+            {!scheduleData[active].cancelled && (
+              <>
+                {/* Ceník */}
+                <div className="mt-16 pt-16 border-t border-white/10">
+                  <span className="block text-[10px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-3">Ceník</span>
+                  <h2 className="font-serif text-[clamp(26px,3.5vw,42px)] font-bold text-white mb-10">
+                    Transparentní <span className="text-[#C41E2A]">ceny</span>
+                  </h2>
 
-              {/* Děti / junioři — jednoduchý ceník */}
-              {(active === 'deti' || active === 'juniori') && (
-                <div className="space-y-4">
-                  {scheduleData[active].pricing.main?.map((item, i) => (
-                    <div key={i} className="bg-white/[0.04] border border-white/[0.08] p-6 flex items-center justify-between gap-4 flex-wrap">
-                      <span className="text-[16px] text-white font-medium">
-                        {item.label}
-                      </span>
-                      <span className="font-serif text-[28px] font-bold text-[#C41E2A]">{item.price} <span className="text-[15px] text-white/40 font-sans font-normal">{item.period}</span></span>
+                  {/* Děti / junioři — jednoduchý ceník */}
+                  {(active === 'deti' || active === 'juniori') && (
+                    <div className="space-y-4">
+                      {scheduleData[active].pricing.main?.map((item, i) => (
+                        <div key={i} className="bg-white/[0.04] border border-white/[0.08] p-6 flex items-center justify-between gap-4 flex-wrap">
+                          <span className="text-[16px] text-white font-medium">
+                            {item.label}
+                          </span>
+                          <span className="font-serif text-[28px] font-bold text-[#C41E2A]">{item.price} <span className="text-[15px] text-white/40 font-sans font-normal">{item.period}</span></span>
+                        </div>
+                      ))}
                     </div>
-                  ))}
-                </div>
-              )}
+                  )}
 
-              {/* Dospělí — porovnání */}
-              {active === 'dospeli' && (
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-[2px] bg-white/[0.05] mb-8">
-                  {scheduleData.dospeli.pricing.extra?.map((item, i) => (
-                    <div key={i} className={`p-6 flex flex-col gap-2 ${item.featured ? 'bg-gradient-to-br from-[#C41E2A] via-[#C41E2A] to-[#8B0000]' : 'bg-[#0A0A0A]'}`}>
-                      {item.featured && (
-                        <span className="self-start bg-[#0A0A0A] text-white text-[9px] font-bold tracking-[2px] uppercase px-2.5 py-1 mb-1">
-                          Nejvýhodnější
-                        </span>
-                      )}
-                      <span className={`text-[14px] ${item.featured ? 'text-white/90' : 'text-white/70'}`}>{item.label}</span>
-                      <span className="text-[20px] font-bold text-white whitespace-nowrap">{item.price}</span>
+                  {/* Dospělí — porovnání */}
+                  {active === 'dospeli' && (
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-[2px] bg-white/[0.05] mb-8">
+                      {scheduleData.dospeli.pricing.extra?.map((item, i) => (
+                        <div key={i} className={`p-6 flex flex-col gap-2 ${item.featured ? 'bg-gradient-to-br from-[#C41E2A] via-[#C41E2A] to-[#8B0000]' : 'bg-[#0A0A0A]'}`}>
+                          {item.featured && (
+                            <span className="self-start bg-[#0A0A0A] text-white text-[9px] font-bold tracking-[2px] uppercase px-2.5 py-1 mb-1">
+                              Nejvýhodnější
+                            </span>
+                          )}
+                          <span className={`text-[14px] ${item.featured ? 'text-white/90' : 'text-white/70'}`}>{item.label}</span>
+                          <span className="text-[20px] font-bold text-white whitespace-nowrap">{item.price}</span>
+                        </div>
+                      ))}
                     </div>
-                  ))}
+                  )}
                 </div>
-              )}
-            </div>
 
-            {/* S sebou */}
-            <div className="mt-12 bg-white/[0.03] border border-white/[0.07] p-6">
-              <h4 className="text-[10px] font-bold tracking-[4px] uppercase text-white/70 mb-3">S sebou na trénink</h4>
-              <p className="text-[15px] text-white/60">{scheduleData[active].gear}</p>
-            </div>
+                {/* S sebou */}
+                <div className="mt-12 bg-white/[0.03] border border-white/[0.07] p-6">
+                  <h4 className="text-[10px] font-bold tracking-[4px] uppercase text-white/70 mb-3">S sebou na trénink</h4>
+                  <p className="text-[15px] text-white/60">{scheduleData[active].gear}</p>
+                </div>
 
-            {/* CTA */}
-            <div className="mt-12 text-center">
-              <Link to="/prihlaseni" className="inline-flex items-center gap-2 bg-[#C41E2A] hover:bg-[#A01822] text-white px-9 py-4 text-[13px] font-bold tracking-[2px] uppercase transition-colors">
-                Rezervovat trénink →
-              </Link>
-              <p className="text-[11px] text-white/30 mt-3">První lekce je vždy zdarma</p>
-            </div>
+                {/* CTA */}
+                <div className="mt-12 text-center">
+                  <Link to="/prihlaseni" className="inline-flex items-center gap-2 bg-[#C41E2A] hover:bg-[#A01822] text-white px-9 py-4 text-[13px] font-bold tracking-[2px] uppercase transition-colors">
+                    Rezervovat trénink →
+                  </Link>
+                  <p className="text-[11px] text-white/30 mt-3">První lekce je vždy zdarma</p>
+                </div>
+              </>
+            )}
           </div>
         </section>
       )}

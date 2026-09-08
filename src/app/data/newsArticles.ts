@@ -24,6 +24,28 @@ export type NewsArticleData = {
 
 export const newsArticles: NewsArticleData[] = [
   {
+    slug: 'treninky-deti-juniori-zruseny-2026',
+    tag: 'Zrušeno',
+    title: 'Tréninky sebeobrany pro děti a juniory zrušeny',
+    date: '12. srpna 2026',
+    excerpt: 'Ze zdravotních důvodů trenéra jsme bohužel nuceni zrušit tréninky sebeobrany pro děti a juniory. Jako alternativu doporučujeme Kung-fu na hunggar.cz.',
+    image: adaPhoto,
+    content: [
+      {
+        text: 'Ze zdravotních důvodů trenéra jsme bohužel nuceni zrušit tréninky sebeobrany pro děti (6–10 let) a juniory (11–16 let). Moc se omlouváme za komplikace.',
+      },
+      { text: 'Trénink dospělých pokračuje beze změny podle rozvrhu.' },
+      {
+        text: 'Jako alternativu dětem a juniorům doporučujeme Kung-fu, které vedeme na',
+        link: { href: 'https://hunggar.cz/treninky', label: 'hunggar.cz' },
+      },
+      {
+        text: 'Kung-fu kombinuje sebeobranu s tradičním bojovým uměním a je vhodné pro stejné věkové kategorie.',
+      },
+      { text: 'V případě dotazů nás neváhejte kontaktovat.' },
+    ],
+  },
+  {
     slug: 'nabor-combatives-brno',
     tag: 'Nábor',
     title: 'Nábor sebeobrany Combatives Brno od září',
