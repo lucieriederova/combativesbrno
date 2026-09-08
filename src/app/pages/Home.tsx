@@ -70,14 +70,14 @@ export default function Home() {
                   to="/prihlaseni"
                   className="inline-flex items-center gap-2 bg-[#C41E2A] hover:bg-[#A01822] text-white px-7 py-3.5 rounded-sm text-xs font-bold tracking-[2px] uppercase transition-colors shadow-lg shadow-[#C41E2A]/20"
                 >
-                  První lekce zdarma →
+                  Chci začít →
                 </Link>
               </div>
             </RevealOnScroll>
 
             <RevealOnScroll delay={0.4}>
               <div className="flex items-center justify-center max-[880px]:order-first relative">
-                <div className="absolute inset-0 flex items-center justify-center">
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
                   <div className="w-[1700px] h-[1700px] rounded-full border border-[#C41E2A] opacity-[0.08]" />
                 </div>
                 <img
