@@ -79,7 +79,7 @@ export default function Navigation() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden absolute top-[68px] left-0 right-0 bg-[#0A0A0A]/95 backdrop-blur-lg border-b border-white/[0.06]">
+        <div className="md:hidden absolute top-[88px] left-0 right-0 bg-[#0A0A0A] border-b border-white/[0.06]">
           <div className="px-5 py-6 space-y-4">
             {links.map((link) => (
               <Link
