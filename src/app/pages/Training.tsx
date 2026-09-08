@@ -10,16 +10,16 @@ const groups = [
   {
     id: 'deti' as Group,
     label: 'Sebeobrana pro děti',
-    sub: '6–10 let · zrušeno',
+    sub: '6–10 let · zrušeno na tento školní rok',
     Icon: Shield,
-    desc: 'Tréninky jsme bohužel museli zrušit ze zdravotních důvodů trenéra. Zkuste Kung-fu pro děti na hunggar.cz.',
+    desc: 'Tréninky pro děti jsme bohužel v tomto školním roce museli zrušit ze zdravotních důvodů trenéra. Zkuste Kung-fu pro děti na hunggar.cz.',
   },
   {
     id: 'juniori' as Group,
     label: 'Sebeobrana pro juniory',
-    sub: '11–16 let · zrušeno',
+    sub: '11–16 let · zrušeno na tento školní rok',
     Icon: Users,
-    desc: 'Tréninky jsme bohužel museli zrušit ze zdravotních důvodů trenéra. Zkuste Kung-fu pro juniory na hunggar.cz.',
+    desc: 'Tréninky pro juniory jsme bohužel v tomto školním roce museli zrušit ze zdravotních důvodů trenéra. Zkuste Kung-fu pro juniory na hunggar.cz.',
   },
   {
     id: 'dospeli' as Group,
@@ -48,7 +48,7 @@ const gearNote =
   'Na první lekci stačí kraťasy a sálová obuv. Pro pravidelný trénink doporučujeme i chránič zubů a suspenzor — vybavení lze zakoupit přes nás za zvýhodněnou cenu.';
 
 const cancelledNote =
-  'Tréninky sebeobrany jsme bohužel museli ze zdravotních důvodů trenéra zrušit. Omlouváme se za komplikace — mrkněte na Kung-fu, který kombinuje sebeobranu s bojovým uměním a vedeme ho na hunggar.cz.';
+  'Tréninky sebeobrany pro děti a juniory jsme bohužel museli v tomto školním roce ze zdravotních důvodů trenéra zrušit. Tréninku dospělých se to netýká, ten pokračuje beze změny. Omlouváme se za komplikace — mrkněte na Kung-fu, který kombinuje sebeobranu s bojovým uměním a vedeme ho na hunggar.cz.';
 
 const scheduleData = {
   deti: {
