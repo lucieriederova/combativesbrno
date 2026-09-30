@@ -1,4 +1,4 @@
-import { Calendar, CheckCircle2, ExternalLink } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 import { RevealOnScroll } from '../components/RevealOnScroll';
 
 export default function Prihlaseni() {
@@ -31,32 +31,27 @@ export default function Prihlaseni() {
       <section className="bg-[#0A0A0A] py-8 border-b border-[#C41E2A]/30">
         <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5 text-center">
           <p className="text-[18px] md:text-[22px] font-bold text-white leading-snug">
-            Nábor probíhá od <span className="text-[#C41E2A]">22. 9. 2026</span>. Ukázkový trénink je zdarma a bez závazku — stačí se zaregistrovat.
+            Nábor probíhá od <span className="text-[#C41E2A]">22. 9. 2026</span>, a to po předchozí domluvě. Zavolejte nám nebo napište. Ukázkový trénink je zdarma a bez závazku.
           </p>
         </div>
       </section>
 
-      {/* Reenio rezervační systém */}
+      {/* Kontakt pro domluvení tréninku */}
       <section className="py-24 bg-[#F5F3F0]">
         <div className="max-w-[700px] mx-auto px-12 max-[880px]:px-5">
           <RevealOnScroll>
-            <div className="bg-white border-l-[4px] border-[#C41E2A] p-12 text-center relative overflow-hidden">
-              <div className="w-16 h-16 bg-[rgba(196,30,42,0.1)] rounded-full flex items-center justify-center mx-auto mb-5">
-                <Calendar className="text-[#C41E2A]" size={28} />
-              </div>
-              <h3 className="font-serif text-[24px] font-bold text-[#0A0A0A] mb-3">
-                Rezervační kalendář Reenio
-              </h3>
-              <p className="text-[15px] text-[#0A0A0A]/60 leading-relaxed max-w-[420px] mx-auto mb-8">
-                Vyber si volný termín a přihlas se na trénink přímo online — kalendář se otevře v nové záložce.
-              </p>
+            <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
-                href="https://combatives.reenio.cz/cs/terms/2026-09-22;viewMode=3-days"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-2 bg-[#C41E2A] hover:bg-[#A01822] text-white px-8 py-3.5 text-[11px] font-bold tracking-[2px] uppercase transition-colors"
+                href="tel:+420605521525"
+                className="inline-flex items-center justify-center gap-2 border border-[#C41E2A] text-[#C41E2A] hover:bg-[#C41E2A] hover:text-white px-6 py-3 text-[11px] font-bold tracking-[2px] uppercase transition-colors"
               >
-                Otevřít rezervaci <ExternalLink size={14} />
+                +420 605 521 525
+              </a>
+              <a
+                href="mailto:info@combatives-brno.cz"
+                className="inline-flex items-center justify-center gap-2 bg-[#C41E2A] hover:bg-[#A01822] text-white px-6 py-3 text-[11px] font-bold tracking-[2px] uppercase transition-colors"
+              >
+                info@combatives-brno.cz
               </a>
             </div>
           </RevealOnScroll>

@@ -59,8 +59,7 @@ export const newsArticles: NewsArticleData[] = [
         text: '22. září proběhnou ukázkové tréninky pro děti, juniory i dospělé. Vezměte si s sebou triko, kraťasy, sálovou obuv a pití.',
       },
       {
-        text: 'Přijďte si vyzkoušet ukázkový trénink zdarma a bez závazku — stačí se předem',
-        link: { href: 'https://combatives.reenio.cz/cs/terms/2026-09-22;viewMode=3-days', label: 'zarezervovat místo přes Reenio' },
+        text: 'Přijďte si vyzkoušet ukázkový trénink zdarma a bez závazku — stačí nám předem zavolat nebo napsat, a to na +420 605 521 525 nebo info@combatives-brno.cz.',
       },
       {
         text: 'Tréninky probíhají na adrese',
