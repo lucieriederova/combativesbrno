@@ -31,7 +31,7 @@ export default function Prihlaseni() {
       <section className="bg-[#0A0A0A] py-8 border-b border-[#C41E2A]/30">
         <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5 text-center">
           <p className="text-[18px] md:text-[22px] font-bold text-white leading-snug">
-            Nábor probíhá od <span className="text-[#C41E2A]">22. 9. 2026</span>, a to po předchozí domluvě. Zavolejte nám nebo napište. Ukázkový trénink je zdarma a bez závazku.
+            Nábor probíhá už jen do <span className="text-[#C41E2A]">9. října 2026</span>, a to po předchozí domluvě. Zavolejte nám nebo napište. Ukázkový trénink je zdarma a bez závazku.
           </p>
         </div>
       </section>
