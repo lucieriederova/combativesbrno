@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { MapPin, Phone, Mail, User, MessageSquare, TramFront, DoorOpen } from 'lucide-react';
 import { RevealOnScroll } from '../components/RevealOnScroll';
 
@@ -12,36 +12,53 @@ export default function Contact() {
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState('');
+  // Spam protection: bots fill the hidden "website" field and submit instantly;
+  // /api/contact drops both quietly.
+  const [website, setWebsite] = useState('');
+  const startedAt = useRef(Date.now());
 
-  const subjectLabels: Record<string, string> = {
-    general: 'Obecný dotaz',
-    private: 'Osobní trénink',
-    pricing: 'Ceny a členství',
-    schedule: 'Rozvrh tréninků',
-    other: 'Jiné',
-  };
-
-  // The site has no backend to receive form submissions, so a "real" send
-  // means handing the message to the visitor's own mail client via mailto: —
-  // it opens pre-filled, the visitor still has to hit send there.
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = subjectLabels[formData.subject] || 'Dotaz z webu';
-    const bodyLines = [
-      `Jméno: ${formData.name}`,
-      `E-mail: ${formData.email}`,
-      formData.phone && `Telefon: ${formData.phone}`,
-      '',
-      formData.message,
-    ].filter(Boolean);
-    const mailtoUrl = `mailto:info@combatives-brno.cz?subject=${encodeURIComponent(`Web: ${subject}`)}&body=${encodeURIComponent(bodyLines.join('\n'))}`;
-    window.location.href = mailtoUrl;
-
-    setSubmitted(true);
-    setTimeout(() => {
+    setSending(true);
+    setError('');
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...formData, website, startedAt: startedAt.current }),
+      });
+      // Mail sending not set up on the server yet (no RESEND_API_KEY in Vercel) —
+      // fall back to opening a pre-filled e-mail in the visitor's mail client.
+      if (res.status === 503) {
+        const body = [
+          `Jméno: ${formData.name}`,
+          `E-mail: ${formData.email}`,
+          ...(formData.phone ? [`Telefon: ${formData.phone}`] : []),
+          '',
+          formData.message,
+        ].join('\n');
+        window.location.href = `mailto:info@combatives-brno.cz?subject=${encodeURIComponent('Dotaz z webu')}&body=${encodeURIComponent(body)}`;
+        return;
+      }
+      if (!res.ok) {
+        setError(
+          res.status === 429
+            ? 'Odeslal(a) jsi několik zpráv za sebou. Zkus to prosím za pár minut.'
+            : res.status === 400
+              ? 'Zkontroluj prosím vyplněné údaje (hlavně e-mail).'
+              : 'Zprávu se nepodařilo odeslat. Napiš nám prosím přímo na info@combatives-brno.cz nebo zavolej.'
+        );
+        return;
+      }
+      setSubmitted(true);
       setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
-      setSubmitted(false);
-    }, 5000);
+    } catch {
+      setError('Zprávu se nepodařilo odeslat. Napiš nám prosím přímo na info@combatives-brno.cz nebo zavolej.');
+    } finally {
+      setSending(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -99,11 +116,19 @@ export default function Contact() {
                   <div className="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Mail className="text-green-600" size={24} />
                   </div>
-                  <h3 className="text-xl font-semibold text-green-900 mb-2">Otevřeli jsme ti e-mail!</h3>
-                  <p className="text-green-700">V e-mailovém klientovi ti vyskočila předvyplněná zpráva na info@combatives-brno.cz — stačí ji tam už jen odeslat.</p>
+                  <h3 className="text-xl font-semibold text-green-900 mb-2">Děkujeme, zpráva odešla!</h3>
+                  <p className="text-green-700">Ozveme se ti co nejdřív na e-mail, který jsi vyplnil(a).</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5">
+                  {/* Honeypot — hidden from people, bots fill it in */}
+                  <div aria-hidden="true" className="absolute -left-[9999px] w-px h-px overflow-hidden">
+                    <label>
+                      Nevyplňujte
+                      <input type="text" name="website" tabIndex={-1} autoComplete="off" value={website} onChange={(e) => setWebsite(e.target.value)} />
+                    </label>
+                  </div>
+
                   <div>
                     <label className="flex items-center gap-2 text-[12px] font-semibold tracking-[3px] uppercase text-[var(--kung-fu-g400)] mb-2">
                       <User size={14} />
@@ -188,11 +213,18 @@ export default function Contact() {
                     />
                   </div>
 
+                  {error && (
+                    <p role="alert" className="bg-red-50 border border-red-200 text-red-800 rounded-sm px-4 py-3 text-[15px]">
+                      {error}
+                    </p>
+                  )}
+
                   <button
                     type="submit"
-                    className="w-full bg-[var(--kung-fu-red)] hover:bg-[var(--kung-fu-red-hover)] text-white px-7 py-4 rounded-sm text-[15px] font-semibold tracking-[2px] uppercase transition-colors"
+                    disabled={sending}
+                    className="w-full disabled:opacity-60 disabled:cursor-wait bg-[var(--kung-fu-red)] hover:bg-[var(--kung-fu-red-hover)] text-white px-7 py-4 rounded-sm text-[15px] font-semibold tracking-[2px] uppercase transition-colors"
                   >
-                    Odeslat zprávu →
+                    {sending ? 'Odesílám…' : 'Odeslat zprávu →'}
                   </button>
 
                   <p className="text-[13px] text-[var(--kung-fu-g400)] text-center">
