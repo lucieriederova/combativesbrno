@@ -16,7 +16,7 @@ export default function PersonalData() {
 
         <RevealOnScroll delay={0.2}>
           <div className="max-w-[900px] mx-auto px-12 max-[880px]:px-5 relative z-10">
-            <div className="text-[10px] tracking-[4px] uppercase text-white/60 mb-3.5">
+            <div className="text-[12px] tracking-[4px] uppercase text-white/60 mb-3.5">
               RBSD Combatives Brno <span className="text-white">/ Ochrana osobních údajů</span>
             </div>
             <h1 className="font-serif text-[clamp(30px,4.5vw,50px)] font-bold text-white leading-tight">
@@ -29,7 +29,7 @@ export default function PersonalData() {
       {/* Obsah */}
       <section className="py-20 bg-white">
         <div className="max-w-[800px] mx-auto px-12 max-[880px]:px-5">
-          <div className="space-y-10 text-[16px] text-[#0A0A0A]/70 leading-relaxed">
+          <div className="space-y-10 text-[17px] text-[#0A0A0A]/70 leading-relaxed">
             <p>
               V naší společnosti řešíme ochranu osobních údajů dle patřičných zákonů. Veškeré osobní
               údaje poskytované návštěvníkem jsou shromažďovány, zpracovávány a uchovávány v souladu
@@ -246,7 +246,7 @@ export default function PersonalData() {
                   formulář, souhlasíte s uchováním osobních údajů pro účely komunikace o tématu, kvůli
                   kterému nás oslovujete.
                 </p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-[14px]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-[15px]">
                   <div>
                     <span className="font-bold text-[#0A0A0A]">Osobní údaj: </span>
                     E-mailová adresa, jméno, telefon, zpráva

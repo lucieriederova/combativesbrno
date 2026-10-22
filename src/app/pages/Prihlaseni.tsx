@@ -17,7 +17,7 @@ export default function Prihlaseni() {
         
         <RevealOnScroll delay={0.2}>
           <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5 relative z-10">
-            <div className="text-[10px] tracking-[4px] uppercase text-white/60 mb-3.5">
+            <div className="text-[12px] tracking-[4px] uppercase text-white/60 mb-3.5">
               RBSD Combatives Brno <span className="text-white">/ Chci začít</span>
             </div>
             <h1 className="font-serif text-[clamp(34px,5vw,58px)] font-bold text-white leading-tight">
@@ -43,13 +43,13 @@ export default function Prihlaseni() {
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <a
                 href="tel:+420605521525"
-                className="inline-flex items-center justify-center gap-2 border border-[#C41E2A] text-[#C41E2A] hover:bg-[#C41E2A] hover:text-white px-6 py-3 text-[11px] font-bold tracking-[2px] uppercase transition-colors"
+                className="inline-flex items-center justify-center gap-2 border border-[#C41E2A] text-[#C41E2A] hover:bg-[#C41E2A] hover:text-white px-6 py-3 text-[13px] font-bold tracking-[2px] uppercase transition-colors"
               >
                 +420 605 521 525
               </a>
               <a
                 href="mailto:info@combatives-brno.cz"
-                className="inline-flex items-center justify-center gap-2 bg-[#C41E2A] hover:bg-[#A01822] text-white px-6 py-3 text-[11px] font-bold tracking-[2px] uppercase transition-colors"
+                className="inline-flex items-center justify-center gap-2 bg-[#C41E2A] hover:bg-[#A01822] text-white px-6 py-3 text-[13px] font-bold tracking-[2px] uppercase transition-colors"
               >
                 info@combatives-brno.cz
               </a>
@@ -78,7 +78,7 @@ export default function Prihlaseni() {
                   className="flex items-start gap-3 bg-white/5 border border-white/10 p-5"
                 >
                   <CheckCircle2 className="text-[#C41E2A] flex-shrink-0 mt-0.5" size={20} />
-                  <span className="text-[16px] text-white/80">{item}</span>
+                  <span className="text-[17px] text-white/80">{item}</span>
                 </div>
               ))}
             </div>
@@ -118,7 +118,7 @@ export default function Prihlaseni() {
                       <h3 className="text-[17px] font-bold text-white mb-2">
                         {faq.q}
                       </h3>
-                      <p className="text-[16px] text-white/70 leading-relaxed">
+                      <p className="text-[17px] text-white/70 leading-relaxed">
                         {faq.a}
                       </p>
                     </div>

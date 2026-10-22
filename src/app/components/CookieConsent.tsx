@@ -43,7 +43,7 @@ export default function CookieConsent() {
   return (
     <div className="fixed inset-x-0 bottom-0 z-[100] bg-[#0A0A0A] border-t-[3px] border-[#C41E2A] px-6 py-6 shadow-[0_-4px_20px_rgba(0,0,0,0.3)]">
       <div className="max-w-[900px] mx-auto">
-        <p className="text-[14px] text-white/70 leading-relaxed mb-4">
+        <p className="text-[15px] text-white/70 leading-relaxed mb-4">
           Používáme cookies pro nezbytný chod webu a se souhlasem i pro analytiku a marketing.
           Více v{' '}
           <Link to="/ochrana-soukromi" className="text-[#C41E2A] underline underline-offset-2 hover:text-white transition-colors">
@@ -54,11 +54,11 @@ export default function CookieConsent() {
 
         {showDetails && (
           <div className="mb-5 space-y-2.5">
-            <label className="flex items-start gap-2.5 text-[13px] text-white/50">
+            <label className="flex items-start gap-2.5 text-[15px] text-white/50">
               <input type="checkbox" checked disabled className="mt-0.5 accent-[#C41E2A]" />
               <span><strong className="text-white/80 font-medium">Nezbytné</strong> — potřebné pro základní fungování webu, vždy aktivní.</span>
             </label>
-            <label className="flex items-start gap-2.5 text-[13px] text-white/70 cursor-pointer">
+            <label className="flex items-start gap-2.5 text-[15px] text-white/70 cursor-pointer">
               <input
                 type="checkbox"
                 checked={analytics}
@@ -67,7 +67,7 @@ export default function CookieConsent() {
               />
               <span><strong className="text-white font-medium">Analytické</strong> — pomáhají nám pochopit, jak web používáte (Google Analytics).</span>
             </label>
-            <label className="flex items-start gap-2.5 text-[13px] text-white/70 cursor-pointer">
+            <label className="flex items-start gap-2.5 text-[15px] text-white/70 cursor-pointer">
               <input
                 type="checkbox"
                 checked={marketing}
@@ -82,27 +82,27 @@ export default function CookieConsent() {
         <div className="flex flex-wrap items-center gap-3">
           <button
             onClick={acceptAll}
-            className="bg-[#C41E2A] hover:bg-[#A01822] text-white px-6 py-2.5 text-[11px] font-semibold tracking-[2px] uppercase transition-colors cursor-pointer"
+            className="bg-[#C41E2A] hover:bg-[#A01822] text-white px-6 py-2.5 text-[13px] font-semibold tracking-[2px] uppercase transition-colors cursor-pointer"
           >
             Přijmout vše
           </button>
           <button
             onClick={rejectAll}
-            className="bg-transparent border-[1.5px] border-white/25 hover:border-white/50 text-white px-6 py-2.5 text-[11px] font-semibold tracking-[2px] uppercase transition-colors cursor-pointer"
+            className="bg-transparent border-[1.5px] border-white/25 hover:border-white/50 text-white px-6 py-2.5 text-[13px] font-semibold tracking-[2px] uppercase transition-colors cursor-pointer"
           >
             Odmítnout vše
           </button>
           {showDetails ? (
             <button
               onClick={saveSelection}
-              className="text-[11px] font-semibold tracking-[2px] uppercase text-[#C41E2A] hover:text-white transition-colors cursor-pointer"
+              className="text-[13px] font-semibold tracking-[2px] uppercase text-[#C41E2A] hover:text-white transition-colors cursor-pointer"
             >
               Uložit výběr
             </button>
           ) : (
             <button
               onClick={() => setShowDetails(true)}
-              className="text-[11px] font-semibold tracking-[2px] uppercase text-white/50 hover:text-white transition-colors cursor-pointer"
+              className="text-[13px] font-semibold tracking-[2px] uppercase text-white/50 hover:text-white transition-colors cursor-pointer"
             >
               Nastavení
             </button>

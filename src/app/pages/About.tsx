@@ -22,7 +22,7 @@ export default function About() {
         
         <RevealOnScroll delay={0.2}>
           <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5 relative z-10">
-            <div className="text-[10px] tracking-[4px] uppercase text-white/60 mb-3.5">
+            <div className="text-[12px] tracking-[4px] uppercase text-white/60 mb-3.5">
               RBSD Combatives Brno <span className="text-white">/ O nás</span>
             </div>
             <h1 className="font-serif text-[clamp(34px,5vw,58px)] font-bold text-white leading-tight">
@@ -37,25 +37,25 @@ export default function About() {
         <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5">
           <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-18">
             <RevealOnScroll>
-              <span className="block text-[10px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-3">
+              <span className="block text-[12px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-3">
                 Naše mise
               </span>
               <h3 className="font-serif text-[26px] font-bold text-[#0A0A0A] mb-5">
                 Proč trénovat s námi
               </h3>
               
-              <p className="text-[16px] text-[#0A0A0A]/70 leading-relaxed mb-3.5">
+              <p className="text-[17px] text-[#0A0A0A]/70 leading-relaxed mb-3.5">
                 Klub RBSD Combatives Brno byl založen s jasným cílem — naučit lidi reálné sebeobrance
                 bez kompromisů. Žádné okázalé techniky, žádné kata, žádný sport. Jen to, co funguje na ulici.
               </p>
 
-              <p className="text-[16px] text-[#0A0A0A]/70 leading-relaxed mb-3.5">
+              <p className="text-[17px] text-[#0A0A0A]/70 leading-relaxed mb-3.5">
                 Náš systém je postaven na Urban Combatives od Lee Morrisona, což je jeden z nejrespektovanějších 
                 systémů reálné sebeobrany na světě. Kombinujeme ho s 15 lety praktických zkušeností 
                 našich instruktorů.
               </p>
 
-              <p className="text-[16px] text-[#0A0A0A]/70 leading-relaxed mb-3.5">
+              <p className="text-[17px] text-[#0A0A0A]/70 leading-relaxed mb-3.5">
                 Věříme, že 90% je v hlavě — mentální nastavení, vůle přežít a schopnost jednat pod stresem. 
                 Proto se u nás neučíte jen techniky, ale hlavně psychologii konfliktu a jak zvládat strach.
               </p>
@@ -64,7 +64,7 @@ export default function About() {
                 Co je RBSD
               </h3>
 
-              <p className="text-[16px] text-[#0A0A0A]/70 leading-relaxed mb-3.5">
+              <p className="text-[17px] text-[#0A0A0A]/70 leading-relaxed mb-3.5">
                 RBSD Combatives Brno je součástí{' '}
                 <a
                   href="https://rbsd.cz/"
@@ -81,10 +81,10 @@ export default function About() {
 
             <div className="space-y-3.5">
               <div className="bg-[#0A0A0A] border-l-[3px] border-[#C41E2A] p-6">
-                <h4 className="text-[11px] tracking-[3px] font-bold uppercase text-[#C41E2A] mb-2.5">
+                <h4 className="text-[13px] tracking-[3px] font-bold uppercase text-[#C41E2A] mb-2.5">
                   CO VÁS NAUČÍME
                 </h4>
-                <ul className="space-y-2.5 text-[15px] text-white/60">
+                <ul className="space-y-2.5 text-[16px] text-white/60">
                   <li className="flex items-start gap-2.5">
                     <span className="text-[#C41E2A] font-bold">▸</span>
                     Prevenci a vyhýbání se konfliktům
@@ -117,15 +117,15 @@ export default function About() {
               </div>
 
               <div className="bg-[#C41E2A] p-6">
-                <h4 className="text-[11px] tracking-[3px] font-bold uppercase text-white mb-2.5">
+                <h4 className="text-[13px] tracking-[3px] font-bold uppercase text-white mb-2.5">
                   PRVNÍ LEKCE ZDARMA
                 </h4>
-                <p className="text-[14px] text-white/90 mb-4 leading-relaxed">
+                <p className="text-[15px] text-white/90 mb-4 leading-relaxed">
                   Přijď se podívat bez závazku. První trénink je vždy zdarma.
                 </p>
                 <Link
                   to="/prihlaseni"
-                  className="inline-flex items-center justify-center bg-[#0A0A0A] hover:bg-[#111] text-white px-6 py-2.5 rounded-sm text-[11px] font-bold tracking-[2px] uppercase transition-colors w-full"
+                  className="inline-flex items-center justify-center bg-[#0A0A0A] hover:bg-[#111] text-white px-6 py-2.5 rounded-sm text-[13px] font-bold tracking-[2px] uppercase transition-colors w-full"
                 >
                   Rezervovat →
                 </Link>
@@ -141,7 +141,7 @@ export default function About() {
         <div className="absolute top-0 right-0 w-[40%] h-full bg-[#C41E2A]/5 pointer-events-none" />
 
         <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5 relative z-10">
-          <span className="block text-[10px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-4">
+          <span className="block text-[12px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-4">
             Náš tým
           </span>
           <h2 className="font-serif text-[clamp(32px,5vw,56px)] font-bold leading-tight text-white mb-16">
@@ -164,7 +164,7 @@ export default function About() {
               </div>
 
               <blockquote className="bg-[#111] border-l-[3px] border-[#C41E2A] p-6">
-                <p className="text-[15px] font-serif italic text-white/70 leading-relaxed">
+                <p className="text-[16px] font-serif italic text-white/70 leading-relaxed">
                   „Combatives je systém, jehož základ najdeme ve výcviku jednotek Comandos za druhé
                   světové války. Je z 90&nbsp;% postaven na správném nastavení hlavy, nasazení a vůli
                   zvítězit. Trénink „hlavy“ posunul úžasným způsobem moje výkony jak v sebeobraně,
@@ -175,14 +175,14 @@ export default function About() {
 
             {/* info */}
             <div className="bg-[#111] border border-white/5 p-10">
-              <div className="text-[10px] tracking-[4px] uppercase text-[#C41E2A] mb-3">
+              <div className="text-[12px] tracking-[4px] uppercase text-[#C41E2A] mb-3">
                 Zakladatel & hlavní instruktor
               </div>
               <h3 className="font-serif text-[36px] font-bold text-white mb-6 leading-tight">
                 Jiří Holáň
               </h3>
 
-              <p className="text-[15px] text-white/60 leading-relaxed mb-8">
+              <p className="text-[16px] text-white/60 leading-relaxed mb-8">
                 Tréninku bojových sportů a umění se věnuje již 15 let. Začínal s karate a kung-fu,
                 ve kterém byl i úspěšným závodníkem. Od roku 2010 se začal věnovat tréninkům reálné
                 sebeobrany. Od té doby si vyzkoušel mnoho sebeobranných systémů jak českých, tak
@@ -206,7 +206,7 @@ export default function About() {
                   'Hung Gar Kung Fu',
                   'Právní aspekty sebeobrany, modelové situace & psychologie konfliktu',
                 ].map((cert, i) => (
-                  <div key={i} className="flex items-start gap-3 text-[14px] text-white/40">
+                  <div key={i} className="flex items-start gap-3 text-[15px] text-white/40">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#C41E2A] shrink-0 mt-1.5" />
                     {cert}
                   </div>
@@ -232,7 +232,7 @@ export default function About() {
               </div>
 
               <blockquote className="bg-[#111] border-r-[3px] border-[#C41E2A] p-6 text-right">
-                <p className="text-[15px] font-serif italic text-white/70 leading-relaxed">
+                <p className="text-[16px] font-serif italic text-white/70 leading-relaxed">
                   „Nejvíc zkušeností jsem nasbíral přímo na žíněnce — a přesně tam se na vás těším.“
                 </p>
               </blockquote>
@@ -240,26 +240,26 @@ export default function About() {
 
             {/* info */}
             <div className="bg-[#111] border border-white/5 p-10 lg:order-1">
-              <div className="text-[10px] tracking-[4px] uppercase text-[#C41E2A] mb-3">
+              <div className="text-[12px] tracking-[4px] uppercase text-[#C41E2A] mb-3">
                 Instruktor — Sanda
               </div>
               <h3 className="font-serif text-[36px] font-bold text-white mb-6 leading-tight">
                 Šimon Klein
               </h3>
 
-              <p className="text-[15px] text-white/60 leading-relaxed mb-6">
+              <p className="text-[16px] text-white/60 leading-relaxed mb-6">
                 Šimon se bojovým sportům věnuje už 16 let, přestože je mu teprve 22. Pochází ze
                 slovenského Martina a dnes trénuje a zápasí v Brně. Za sebou má přes 400 grapplingových
                 zápasů, 24 zápasů v amatérském MMA a úspěšný vstup do profesionálního MMA s bilancí 1-0.
               </p>
 
-              <p className="text-[15px] text-white/60 leading-relaxed mb-6">
+              <p className="text-[16px] text-white/60 leading-relaxed mb-6">
                 Patří mezi nejúspěšnější grapplery své generace — je mistrem Evropy v profesionální
                 kategorii, 12násobným mistrem Slovenska, 4násobným mistrem České republiky a šampionem
                 Polska i Rakouska. Titul mistra Slovenska získal také v amatérském MMA.
               </p>
 
-              <p className="text-[15px] text-white/60 leading-relaxed mb-8">
+              <p className="text-[16px] text-white/60 leading-relaxed mb-8">
                 Na trénincích sandy předává především to, co sám léta sbíral v ringu a na žíněnce:
                 praktickou techniku, kondici a chladnou hlavu v zápase.
               </p>
@@ -272,7 +272,7 @@ export default function About() {
                   '400+ zápasů',
                   'Profesionální MMA zápasník',
                 ].map((badge, i) => (
-                  <div key={i} className="flex items-start gap-3 text-[14px] text-white/40">
+                  <div key={i} className="flex items-start gap-3 text-[15px] text-white/40">
                     <span className="w-1.5 h-1.5 rounded-full bg-[#C41E2A] shrink-0 mt-1.5" />
                     {badge}
                   </div>
@@ -283,7 +283,7 @@ export default function About() {
 
           {/* Rozhovor se Šimonem Kleinem */}
           <div className="mt-20 pt-16 border-t border-white/10 flex flex-col items-center text-center">
-            <span className="block text-[10px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-4">
+            <span className="block text-[12px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-4">
               Rozhovor
             </span>
             <h3 className="font-serif text-[clamp(26px,3.5vw,40px)] font-bold text-white mb-10 leading-tight">
@@ -314,12 +314,12 @@ export default function About() {
           <h2 className="font-serif text-[clamp(36px,5vw,56px)] font-bold text-white leading-tight mb-6">
             Připraven začít?
           </h2>
-          <p className="text-[16px] text-white/60 mb-10 max-w-[600px] mx-auto">
+          <p className="text-[17px] text-white/60 mb-10 max-w-[600px] mx-auto">
             První lekce je zdarma. Žádné závazky, žádné smlouvy. Jen ty a realita.
           </p>
           <Link
             to="/prihlaseni"
-            className="inline-flex items-center justify-center bg-[#C41E2A] hover:bg-[#A01822] text-white px-12 py-5 text-[15px] font-bold tracking-[3px] uppercase transition-colors"
+            className="inline-flex items-center justify-center bg-[#C41E2A] hover:bg-[#A01822] text-white px-12 py-5 text-[16px] font-bold tracking-[3px] uppercase transition-colors"
           >
             Rezervovat lekci →
           </Link>

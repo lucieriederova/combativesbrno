@@ -17,7 +17,7 @@ export default function PrivacyPolicy() {
 
         <RevealOnScroll delay={0.2}>
           <div className="max-w-[900px] mx-auto px-12 max-[880px]:px-5 relative z-10">
-            <div className="text-[10px] tracking-[4px] uppercase text-white/60 mb-3.5">
+            <div className="text-[12px] tracking-[4px] uppercase text-white/60 mb-3.5">
               RBSD Combatives Brno <span className="text-white">/ Ochrana soukromí</span>
             </div>
             <h1 className="font-serif text-[clamp(30px,4.5vw,50px)] font-bold text-white leading-tight">
@@ -30,7 +30,7 @@ export default function PrivacyPolicy() {
       {/* Obsah */}
       <section className="py-20 bg-white">
         <div className="max-w-[800px] mx-auto px-12 max-[880px]:px-5">
-          <div className="space-y-12 text-[16px] text-[#0A0A0A]/70 leading-relaxed">
+          <div className="space-y-12 text-[17px] text-[#0A0A0A]/70 leading-relaxed">
             <div>
               <h2 className="font-serif text-[24px] font-bold text-[#0A0A0A] mb-4">Správce osobních údajů</h2>
               <p>
@@ -50,21 +50,21 @@ export default function PrivacyPolicy() {
               <div className="space-y-4">
                 <div className="border border-[#0A0A0A]/10 p-5">
                   <h3 className="font-bold text-[#0A0A0A] mb-1.5">Nezbytné</h3>
-                  <p className="text-[15px]">
+                  <p className="text-[16px]">
                     Potřebné pro základní chod webu (např. zapamatování si vaší volby v cookie liště).
                     Nelze je vypnout a nevyžadují souhlas.
                   </p>
                 </div>
                 <div className="border border-[#0A0A0A]/10 p-5">
                   <h3 className="font-bold text-[#0A0A0A] mb-1.5">Analytické — Google Analytics</h3>
-                  <p className="text-[15px]">
+                  <p className="text-[16px]">
                     Pomáhají nám anonymizovaně pochopit, jak návštěvníci web používají (např. které stránky jsou
                     nejnavštěvovanější), abychom mohli obsah zlepšovat. Aktivují se jen s vaším souhlasem.
                   </p>
                 </div>
                 <div className="border border-[#0A0A0A]/10 p-5">
                   <h3 className="font-bold text-[#0A0A0A] mb-1.5">Marketingové — Meta Pixel</h3>
-                  <p className="text-[15px]">
+                  <p className="text-[16px]">
                     Používáme k měření účinnosti reklamy na Facebooku a Instagramu a k zobrazování relevantnější
                     nabídky. Aktivují se jen s vaším souhlasem.
                   </p>

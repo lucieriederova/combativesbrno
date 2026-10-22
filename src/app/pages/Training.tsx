@@ -136,7 +136,7 @@ export default function Training() {
 
         <RevealOnScroll delay={0.2}>
           <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5 relative z-10">
-            <div className="text-[10px] tracking-[4px] uppercase text-white/60 mb-3.5">
+            <div className="text-[12px] tracking-[4px] uppercase text-white/60 mb-3.5">
               RBSD Combatives Brno <span className="text-white">/ Tréninky</span>
             </div>
             <h1 className="font-serif text-[clamp(34px,5vw,58px)] font-bold text-white leading-tight">
@@ -149,7 +149,7 @@ export default function Training() {
       {/* Jak probíhá trénink */}
       <section className="py-24 bg-[#F5F3F0]">
         <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5">
-          <span className="block text-[10px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-4">
+          <span className="block text-[12px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-4">
             01 — JAK TO FUNGUJE
           </span>
           <h2 className="font-serif text-[clamp(32px,5vw,56px)] font-bold leading-tight text-[#0A0A0A] mb-6">
@@ -195,7 +195,7 @@ export default function Training() {
                 <h3 className="text-[18px] font-bold text-[#0A0A0A] mb-2">
                   {phase.title}
                 </h3>
-                <p className="text-[14px] text-[#0A0A0A]/60 leading-relaxed mt-3">
+                <p className="text-[15px] text-[#0A0A0A]/60 leading-relaxed mt-3">
                   {phase.desc}
                 </p>
               </div>
@@ -208,7 +208,7 @@ export default function Training() {
       <section className="py-24 bg-white">
         <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5">
           <RevealOnScroll>
-            <span className="block text-[10px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-4">
+            <span className="block text-[12px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-4">
               02 — ZAČNĚTE ZDE
             </span>
             <h2 className="font-serif text-[clamp(32px,5vw,56px)] font-bold leading-tight text-[#0A0A0A] mb-14">
@@ -236,17 +236,17 @@ export default function Training() {
                     strokeWidth={1.5}
                   />
 
-                  <div className={`text-[9px] font-bold tracking-[3px] uppercase mb-3 transition-colors ${isActive ? 'text-[#C41E2A]' : 'text-[#C41E2A]/70'}`}>
+                  <div className={`text-[11px] font-bold tracking-[3px] uppercase mb-3 transition-colors ${isActive ? 'text-[#C41E2A]' : 'text-[#C41E2A]/70'}`}>
                     {g.sub}
                   </div>
                   <div className={`font-serif text-[20px] font-bold mb-2 leading-tight transition-colors ${isActive ? 'text-white' : 'text-[#0A0A0A]'}`}>
                     {g.label}
                   </div>
-                  <p className={`text-[13px] leading-normal transition-colors ${isActive ? 'text-white/50' : 'text-[#0A0A0A]/60'}`}>
+                  <p className={`text-[15px] leading-normal transition-colors ${isActive ? 'text-white/50' : 'text-[#0A0A0A]/60'}`}>
                     {g.desc}
                   </p>
 
-                  <div className={`mt-5 flex items-center gap-1 text-[10px] font-bold tracking-[2px] uppercase transition-colors ${isActive ? 'text-[#C41E2A]' : 'text-[#C41E2A]/60 group-hover:text-[#C41E2A]'}`}>
+                  <div className={`mt-5 flex items-center gap-1 text-[12px] font-bold tracking-[2px] uppercase transition-colors ${isActive ? 'text-[#C41E2A]' : 'text-[#C41E2A]/60 group-hover:text-[#C41E2A]'}`}>
                     {isActive ? 'Skrýt' : 'Zobrazit'} <ChevronRight size={12} className={`transition-transform ${isActive ? 'rotate-90' : ''}`} />
                   </div>
                 </button>
@@ -263,17 +263,17 @@ export default function Training() {
             {scheduleData[active].cancelled && (
               <RevealOnScroll>
                 <div className="bg-[#C41E2A]/10 border-l-[3px] border-[#C41E2A] p-8 mb-4">
-                  <div className="text-[11px] font-bold tracking-[4px] uppercase text-[#C41E2A] mb-3">
+                  <div className="text-[13px] font-bold tracking-[4px] uppercase text-[#C41E2A] mb-3">
                     Tréninky zrušeny
                   </div>
-                  <p className="text-[16px] text-white/80 leading-relaxed mb-6 max-w-[640px]">
+                  <p className="text-[17px] text-white/80 leading-relaxed mb-6 max-w-[640px]">
                     {scheduleData[active].cancelled}
                   </p>
                   <a
                     href="https://hunggar.cz/treninky"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 bg-[#C41E2A] hover:bg-[#A01822] text-white px-9 py-4 text-[13px] font-bold tracking-[2px] uppercase transition-colors"
+                    className="inline-flex items-center gap-2 bg-[#C41E2A] hover:bg-[#A01822] text-white px-9 py-4 text-[15px] font-bold tracking-[2px] uppercase transition-colors"
                   >
                     Kung-fu na hunggar.cz →
                   </a>
@@ -283,7 +283,7 @@ export default function Training() {
 
             {/* Rozvrh */}
             <RevealOnScroll>
-              <span className="block text-[10px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-3">Rozvrh</span>
+              <span className="block text-[12px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-3">Rozvrh</span>
               <h2 className="font-serif text-[clamp(26px,3.5vw,42px)] font-bold text-white mb-12">
                 Kdy & <span className="text-[#C41E2A]">kde</span>
               </h2>
@@ -291,28 +291,28 @@ export default function Training() {
 
             {scheduleData[active].sections.map((section, si) => (
               <div key={si} className="mb-12">
-                <h3 className="text-[11px] font-bold tracking-[4px] uppercase text-white/70 mb-5">{section.title}</h3>
+                <h3 className="text-[13px] font-bold tracking-[4px] uppercase text-white/70 mb-5">{section.title}</h3>
                 <div className="overflow-x-auto">
                   <table className="w-full border-collapse">
                     <thead>
                       <tr>
                         {['Trénink', 'Den', 'Čas', 'Místo'].map((h) => (
-                          <th key={h} className="px-5 py-3 text-left text-[10px] font-bold tracking-[3px] uppercase text-white/40 border-b border-white/10">{h}</th>
+                          <th key={h} className="px-5 py-3 text-left text-[12px] font-bold tracking-[3px] uppercase text-white/40 border-b border-white/10">{h}</th>
                         ))}
                       </tr>
                     </thead>
                     <tbody>
                       {section.rows.map((row, ri) => (
                         <tr key={ri} className="border-b border-white/[0.06] hover:bg-white/[0.03] transition-colors">
-                          <td className="px-5 py-4 text-[15px] font-medium text-white">
+                          <td className="px-5 py-4 text-[16px] font-medium text-white">
                             {row.name}
-                            {row.note && <span className="ml-2 text-[10px] text-[#C41E2A] font-bold tracking-wide uppercase">{row.note}</span>}
+                            {row.note && <span className="ml-2 text-[12px] text-[#C41E2A] font-bold tracking-wide uppercase">{row.note}</span>}
                           </td>
-                          <td className="px-5 py-4 text-[14px] text-white/60">{row.day}</td>
-                          <td className="px-5 py-4 text-[14px] text-white/60 whitespace-nowrap">
+                          <td className="px-5 py-4 text-[15px] text-white/60">{row.day}</td>
+                          <td className="px-5 py-4 text-[15px] text-white/60 whitespace-nowrap">
                             <Clock size={11} className="inline mr-1.5 opacity-40" />{row.time}
                           </td>
-                          <td className="px-5 py-4 text-[14px] text-white/60 whitespace-nowrap">
+                          <td className="px-5 py-4 text-[15px] text-white/60 whitespace-nowrap">
                             <a
                               href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(row.place + ', Brno')}`}
                               target="_blank"
@@ -328,7 +328,7 @@ export default function Training() {
                   </table>
                 </div>
                 {section.note && (
-                  <p className="mt-3 text-[13px] text-white/35 italic">{section.note}</p>
+                  <p className="mt-3 text-[15px] text-white/35 italic">{section.note}</p>
                 )}
               </div>
             ))}
@@ -337,7 +337,7 @@ export default function Training() {
               <>
                 {/* Ceník */}
                 <div className="mt-16 pt-16 border-t border-white/10">
-                  <span className="block text-[10px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-3">Ceník</span>
+                  <span className="block text-[12px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-3">Ceník</span>
                   <h2 className="font-serif text-[clamp(26px,3.5vw,42px)] font-bold text-white mb-10">
                     Transparentní <span className="text-[#C41E2A]">ceny</span>
                   </h2>
@@ -347,10 +347,10 @@ export default function Training() {
                     <div className="space-y-4">
                       {scheduleData[active].pricing.main?.map((item, i) => (
                         <div key={i} className="bg-white/[0.04] border border-white/[0.08] p-6 flex items-center justify-between gap-4 flex-wrap">
-                          <span className="text-[16px] text-white font-medium">
+                          <span className="text-[17px] text-white font-medium">
                             {item.label}
                           </span>
-                          <span className="font-serif text-[28px] font-bold text-[#C41E2A]">{item.price} <span className="text-[15px] text-white/40 font-sans font-normal">{item.period}</span></span>
+                          <span className="font-serif text-[28px] font-bold text-[#C41E2A]">{item.price} <span className="text-[16px] text-white/40 font-sans font-normal">{item.period}</span></span>
                         </div>
                       ))}
                     </div>
@@ -362,11 +362,11 @@ export default function Training() {
                       {scheduleData.dospeli.pricing.extra?.map((item, i) => (
                         <div key={i} className={`p-6 flex flex-col gap-2 ${item.featured ? 'bg-gradient-to-br from-[#C41E2A] via-[#C41E2A] to-[#8B0000]' : 'bg-[#0A0A0A]'}`}>
                           {item.featured && (
-                            <span className="self-start bg-[#0A0A0A] text-white text-[9px] font-bold tracking-[2px] uppercase px-2.5 py-1 mb-1">
+                            <span className="self-start bg-[#0A0A0A] text-white text-[11px] font-bold tracking-[2px] uppercase px-2.5 py-1 mb-1">
                               Nejvýhodnější
                             </span>
                           )}
-                          <span className={`text-[14px] ${item.featured ? 'text-white/90' : 'text-white/70'}`}>{item.label}</span>
+                          <span className={`text-[15px] ${item.featured ? 'text-white/90' : 'text-white/70'}`}>{item.label}</span>
                           <span className="text-[20px] font-bold text-white whitespace-nowrap">{item.price}</span>
                         </div>
                       ))}
@@ -376,16 +376,16 @@ export default function Training() {
 
                 {/* S sebou */}
                 <div className="mt-12 bg-white/[0.03] border border-white/[0.07] p-6">
-                  <h4 className="text-[10px] font-bold tracking-[4px] uppercase text-white/70 mb-3">S sebou na trénink</h4>
-                  <p className="text-[15px] text-white/60">{scheduleData[active].gear}</p>
+                  <h4 className="text-[12px] font-bold tracking-[4px] uppercase text-white/70 mb-3">S sebou na trénink</h4>
+                  <p className="text-[16px] text-white/60">{scheduleData[active].gear}</p>
                 </div>
 
                 {/* CTA */}
                 <div className="mt-12 text-center">
-                  <Link to="/prihlaseni" className="inline-flex items-center gap-2 bg-[#C41E2A] hover:bg-[#A01822] text-white px-9 py-4 text-[13px] font-bold tracking-[2px] uppercase transition-colors">
+                  <Link to="/prihlaseni" className="inline-flex items-center gap-2 bg-[#C41E2A] hover:bg-[#A01822] text-white px-9 py-4 text-[15px] font-bold tracking-[2px] uppercase transition-colors">
                     Rezervovat trénink →
                   </Link>
-                  <p className="text-[11px] text-white/30 mt-3">První lekce je vždy zdarma</p>
+                  <p className="text-[13px] text-white/30 mt-3">První lekce je vždy zdarma</p>
                 </div>
               </>
             )}
@@ -397,11 +397,11 @@ export default function Training() {
       {active === 'sanda' && (
         <section ref={contentRef as RefObject<HTMLElement>} className="bg-[#0A0A0A] py-20 scroll-mt-20">
           <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5">
-            <span className="block text-[10px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-3">Sportovní boj</span>
+            <span className="block text-[12px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-3">Sportovní boj</span>
             <h2 className="font-serif text-[clamp(26px,3.5vw,42px)] font-bold text-white mb-6">
               Sanda — <span className="text-[#C41E2A]">sportovní boj</span>
             </h2>
-            <p className="text-[16px] text-white/60 leading-relaxed mb-10 max-w-[700px]">
+            <p className="text-[17px] text-white/60 leading-relaxed mb-10 max-w-[700px]">
               Sanda je (plno)kontaktní sport, kombinující údery, kopy a hody. Sanda vám pomůže s vylepšením technik,
               které znáte z tréninku sebeobrany, do praxe. Pomůže vám vylepšit úderovou a kopací techniku, zlepší
               vaši práci na nohách, práci se vzdáleností. S přibývajícími schopnostmi je možné přidat řízený
@@ -416,21 +416,21 @@ export default function Training() {
                 { label: 'Trenér', price: 'Šimon Klein' },
               ].map((item, i) => (
                 <div key={i} className="bg-[#0A0A0A] p-6 border border-white/[0.07]">
-                  <div className="text-[10px] font-bold tracking-[3px] uppercase text-white/30 mb-2">{item.label}</div>
-                  <div className="text-[16px] text-white font-medium">{item.price}</div>
+                  <div className="text-[12px] font-bold tracking-[3px] uppercase text-white/30 mb-2">{item.label}</div>
+                  <div className="text-[17px] text-white font-medium">{item.price}</div>
                 </div>
               ))}
             </div>
 
             <div className="flex flex-wrap gap-4 mb-16">
-              <Link to="/prihlaseni" className="inline-flex items-center gap-2 bg-[#C41E2A] hover:bg-[#A01822] text-white px-9 py-4 text-[13px] font-bold tracking-[2px] uppercase transition-colors">
+              <Link to="/prihlaseni" className="inline-flex items-center gap-2 bg-[#C41E2A] hover:bg-[#A01822] text-white px-9 py-4 text-[15px] font-bold tracking-[2px] uppercase transition-colors">
                 Rezervovat →
               </Link>
             </div>
 
             {/* Rozhovor s trenérem Sandy */}
             <div className="pt-16 border-t border-white/10">
-              <span className="block text-[11px] font-bold tracking-[4px] uppercase text-[#C41E2A] mb-4">
+              <span className="block text-[13px] font-bold tracking-[4px] uppercase text-[#C41E2A] mb-4">
                 Poznejte trenéra
               </span>
               <h3 className="font-serif text-[clamp(26px,3.5vw,38px)] font-bold text-white mb-10 leading-tight">
@@ -453,7 +453,7 @@ export default function Training() {
                         <span className="font-serif text-[26px] font-bold text-[#C41E2A]/25 leading-none shrink-0 tabular-nums">
                           {String(i + 1).padStart(2, '0')}
                         </span>
-                        <p className="text-[16px] text-white/60 leading-relaxed pt-1">{q}</p>
+                        <p className="text-[17px] text-white/60 leading-relaxed pt-1">{q}</p>
                       </li>
                     ))}
                   </ul>
@@ -485,11 +485,11 @@ export default function Training() {
       {active === 'individualni' && (
         <section ref={contentRef as RefObject<HTMLElement>} className="bg-[#0A0A0A] py-20 scroll-mt-20">
           <div className="max-w-[900px] mx-auto px-12 max-[880px]:px-5">
-            <span className="block text-[10px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-3">Individuální výuka</span>
+            <span className="block text-[12px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-3">Individuální výuka</span>
             <h2 className="font-serif text-[clamp(26px,3.5vw,42px)] font-bold text-white mb-6">
               Trénink <span className="text-[#C41E2A]">na míru</span>
             </h2>
-            <p className="text-[16px] text-white/60 leading-relaxed mb-10 max-w-[620px]">
+            <p className="text-[17px] text-white/60 leading-relaxed mb-10 max-w-[620px]">
               Mimo pravidelné skupinové tréninky nabízíme i individuální výuku pro 1–4 osoby. Hodí se, když
               potřebuješ doladit konkrétní techniku, řešíš specifickou situaci, nebo ti nesedí čas skupinových
               tréninků. Témata i tempo přizpůsobíme přesně tobě.
@@ -502,12 +502,12 @@ export default function Training() {
                 { label: 'Časy', price: 'Dle dohody' },
               ].map((item, i) => (
                 <div key={i} className="bg-[#0A0A0A] p-6 border border-white/[0.07]">
-                  <div className="text-[10px] font-bold tracking-[3px] uppercase text-white/30 mb-2">{item.label}</div>
-                  <div className="text-[16px] text-white font-medium">{item.price}</div>
+                  <div className="text-[12px] font-bold tracking-[3px] uppercase text-white/30 mb-2">{item.label}</div>
+                  <div className="text-[17px] text-white font-medium">{item.price}</div>
                 </div>
               ))}
             </div>
-            <Link to="/kontakt" className="inline-flex items-center gap-2 bg-[#C41E2A] hover:bg-[#A01822] text-white px-9 py-4 text-[13px] font-bold tracking-[2px] uppercase transition-colors">
+            <Link to="/kontakt" className="inline-flex items-center gap-2 bg-[#C41E2A] hover:bg-[#A01822] text-white px-9 py-4 text-[15px] font-bold tracking-[2px] uppercase transition-colors">
               Kontaktujte nás →
             </Link>
           </div>
@@ -523,12 +523,12 @@ export default function Training() {
             První lekce <br className="md:hidden" />
             <span className="text-[#F5F3F0]">zdarma</span>
           </h2>
-          <p className="text-[16px] text-white/80 mb-10 max-w-[600px] mx-auto">
+          <p className="text-[17px] text-white/80 mb-10 max-w-[600px] mx-auto">
             Bez závazku, bez smluv. Přijď se podívat, jak vypadá reálná sebeobrana.
           </p>
           <Link
             to="/prihlaseni"
-            className="inline-flex items-center justify-center bg-[#0A0A0A] hover:bg-[#111] text-white px-12 py-5 text-[15px] font-bold tracking-[3px] uppercase transition-colors"
+            className="inline-flex items-center justify-center bg-[#0A0A0A] hover:bg-[#111] text-white px-12 py-5 text-[16px] font-bold tracking-[3px] uppercase transition-colors"
           >
             Rezervovat lekci zdarma →
           </Link>

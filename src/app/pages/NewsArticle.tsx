@@ -16,7 +16,7 @@ export default function NewsArticle() {
           </h1>
           <Link
             to="/aktuality"
-            className="inline-flex items-center gap-2 text-[#C41E2A] font-bold text-[14px] tracking-[2px] uppercase hover:text-[#A01822] transition-colors"
+            className="inline-flex items-center gap-2 text-[#C41E2A] font-bold text-[15px] tracking-[2px] uppercase hover:text-[#A01822] transition-colors"
           >
             <ArrowLeft size={16} /> Zpět na aktuality
           </Link>
@@ -38,16 +38,16 @@ export default function NewsArticle() {
         />
         <RevealOnScroll delay={0.2}>
           <div className="max-w-[800px] mx-auto px-12 max-[880px]:px-5 relative z-10">
-            <div className="text-[10px] tracking-[4px] uppercase text-white/60 mb-3.5">
+            <div className="text-[12px] tracking-[4px] uppercase text-white/60 mb-3.5">
               RBSD Combatives Brno <span className="text-white">/ Aktuality</span>
             </div>
-            <span className="inline-block mb-4 text-[9px] font-bold tracking-[4px] uppercase text-white bg-white/15 px-2.5 py-1">
+            <span className="inline-block mb-4 text-[11px] font-bold tracking-[4px] uppercase text-white bg-white/15 px-2.5 py-1">
               {article.tag}
             </span>
             <h1 className="font-serif text-[clamp(28px,4.5vw,48px)] font-bold text-white leading-tight mb-4">
               {article.title}
             </h1>
-            <div className="flex items-center gap-1.5 text-[14px] text-white/70">
+            <div className="flex items-center gap-1.5 text-[15px] text-white/70">
               <Calendar size={14} />
               {article.date}
             </div>
@@ -75,7 +75,7 @@ export default function NewsArticle() {
                   </h2>
                 )}
                 {block.text && (
-                  <p className="text-[16px] text-[#0A0A0A]/70 leading-relaxed">
+                  <p className="text-[17px] text-[#0A0A0A]/70 leading-relaxed">
                     {block.text}
                     {block.link && (
                       <>
@@ -96,7 +96,7 @@ export default function NewsArticle() {
                 {block.list && (
                   <ul className="space-y-2.5 mt-2">
                     {block.list.map((item, j) => (
-                      <li key={j} className="flex items-start gap-2.5 text-[16px] text-[#0A0A0A]/70 leading-relaxed">
+                      <li key={j} className="flex items-start gap-2.5 text-[17px] text-[#0A0A0A]/70 leading-relaxed">
                         <span className="text-[#C41E2A] font-bold shrink-0">▸</span>
                         {item}
                       </li>
@@ -110,7 +110,7 @@ export default function NewsArticle() {
           <div className="mt-16 pt-8 border-t border-[#0A0A0A]/10">
             <Link
               to="/aktuality"
-              className="inline-flex items-center gap-2 text-[#C41E2A] font-bold text-[14px] tracking-[2px] uppercase hover:text-[#A01822] transition-colors"
+              className="inline-flex items-center gap-2 text-[#C41E2A] font-bold text-[15px] tracking-[2px] uppercase hover:text-[#A01822] transition-colors"
             >
               <ArrowLeft size={16} /> Zpět na aktuality
             </Link>
@@ -124,12 +124,12 @@ export default function NewsArticle() {
           <h2 className="font-serif text-[clamp(28px,4vw,44px)] font-bold text-white leading-tight mb-6">
             Chceš být součástí?
           </h2>
-          <p className="text-[16px] text-white/60 mb-8 max-w-[500px] mx-auto">
+          <p className="text-[17px] text-white/60 mb-8 max-w-[500px] mx-auto">
             První lekce je zdarma. Přijď se podívat, jak vypadá skutečná sebeobrana.
           </p>
           <Link
             to="/prihlaseni"
-            className="inline-flex items-center justify-center bg-[#C41E2A] hover:bg-[#A01822] text-white px-10 py-4 text-[14px] font-bold tracking-[3px] uppercase transition-colors"
+            className="inline-flex items-center justify-center bg-[#C41E2A] hover:bg-[#A01822] text-white px-10 py-4 text-[15px] font-bold tracking-[3px] uppercase transition-colors"
           >
             Rezervovat lekci →
           </Link>

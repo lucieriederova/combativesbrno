@@ -15,12 +15,12 @@ export default function Footer() {
                 <span className="text-[18px] font-bold tracking-[2px] uppercase text-[#C41E2A] leading-tight">
                   RBSD
                 </span>
-                <small className="text-[12px] font-normal tracking-[3px] uppercase text-white/40">
+                <small className="text-[13px] font-normal tracking-[3px] uppercase text-white/40">
                   Combatives Brno
                 </small>
               </div>
             </div>
-            <p className="text-[13px] text-white/30 leading-relaxed mb-6">
+            <p className="text-[15px] text-white/30 leading-relaxed mb-6">
               Reálná sebeobrana založená na systému Urban Combatives. 
               Bez kompromisů. Bez pravidel. Jen to, co funguje.
             </p>
@@ -44,14 +44,14 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-[10px] font-bold tracking-[4px] uppercase text-[#C41E2A]/60 mb-5">
+            <h4 className="text-[12px] font-bold tracking-[4px] uppercase text-[#C41E2A]/60 mb-5">
               Rychlé odkazy
             </h4>
             <ul className="space-y-2.5">
               <li>
                 <Link
                   to="/o-nas"
-                  className="text-[13px] text-white/45 hover:text-[#C41E2A] transition-colors"
+                  className="text-[15px] text-white/45 hover:text-[#C41E2A] transition-colors"
                 >
                   O nás
                 </Link>
@@ -59,7 +59,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/treninky"
-                  className="text-[13px] text-white/45 hover:text-[#C41E2A] transition-colors"
+                  className="text-[15px] text-white/45 hover:text-[#C41E2A] transition-colors"
                 >
                   Rozvrh tréninků
                 </Link>
@@ -67,7 +67,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/aktuality"
-                  className="text-[13px] text-white/45 hover:text-[#C41E2A] transition-colors"
+                  className="text-[15px] text-white/45 hover:text-[#C41E2A] transition-colors"
                 >
                   Aktuality
                 </Link>
@@ -75,7 +75,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/reference"
-                  className="text-[13px] text-white/45 hover:text-[#C41E2A] transition-colors"
+                  className="text-[15px] text-white/45 hover:text-[#C41E2A] transition-colors"
                 >
                   Reference
                 </Link>
@@ -83,7 +83,7 @@ export default function Footer() {
               <li>
                 <Link
                   to="/kontakt"
-                  className="text-[13px] text-white/45 hover:text-[#C41E2A] transition-colors"
+                  className="text-[15px] text-white/45 hover:text-[#C41E2A] transition-colors"
                 >
                   Kontakt
                 </Link>
@@ -93,7 +93,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="text-[10px] font-bold tracking-[4px] uppercase text-[#C41E2A]/60 mb-5">
+            <h4 className="text-[12px] font-bold tracking-[4px] uppercase text-[#C41E2A]/60 mb-5">
               Kontakt
             </h4>
             <div className="space-y-2.5">
@@ -103,25 +103,25 @@ export default function Footer() {
                   href="https://www.google.com/maps/search/?api=1&query=%C5%A0ujanovo+n%C3%A1m%C4%9Bst%C3%AD+1+Brno"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[13px] text-white/45 leading-normal hover:text-[#C41E2A] transition-colors"
+                  className="text-[15px] text-white/45 leading-normal hover:text-[#C41E2A] transition-colors"
                 >
                   Šujanovo náměstí 1<br />Brno
                 </a>
               </div>
               <div className="flex items-start gap-2.5">
                 <span className="text-sm mt-0.5">📞</span>
-                <a href="tel:+420605521525" className="text-[13px] text-white/45 hover:text-[#C41E2A] transition-colors">+420 605 521 525</a>
+                <a href="tel:+420605521525" className="text-[15px] text-white/45 hover:text-[#C41E2A] transition-colors">+420 605 521 525</a>
               </div>
               <div className="flex items-start gap-2.5">
                 <span className="text-sm mt-0.5">✉️</span>
-                <p className="text-[13px] text-white/45">info@combatives-brno.cz</p>
+                <p className="text-[15px] text-white/45">info@combatives-brno.cz</p>
               </div>
             </div>
           </div>
         </div>
 
         {/* Bottom */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-[11px] text-white/18 tracking-wide">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-[13px] text-white/18 tracking-wide">
           <span>© 2026 RBSD Combatives Brno</span>
           <div className="flex items-center gap-5">
             <Link to="/ochrana-soukromi" className="text-white/20 hover:text-[#C41E2A] transition-colors">

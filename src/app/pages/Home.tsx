@@ -48,7 +48,7 @@ export default function Home() {
             <RevealOnScroll delay={0.2}>
               <div className="inline-flex items-center gap-3 mb-6">
                 <div className="w-7 h-px bg-[#C41E2A]" />
-                <span className="text-[10px] font-bold tracking-[5px] uppercase text-[#C41E2A]">
+                <span className="text-[12px] font-bold tracking-[5px] uppercase text-[#C41E2A]">
                   Reality Based Self Defense
                 </span>
               </div>
@@ -57,7 +57,7 @@ export default function Home() {
                 REÁLNÁ <span className="text-[#C41E2A]">SEBEOBRANA</span>
               </h1>
 
-              <p className="text-[14px] font-light tracking-[6px] uppercase text-white/50 mb-8">
+              <p className="text-[15px] font-light tracking-[6px] uppercase text-white/50 mb-8">
                 Combatives Brno
               </p>
 
@@ -96,16 +96,16 @@ export default function Home() {
         <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
             <div>
-              <span className="block text-[10px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-4">
+              <span className="block text-[12px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-4">
                 01 — O SYSTÉMU
               </span>
               <h2 className="font-serif text-[clamp(32px,5vw,56px)] font-bold leading-tight text-[#0A0A0A] mb-6">
                 CO JE <span className="text-[#C41E2A]">COMBATIVES</span>
               </h2>
-              <p className="text-[16px] leading-relaxed text-[#0A0A0A]/70 mb-6">
+              <p className="text-[17px] leading-relaxed text-[#0A0A0A]/70 mb-6">
                 <strong className="text-[#0A0A0A] font-bold">Urban Combatives</strong> je mezinárodně uznávaná organizace, která vyučuje dovednosti v oblasti osobní bezpečnosti a sebeobrany jako metodu boje proti násilí. Byla vytvořena primárně pro běžné civilisty, ale je přizpůsobitelná i pro potřeby bezpečnostních služeb, policie a vojenských jednotek. Systém Urban Combatives se vyučuje napříč všemi úrovněmi, a to až po elitní speciální jednotky po celém světě, kde se samozřejmě pravidla boje i samotné cíle budou lišit.
               </p>
-              <p className="text-[16px] leading-relaxed text-[#0A0A0A]/70">
+              <p className="text-[17px] leading-relaxed text-[#0A0A0A]/70">
                 Nejde o sport ani tradiční bojové umění s pravidly, ale o čistě „pouliční“ metodu zaměřenou na osobní bezpečnost a obranu proti skutečnému násilí. Vše je postaveno na budování odolné psychiky a schopnosti fungovat i pod obrovským stresem, zmatkem a návalem adrenalinu.
               </p>
             </div>
@@ -115,7 +115,7 @@ export default function Home() {
               <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#C41E2A]/30 to-transparent" />
               
               <div className="relative z-10">
-                <div className="text-[11px] font-bold tracking-[4px] uppercase text-[#C41E2A] mb-6">
+                <div className="text-[13px] font-bold tracking-[4px] uppercase text-[#C41E2A] mb-6">
                   KLÍČOVÉ PRINCIPY
                 </div>
                 <ul className="space-y-4">
@@ -128,8 +128,8 @@ export default function Home() {
                     'Právní stránka konfliktu',
                     'Psychologie konfliktu',
                   ].map((item, i) => (
-                    <li key={i} className="flex items-start gap-3 text-white/70 text-[15px]">
-                      <span className="text-[#C41E2A] font-bold text-[16px] mt-[-2px]">▸</span>
+                    <li key={i} className="flex items-start gap-3 text-white/70 text-[16px]">
+                      <span className="text-[#C41E2A] font-bold text-[17px] mt-[-2px]">▸</span>
                       {item}
                     </li>
                   ))}
@@ -150,7 +150,7 @@ export default function Home() {
         />
 
         <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5 relative z-10">
-          <span className="block text-[10px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-4">
+          <span className="block text-[12px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-4">
             02 — NAŠE METODA
           </span>
           <h2 className="font-serif text-[clamp(32px,5vw,56px)] font-bold leading-tight text-white mb-16">
@@ -182,13 +182,13 @@ export default function Home() {
                 <div className="text-[72px] font-bold text-white/5 leading-none mb-4 group-hover:text-[#C41E2A]/10 transition-colors">
                   {pillar.number}
                 </div>
-                <div className="text-[11px] font-bold tracking-[3px] uppercase text-[#C41E2A] mb-2">
+                <div className="text-[13px] font-bold tracking-[3px] uppercase text-[#C41E2A] mb-2">
                   {pillar.subtitle}
                 </div>
                 <h3 className="text-[20px] font-bold text-white mb-4 leading-tight">
                   {pillar.title}
                 </h3>
-                <p className="text-[14px] text-white/50 leading-relaxed">
+                <p className="text-[15px] text-white/50 leading-relaxed">
                   {pillar.desc}
                 </p>
               </div>
@@ -200,13 +200,13 @@ export default function Home() {
       {/* Pro koho */}
       <section className="py-24 bg-[#F5F3F0]">
         <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5">
-          <span className="block text-[10px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-4">
+          <span className="block text-[12px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-4">
             03 — PRO KOHO
           </span>
           <h2 className="font-serif text-[clamp(32px,5vw,56px)] font-bold leading-tight text-[#0A0A0A] mb-6">
             KOMU JE <span className="text-[#C41E2A]">COMBATIVES URČENO</span>
           </h2>
-          <p className="text-[16px] text-[#0A0A0A]/70 leading-relaxed max-w-[700px] mb-16">
+          <p className="text-[17px] text-[#0A0A0A]/70 leading-relaxed max-w-[700px] mb-16">
             Combatives je pro každého, kdo chce být připraven na reálnou konfrontaci. Bez ohledu na věk, pohlaví nebo fyzickou kondici.
           </p>
 
@@ -240,7 +240,7 @@ export default function Home() {
                 <h3 className="text-[18px] font-bold text-[#0A0A0A] mb-3">
                   {item.title}
                 </h3>
-                <p className="text-[15px] text-[#0A0A0A]/60 leading-relaxed">
+                <p className="text-[16px] text-[#0A0A0A]/60 leading-relaxed">
                   {item.desc}
                 </p>
               </div>
@@ -252,7 +252,7 @@ export default function Home() {
       {/* FAQ */}
       <section className="py-24 bg-[#0A0A0A]">
         <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5">
-          <span className="block text-[10px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-4">
+          <span className="block text-[12px] font-bold tracking-[5px] uppercase text-[#C41E2A] mb-4">
             04 — ČASTÉ OTÁZKY
           </span>
           <h2 className="font-serif text-[clamp(32px,5vw,56px)] font-bold leading-tight text-white mb-16">
@@ -291,7 +291,7 @@ export default function Home() {
                   onClick={() => toggleFaq(i)}
                   className="w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors"
                 >
-                  <span className="text-[16px] font-bold text-white">
+                  <span className="text-[17px] font-bold text-white">
                     {faq.question}
                   </span>
                   <span className={`text-[#C41E2A] text-[24px] transition-transform ${openFaqIndex === i ? 'rotate-45' : ''}`}>
@@ -300,7 +300,7 @@ export default function Home() {
                 </button>
                 {openFaqIndex === i && (
                   <div className="px-6 pb-6 pt-0">
-                    <p className="text-[15px] text-white/60 leading-relaxed">
+                    <p className="text-[16px] text-white/60 leading-relaxed">
                       {faq.answer}
                     </p>
                   </div>
@@ -320,12 +320,12 @@ export default function Home() {
             Připraven na <br className="md:hidden" />
             <span className="text-[#F5F3F0]">první lekci?</span>
           </h2>
-          <p className="text-[16px] text-white/80 mb-10 max-w-[600px] mx-auto">
+          <p className="text-[17px] text-white/80 mb-10 max-w-[600px] mx-auto">
             První trénink je vždy zdarma a bez závazku. Přijď se podívat, jak vypadá reálná sebeobrana.
           </p>
           <Link
             to="/prihlaseni"
-            className="inline-flex items-center justify-center bg-[#0A0A0A] hover:bg-[#111] text-white px-12 py-5 text-[15px] font-bold tracking-[3px] uppercase transition-colors"
+            className="inline-flex items-center justify-center bg-[#0A0A0A] hover:bg-[#111] text-white px-12 py-5 text-[16px] font-bold tracking-[3px] uppercase transition-colors"
           >
             Rezervovat lekci zdarma →
           </Link>

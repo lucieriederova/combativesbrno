@@ -29,7 +29,7 @@ export default function Partners() {
         
         <RevealOnScroll delay={0.2}>
           <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5 relative z-10">
-            <div className="text-[10px] tracking-[4px] uppercase text-white/60 mb-3.5">
+            <div className="text-[12px] tracking-[4px] uppercase text-white/60 mb-3.5">
               Hung Gar Kung Fu Škola Brno <span className="text-[var(--kung-fu-gold)]">/ Partneři</span>
             </div>
             <h1 className="font-serif text-[clamp(34px,5vw,58px)] font-semibold text-white leading-tight">
@@ -57,7 +57,7 @@ export default function Partners() {
       {/* Partners Grid */}
       <section className="py-24 bg-[var(--kung-fu-black)]">
         <div className="max-w-[1100px] mx-auto px-12 max-[880px]:px-5">
-          <span className="block text-[10px] font-semibold tracking-[5px] uppercase text-[var(--kung-fu-red)] mb-3">
+          <span className="block text-[12px] font-semibold tracking-[5px] uppercase text-[var(--kung-fu-red)] mb-3">
             Partneři
           </span>
           <h2 className="font-serif text-[clamp(28px,4vw,46px)] font-semibold leading-tight text-white mb-14">
@@ -125,7 +125,7 @@ export default function Partners() {
                 </span>
 
                 <div className="relative z-10">
-                  <div className="inline-block mb-4 bg-[var(--kung-fu-red)]/5 border border-[var(--kung-fu-red)]/20 px-2.5 py-1 rounded-sm text-[9px] font-semibold tracking-[3px] uppercase text-[var(--kung-fu-red)] group-hover:bg-[var(--kung-fu-red)] group-hover:text-white transition-colors">
+                  <div className="inline-block mb-4 bg-[var(--kung-fu-red)]/5 border border-[var(--kung-fu-red)]/20 px-2.5 py-1 rounded-sm text-[11px] font-semibold tracking-[3px] uppercase text-[var(--kung-fu-red)] group-hover:bg-[var(--kung-fu-red)] group-hover:text-white transition-colors">
                     {partner.category}
                   </div>
                   
@@ -133,11 +133,11 @@ export default function Partners() {
                     {partner.name}
                   </h3>
                   
-                  <p className="text-[14px] text-[var(--kung-fu-g600)] leading-normal mb-4">
+                  <p className="text-[15px] text-[var(--kung-fu-g600)] leading-normal mb-4">
                     {partner.desc}
                   </p>
                   
-                  <div className="inline-block bg-[var(--kung-fu-g100)] px-2.5 py-1 rounded-sm text-[10px] text-[var(--kung-fu-g400)] border border-[var(--kung-fu-g200)]">
+                  <div className="inline-block bg-[var(--kung-fu-g100)] px-2.5 py-1 rounded-sm text-[12px] text-[var(--kung-fu-g400)] border border-[var(--kung-fu-g200)]">
                     {partner.type}
                   </div>
                 </div>
@@ -150,7 +150,7 @@ export default function Partners() {
       {/* Become Partner CTA */}
       <section className="py-24 bg-white">
         <div className="max-w-[800px] mx-auto px-12 text-center max-[880px]:px-5">
-          <span className="block text-[10px] font-semibold tracking-[5px] uppercase text-[var(--kung-fu-red)] mb-3">
+          <span className="block text-[12px] font-semibold tracking-[5px] uppercase text-[var(--kung-fu-red)] mb-3">
             Spolupráce
           </span>
           <h2 className="font-serif text-[clamp(28px,4vw,42px)] font-semibold text-[var(--kung-fu-black)] mb-6">
@@ -174,7 +174,7 @@ export default function Partners() {
                   </span>
                 </div>
                 <h3 className="font-semibold text-[var(--kung-fu-black)] mb-1.5">{benefit.title}</h3>
-                <p className="text-[14px] text-[var(--kung-fu-g500)]">{benefit.desc}</p>
+                <p className="text-[15px] text-[var(--kung-fu-g500)]">{benefit.desc}</p>
               </div>
             ))}
           </div>
@@ -209,7 +209,7 @@ export default function Partners() {
             >
               謝
             </span>
-            <p className="text-[11px] tracking-[4px] uppercase text-white/30 mt-3">
+            <p className="text-[13px] tracking-[4px] uppercase text-white/30 mt-3">
               Děkujeme • 謝謝
             </p>
           </div>

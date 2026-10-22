@@ -36,7 +36,7 @@ export default function Navigation() {
             <span className="text-[18px] font-bold tracking-[2px] uppercase leading-tight text-white transition-colors">
               RBSD
             </span>
-            <small className="text-[12px] font-normal tracking-[3px] uppercase text-white/40 transition-colors">
+            <small className="text-[13px] font-normal tracking-[3px] uppercase text-white/40 transition-colors">
               Combatives Brno
             </small>
           </div>
@@ -48,7 +48,7 @@ export default function Navigation() {
             <Link
               key={link.to}
               to={link.to}
-              className={`text-[11px] font-medium tracking-[2px] uppercase transition-colors ${
+              className={`text-[13px] font-medium tracking-[2px] uppercase transition-colors ${
                 isActive(link.to) 
                   ? 'text-white' 
                   : 'text-white/40 hover:text-white'
@@ -61,7 +61,7 @@ export default function Navigation() {
           {/* CTA Button */}
           <Link
             to="/prihlaseni"
-            className="bg-[#C41E2A] hover:bg-[#A01822] text-white px-6 py-2.5 rounded-sm text-[10px] font-bold tracking-[2px] uppercase transition-colors"
+            className="bg-[#C41E2A] hover:bg-[#A01822] text-white px-6 py-2.5 rounded-sm text-[12px] font-bold tracking-[2px] uppercase transition-colors"
           >
             Chci začít
           </Link>
@@ -85,7 +85,7 @@ export default function Navigation() {
               <Link
                 key={link.to}
                 to={link.to}
-                className={`block text-[13px] font-medium tracking-[2px] uppercase transition-colors ${
+                className={`block text-[15px] font-medium tracking-[2px] uppercase transition-colors ${
                   isActive(link.to) 
                     ? 'text-white' 
                     : 'text-white/40'
@@ -96,7 +96,7 @@ export default function Navigation() {
             ))}
             <Link
               to="/prihlaseni"
-              className="block w-full bg-[#C41E2A] hover:bg-[#A01822] text-white px-6 py-3 rounded-sm text-center text-[11px] font-bold tracking-[2px] uppercase transition-colors mt-4"
+              className="block w-full bg-[#C41E2A] hover:bg-[#A01822] text-white px-6 py-3 rounded-sm text-center text-[13px] font-bold tracking-[2px] uppercase transition-colors mt-4"
             >
               Chci začít
             </Link>
