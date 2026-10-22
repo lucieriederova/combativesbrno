@@ -45,29 +45,37 @@ export default function References() {
             Poslechněte si, proč lidé trénují Combatives a jak jim to změnilo život.
           </p>
 
-          {/* Fotky z tréninků — první, co návštěvník na stránce uvidí */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-14">
-            {[
-              '/reference/trenink-1.jpg',
-              '/reference/trenink-2.jpg',
-              '/reference/trenink-3.jpg',
-              '/reference/trenink-4.jpg',
-            ].map((src, i) => (
-              <RevealOnScroll key={src} delay={0.1 * i}>
-                <div className="aspect-[4/5] overflow-hidden border-b-[4px] border-[#C41E2A]">
-                  <img
-                    src={src}
-                    alt="Trénink RBSD Combatives Brno"
-                    loading={i < 2 ? 'eager' : 'lazy'}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              </RevealOnScroll>
-            ))}
-          </div>
-
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
+              // Fotky z tréninku: popis tréninku, ne recenze — proto bez uvozovek a ikony citace
+              {
+                name: 'Technika',
+                program: 'Sebeobrana pro dospělé',
+                duration: 'Úterý 18:00',
+                photo: '/reference/trenink-1.jpg',
+                text: 'Nácvik základních elementů — úderů, kopů a práce v pohybu. Techniku si zkoušíš naplno do lap, ne do vzduchu.',
+              },
+              {
+                name: 'Práce ve dvojicích',
+                program: 'Sebeobrana pro dospělé',
+                duration: 'Úterý 18:00',
+                photo: '/reference/trenink-2.jpg',
+                text: 'Trénuješ s partnerem, který drží lapy a postupně přidává tempo. Na věku ani předchozích zkušenostech nezáleží.',
+              },
+              {
+                name: 'Taktika',
+                program: 'Sebeobrana pro dospělé',
+                duration: 'Úterý 18:00',
+                photo: '/reference/trenink-3.jpg',
+                text: 'Trénink vhodné taktiky pro danou situaci — kdy se bránit, kdy útočit a kdy odejít.',
+              },
+              {
+                name: 'Scénáře',
+                program: 'Sebeobrana pro dospělé',
+                duration: 'Úterý 18:00',
+                photo: '/reference/trenink-4.jpg',
+                text: 'Technika a taktika aplikovaná do modelové situace s postupným přidáváním stresu.',
+              },
               {
                 name: 'Áďa',
                 program: 'Combatives Začátečníci',
@@ -102,12 +110,12 @@ export default function References() {
                   <img
                     src={testimonial.photo}
                     alt={testimonial.name}
-                    className="w-full h-full object-cover scale-[1.6]"
+                    className={`w-full h-full object-cover ${testimonial.quote ? 'scale-[1.6]' : ''}`}
                   />
                 </div>
 
                 <div className="p-8 relative flex-1">
-                  <Quote className="absolute top-6 right-6 text-[#C41E2A]/10" size={48} />
+                  {testimonial.quote && <Quote className="absolute top-6 right-6 text-[#C41E2A]/10" size={48} />}
 
                   <div className="relative z-10">
                     <div className="flex items-start justify-between gap-3 mb-4">
@@ -124,9 +132,15 @@ export default function References() {
                       </div>
                     </div>
 
-                    <p className="text-[16px] text-[#0A0A0A]/70 leading-relaxed italic">
-                      "{testimonial.quote}"
-                    </p>
+                    {testimonial.quote ? (
+                      <p className="text-[16px] text-[#0A0A0A]/70 leading-relaxed italic">
+                        "{testimonial.quote}"
+                      </p>
+                    ) : (
+                      <p className="text-[16px] text-[#0A0A0A]/70 leading-relaxed">
+                        {testimonial.text}
+                      </p>
+                    )}
                   </div>
                 </div>
               </div>
