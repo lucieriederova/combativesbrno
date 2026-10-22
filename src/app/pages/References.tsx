@@ -1,8 +1,6 @@
 import { Link } from 'react-router';
 import { Quote } from 'lucide-react';
 import { RevealOnScroll } from '../components/RevealOnScroll';
-import adaPhoto from '@/imports/ada.jpg';
-import kataPhoto from '@/imports/kata.jpg';
 import krystofPhoto from '@/imports/krystof.jpg';
 import matyPhoto from '@/imports/maty.jpg';
 
@@ -75,20 +73,6 @@ export default function References() {
                 duration: 'Úterý 18:00',
                 photo: '/reference/trenink-4.jpg',
                 text: 'Technika a taktika aplikovaná do modelové situace s postupným přidáváním stresu.',
-              },
-              {
-                name: 'Áďa',
-                program: 'Combatives Začátečníci',
-                duration: 'Trénuje 1 rok',
-                photo: adaPhoto,
-                quote: 'Konečně něco, co má smysl. Žádné zbytečnosti, jen praktická obrana. Cítím se mnohem bezpečněji.',
-              },
-              {
-                name: 'Káťa',
-                program: 'Sebeobrana pro ženy',
-                duration: 'Trénuje 8 měsíců',
-                photo: kataPhoto,
-                quote: 'Nikdy jsem nesportovala, ale tady se nebojím zkoušet nové věci. Všichni jsou vstřícní a atmosféra je skvělá.',
               },
               {
                 name: 'Kryštof',
