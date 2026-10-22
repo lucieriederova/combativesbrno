@@ -45,7 +45,7 @@ export default function References() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
-              // Fotky z tréninku: popis tréninku, ne recenze — proto bez uvozovek a ikony citace
+              // Fotky z tréninku: popis tréninku (text), ne recenze konkrétního člověka
               {
                 name: 'Technika',
                 program: 'Sebeobrana pro dospělé',
@@ -99,7 +99,7 @@ export default function References() {
                 </div>
 
                 <div className="p-8 relative flex-1">
-                  {testimonial.quote && <Quote className="absolute top-6 right-6 text-[#C41E2A]/10" size={48} />}
+                  <Quote className="absolute top-6 right-6 text-[#C41E2A]/10" size={48} />
 
                   <div className="relative z-10">
                     <div className="flex items-start justify-between gap-3 mb-4">
@@ -116,15 +116,9 @@ export default function References() {
                       </div>
                     </div>
 
-                    {testimonial.quote ? (
-                      <p className="text-[16px] text-[#0A0A0A]/70 leading-relaxed italic">
-                        "{testimonial.quote}"
-                      </p>
-                    ) : (
-                      <p className="text-[16px] text-[#0A0A0A]/70 leading-relaxed">
-                        {testimonial.text}
-                      </p>
-                    )}
+                    <p className="text-[16px] text-[#0A0A0A]/70 leading-relaxed italic">
+                      "{testimonial.quote ?? testimonial.text}"
+                    </p>
                   </div>
                 </div>
               </div>
