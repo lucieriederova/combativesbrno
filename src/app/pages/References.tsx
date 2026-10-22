@@ -45,6 +45,27 @@ export default function References() {
             Poslechněte si, proč lidé trénují Combatives a jak jim to změnilo život.
           </p>
 
+          {/* Fotky z tréninků — první, co návštěvník na stránce uvidí */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-14">
+            {[
+              '/reference/trenink-1.jpg',
+              '/reference/trenink-2.jpg',
+              '/reference/trenink-3.jpg',
+              '/reference/trenink-4.jpg',
+            ].map((src, i) => (
+              <RevealOnScroll key={src} delay={0.1 * i}>
+                <div className="aspect-[4/5] overflow-hidden border-b-[4px] border-[#C41E2A]">
+                  <img
+                    src={src}
+                    alt="Trénink RBSD Combatives Brno"
+                    loading={i < 2 ? 'eager' : 'lazy'}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              </RevealOnScroll>
+            ))}
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
