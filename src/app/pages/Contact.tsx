@@ -301,8 +301,9 @@ export default function Contact() {
                 <div className="px-4 py-3 border-t border-black/[0.08] flex items-start gap-2.5 text-[15px] text-[#0A0A0A]/60 leading-relaxed">
                   <DoorOpen size={14} className="text-[#C41E2A] mt-0.5 shrink-0" />
                   <span>
-                    <strong className="text-[#0A0A0A] font-semibold">Jak najít tělocvičnu:</strong> vejdi do školy hlavními dveřmi,
-                    pak se dej doprava a pokračuj dál po chodbě až k proskleným dveřím. Za nimi je tělocvična a šatny.
+                    <strong className="text-[#0A0A0A] font-semibold">Jak najít tělocvičnu:</strong> vejdi do školy hlavním vchodem z ulice Mlýnská,
+                    označeným velkým písmenem <strong className="font-semibold">A</strong>. Za dveřmi jsou schody, po nich se dej doprava
+                    a pokračuj po chodbě až k proskleným dveřím. Za nimi najdeš šatny a tělocvičnu.
                   </span>
                 </div>
               </div>
