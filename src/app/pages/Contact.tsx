@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import { MapPin, Phone, Mail, User, MessageSquare, TramFront, DoorOpen } from 'lucide-react';
 import { RevealOnScroll } from '../components/RevealOnScroll';
+import { EMAIL } from '@/app/lib/email';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -39,7 +40,7 @@ export default function Contact() {
           '',
           formData.message,
         ].join('\n');
-        window.location.href = `mailto:info@combatives-brno.cz?subject=${encodeURIComponent('Dotaz z webu')}&body=${encodeURIComponent(body)}`;
+        window.location.href = `mailto:${EMAIL}?subject=${encodeURIComponent('Dotaz z webu')}&body=${encodeURIComponent(body)}`;
         return;
       }
       if (!res.ok) {
@@ -48,14 +49,14 @@ export default function Contact() {
             ? 'Odeslal(a) jsi několik zpráv za sebou. Zkus to prosím za pár minut.'
             : res.status === 400
               ? 'Zkontroluj prosím vyplněné údaje (hlavně e-mail).'
-              : 'Zprávu se nepodařilo odeslat. Napiš nám prosím přímo na info@combatives-brno.cz nebo zavolej.'
+              : `Zprávu se nepodařilo odeslat. Napiš nám prosím přímo na ${EMAIL} nebo zavolej.`
         );
         return;
       }
       setSubmitted(true);
       setFormData({ name: '', email: '', phone: '', subject: '', message: '' });
     } catch {
-      setError('Zprávu se nepodařilo odeslat. Napiš nám prosím přímo na info@combatives-brno.cz nebo zavolej.');
+      setError(`Zprávu se nepodařilo odeslat. Napiš nám prosím přímo na ${EMAIL} nebo zavolej.`);
     } finally {
       setSending(false);
     }
@@ -258,7 +259,7 @@ export default function Contact() {
                   {
                     icon: <Mail size={20} />,
                     label: 'E-mail',
-                    value: 'info@combatives-brno.cz'
+                    value: EMAIL
                   },
                 ].map((item, i) => (
                   <div

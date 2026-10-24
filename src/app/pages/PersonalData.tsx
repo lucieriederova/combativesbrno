@@ -1,4 +1,5 @@
 import { RevealOnScroll } from '../components/RevealOnScroll';
+import { HUNGGAR_EMAIL } from '@/app/lib/email';
 
 export default function PersonalData() {
   return (
@@ -199,8 +200,8 @@ export default function PersonalData() {
                 <p>
                   Pokud chcete požádat o přenos svých údajů (tedy těch, co jste vy sami zadali),
                   kontaktujte nás na{' '}
-                  <a href="mailto:info@hunggar.cz" className="text-[#C41E2A] hover:text-[#A01822] underline underline-offset-2">
-                    info@hunggar.cz
+                  <a href={`mailto:${HUNGGAR_EMAIL}`} className="text-[#C41E2A] hover:text-[#A01822] underline underline-offset-2">
+                    {HUNGGAR_EMAIL}
                   </a>.
                 </p>
               </div>
@@ -208,8 +209,8 @@ export default function PersonalData() {
                 <h3 className="font-bold text-[#0A0A0A] mb-1.5">Vznesení námitky</h3>
                 <p>
                   Pokud chcete vznést námitku, kontaktujte nás na{' '}
-                  <a href="mailto:info@hunggar.cz" className="text-[#C41E2A] hover:text-[#A01822] underline underline-offset-2">
-                    info@hunggar.cz
+                  <a href={`mailto:${HUNGGAR_EMAIL}`} className="text-[#C41E2A] hover:text-[#A01822] underline underline-offset-2">
+                    {HUNGGAR_EMAIL}
                   </a>.
                 </p>
               </div>
@@ -217,8 +218,8 @@ export default function PersonalData() {
                 <h3 className="font-bold text-[#0A0A0A] mb-1.5">Žádost o odvolání souhlasu se zpracováním osobních údajů</h3>
                 <p>
                   Pokud chcete odvolat souhlas, kontaktujte nás na{' '}
-                  <a href="mailto:info@hunggar.cz" className="text-[#C41E2A] hover:text-[#A01822] underline underline-offset-2">
-                    info@hunggar.cz
+                  <a href={`mailto:${HUNGGAR_EMAIL}`} className="text-[#C41E2A] hover:text-[#A01822] underline underline-offset-2">
+                    {HUNGGAR_EMAIL}
                   </a>.
                 </p>
               </div>
@@ -226,8 +227,8 @@ export default function PersonalData() {
                 <h3 className="font-bold text-[#0A0A0A] mb-1.5">Žádost o odstranění osobních údajů (právo být zapomenut)</h3>
                 <p>
                   Pokud chcete kompletně vymazat svoje data z našich databází, kontaktujte nás na{' '}
-                  <a href="mailto:info@hunggar.cz" className="text-[#C41E2A] hover:text-[#A01822] underline underline-offset-2">
-                    info@hunggar.cz
+                  <a href={`mailto:${HUNGGAR_EMAIL}`} className="text-[#C41E2A] hover:text-[#A01822] underline underline-offset-2">
+                    {HUNGGAR_EMAIL}
                   </a>.
                 </p>
               </div>

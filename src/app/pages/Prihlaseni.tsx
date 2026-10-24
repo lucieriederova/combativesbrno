@@ -1,5 +1,6 @@
 import { CheckCircle2 } from 'lucide-react';
 import { RevealOnScroll } from '../components/RevealOnScroll';
+import { EMAIL } from '@/app/lib/email';
 
 export default function Prihlaseni() {
   return (
@@ -48,10 +49,10 @@ export default function Prihlaseni() {
                 +420 605 521 525
               </a>
               <a
-                href="mailto:info@combatives-brno.cz"
+                href={`mailto:${EMAIL}`}
                 className="inline-flex items-center justify-center gap-2 bg-[#C41E2A] hover:bg-[#A01822] text-white px-6 py-3 text-[13px] font-bold tracking-[2px] uppercase transition-colors"
               >
-                info@combatives-brno.cz
+                {EMAIL}
               </a>
             </div>
           </RevealOnScroll>

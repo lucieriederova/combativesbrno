@@ -1,5 +1,6 @@
 import { RevealOnScroll } from '../components/RevealOnScroll';
 import { openCookieSettings } from '../lib/cookieConsent';
+import { EMAIL } from '@/app/lib/email';
 
 export default function PrivacyPolicy() {
   return (
@@ -36,8 +37,8 @@ export default function PrivacyPolicy() {
               <p>
                 Provozovatelem webu a správcem osobních údajů je RBSD Combatives Brno.
                 V případě dotazů k ochraně soukromí nás kontaktujte na{' '}
-                <a href="mailto:info@combatives-brno.cz" className="text-[#C41E2A] hover:text-[#A01822] underline underline-offset-2">
-                  info@combatives-brno.cz
+                <a href={`mailto:${EMAIL}`} className="text-[#C41E2A] hover:text-[#A01822] underline underline-offset-2">
+                  {EMAIL}
                 </a>.
               </p>
             </div>

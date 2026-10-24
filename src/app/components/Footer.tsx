@@ -1,6 +1,7 @@
 import { Link } from 'react-router';
 import rbsdLogo from '@/imports/si_la__kopie_.png';
 import { openCookieSettings } from '../lib/cookieConsent';
+import { EMAIL } from '@/app/lib/email';
 
 export default function Footer() {
   return (
@@ -34,7 +35,7 @@ export default function Footer() {
                 <span className="text-sm">📱</span>
               </a>
               <a
-                href="mailto:info@combatives-brno.cz"
+                href={`mailto:${EMAIL}`}
                 className="w-9 h-9 rounded-full border border-white/10 flex items-center justify-center text-white/35 hover:border-[#C41E2A] hover:bg-[#C41E2A] hover:text-white transition-all"
               >
                 <span className="text-sm">📧</span>
@@ -114,7 +115,7 @@ export default function Footer() {
               </div>
               <div className="flex items-start gap-2.5">
                 <span className="text-sm mt-0.5">✉️</span>
-                <p className="text-[15px] text-white/45">info@combatives-brno.cz</p>
+                <p className="text-[15px] text-white/45">{EMAIL}</p>
               </div>
             </div>
           </div>

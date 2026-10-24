@@ -1,6 +1,7 @@
 import adaPhoto from '@/imports/ada.jpg';
 import krystofPhoto from '@/imports/krystof.jpg';
 import kataPhoto from '@/imports/kata.jpg';
+import { EMAIL } from '@/app/lib/email';
 
 export type NewsContentBlock = {
   heading?: string;
@@ -59,7 +60,7 @@ export const newsArticles: NewsArticleData[] = [
         text: '22. září proběhnou ukázkové tréninky pro děti, juniory i dospělé. Vezměte si s sebou triko, kraťasy, sálovou obuv a pití.',
       },
       {
-        text: 'Přijďte si vyzkoušet ukázkový trénink zdarma a bez závazku — stačí nám předem zavolat nebo napsat, a to na +420 605 521 525 nebo info@combatives-brno.cz.',
+        text: `Přijďte si vyzkoušet ukázkový trénink zdarma a bez závazku — stačí nám předem zavolat nebo napsat, a to na +420 605 521 525 nebo ${EMAIL}.`,
       },
       {
         text: 'Tréninky probíhají na adrese',
